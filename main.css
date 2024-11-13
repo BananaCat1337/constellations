@@ -6,19 +6,6 @@ body {
     padding: 0;
 }
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.header img {
-    max-width: 20%;
-    height: auto;
-}
-
 .logo {
     margin: 50px 0 780px 57px;
     max-width: 15%;
