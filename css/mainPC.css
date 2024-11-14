@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Angst";
+    src: url(/constellations/fonts/angst/static/Angst-Normal.otf);
+}
 
 main {
     display: flex;
@@ -140,4 +144,12 @@ main {
 .block .right-container .step {
     height: 50%;
     width: 25%;
+}
+
+.pipibaka {
+    font-family: "Angst", sans-serif;
+    color: #ECA100;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 2px; /*на глаз посмотри как в макете будет, я лох*/
 }
