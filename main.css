@@ -6,13 +6,19 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  color: #f6f1ff;
 }
 footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   background-color: #080839;
   width: 100vw;
   height: 170px;
+}
+h5 {
+  margin: 0;
 }
 .logo_container {
   position: relative;
@@ -31,3 +37,39 @@ footer {
   font-size: 24px;
   color: #f6f1ff;
 }
+.contacts_container {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactsLogo {
+  max-width: 33px;
+  max-height: 33px;
+}
+.numbers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.addresses {
+  position: relative;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.copyright_container {
+  width: 50%;
+  height: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 50%;
+  position: absolute;
+  right: 60px;
+  bottom: 28px;
+}
+ /* Я ХЗ КАК СДЕЛАТЬ 
