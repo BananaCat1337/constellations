@@ -83,8 +83,6 @@ main {
 .astro-line {
   width: 100%;
   height: 5%;
-
-  border-bottom: solid 2px;
 }
 
 .lower-container {
@@ -262,3 +260,4 @@ footer .right-container .uppest-conainer {
   justify-content: space-around;
   opacity: 50%;
 }
+
