@@ -1,155 +1,264 @@
 @font-face {
-    font-family: "Angst";
-    src: url(/constellations/fonts/angst/static/Angst-Normal.otf);
+  font-family: 'Angst';
+  src: url(/constellations/fonts/angst/static/Angst-Normal.otf);
+}
+
+body {
+  width: 100%;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    background-image: url('../mainPNG/background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('../mainPNG/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
-    width: 10vw;
-    height: 10vh;
+  width: 10vw;
+  height: 10vh;
 
-    top: 0;
+  top: 0;
 }
 
 .main-container {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 
-    height: 90%;
-    width: 95%;
+  height: 90%;
+  width: 95%;
 }
 
 .upper-container {
-    display: flex;
+  display: flex;
 
-    width: 100%;
-    height: 65%;
+  width: 100%;
+  height: 65%;
 }
 
 .upper-container .left-container {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    width: 11%;
-    height: 100%;
+  width: 11%;
+  height: 100%;
 }
 
 .buttons {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 
-    height: 40%;
+  height: 40%;
 
-    margin-top: 85%;
+  margin-top: 85%;
 }
 
 .button {
-    width: 60%;
+  width: 60%;
 
-    cursor: pointer;
-    user-select: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .midle-container {
-    display: flex;
+  display: flex;
 
-    width: 80%;
+  width: 80%;
 
-    align-items: center;
-    flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 .astro-line {
-    width: 100%;
-    height: 5%;
+  width: 100%;
+  height: 5%;
 
-    border-bottom: solid 2px;
+  border-bottom: solid 2px;
 }
 
 .lower-container {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 
-    height: 30%;
-    width: 85%;
+  height: 30%;
+  width: 85%;
 }
 
 .block {
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    height: 80%;
-    width: 45%;
+  height: 80%;
+  width: 45%;
 
-    background-color:rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(1vh);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1vh);
 
-    padding-top: 1.5%;
-    padding-left: 2%;
-    padding-bottom: 2.5%;
-    padding-right: 2.5%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-bottom: 2.5%;
+  padding-right: 2.5%;
 }
 
 .video {
-    height: 100%;
-    width: 80%;
+  height: 100%;
+  width: 80%;
 }
 
 .block .left-container {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 
-    height: 100%;
-    width: 60%;
+  height: 100%;
+  width: 60%;
 }
 
 .graphic {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    height: 100%;
+  height: 100%;
 }
 
 .block .right-container .steps {
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .block .right-container .step {
-    height: 50%;
-    width: 25%;
+  height: 50%;
+  width: 25%;
+}
+
+.block .right-container img {
+  height: 40%;
+  width: 80%;
 }
 
 .pipibaka {
-    font-family: "Angst", sans-serif;
-    color: #ECA100;
-    line-height: 1.2;
-    font-weight: normal;
-    letter-spacing: 2px; /*на глаз посмотри как в макете будет, я лох*/
+  font-family: 'Angst', sans-serif;
+  color: #eca100;
+  line-height: 1.2;
+  font-weight: normal;
+  letter-spacing: 2px; /*на глаз посмотри как в макете будет, я лох*/
+}
+
+footer {
+  position: absolute;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #080839;
+
+  width: 100%;
+  height: 18vh;
+}
+
+footer .left-conainer {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 45%;
+  height: 70%;
+}
+
+h5 {
+  margin: 0;
+}
+.logo_container {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_footer {
+  width: 8vw;
+  height: 8vh;
+}
+
+.site_address {
+  font-size: 24px;
+  color: #f6f1ff;
+}
+
+.contacts_container {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactsLogo {
+  max-width: 4vh;
+  max-height: 4vh;
+}
+
+footer .right-container {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 70%;
+  width: 45%;
+}
+
+footer .right-container .uppest-conainer {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 60%;
+}
+
+.numbers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.addresses {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.copyright_container {
+  width: 100%;
+  height: 40%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  opacity: 50%;
 }
