@@ -16,9 +16,13 @@
 
 <body>
   <div class="popUp" id="popUp">
-    <div id="popUp3" class="popUp3">
-      <div class="popUp3-content">Test</div>
-      <button id="popup_close">закрыть</button>
+    <div id="popUp3" class="popUp3 popUp-large">
+      <div class="popUp3-content">Test2</div>
+      <button id="popup_close" class="popup_close">закрыть</button>
+    </div>
+    <div id="popUp1" class="popUp1 popUp-large">
+      <div class="popUp1-content">Test1</div>
+      <button id="popup_close" class="popup_close">закрыть</button>
     </div>
   </div>
   <div class="bgImage-container"></div>
@@ -35,9 +39,9 @@
     <main>
       <div class="main-wrapper">
         <div class="left-nav-bar">
-          <p class="zxc">Об акции</p>
-          <p class="zxc">На что пойдут средства?</p>
-          <p class="zxc" id="popup3_open_zxc">Выбрать созвездие</p>
+          <p class="zxc" id="popup1_open_zxc">Об акции</p>
+          <p class="zxc">На что пойдут   средства?</p>
+          <p class="zxc" id="popup3_open_zxc">Выбрать   созвездие</p>
         </div>
         <div class="main-title-wrapper">
           <p class="main-title">
@@ -60,8 +64,10 @@
         <div class="range-text">0</div>
       </div>
       <div class="info-blocks">
-        <div class="info-block"></div>
-        <div class="info-block">
+        <div class="info-block left">
+          
+        </div>
+        <div class="info-block right">
           <button id="popup3_open" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Зажги созвездие
           </button>

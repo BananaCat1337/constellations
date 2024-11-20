@@ -15,6 +15,13 @@ h5 {
   font-size: 1rem;
 }
 
+h5 {
+  font-family: 'hauora';
+  color: #f6f1ff;
+
+  font-size: 1rem;
+}
+
 
 
 .copyright_container a {
@@ -36,7 +43,8 @@ h5 {
   height: 100%;
 
   background-color:rgba(24, 14, 68, 0.3);
-  z-index: 1;
+  backdrop-filter: blur(5px);
+  z-index: 2;
 
   justify-content: center;
   align-items: center;
@@ -46,11 +54,38 @@ h5 {
   display: flex;
 }
 
-.popUp3 {
+.popUp-large {
   height: 60%;
   width: 50%;
 
   background: #f6f1ff;
+}
+
+
+
+.popUp3 {
+  display: none;
+  z-index: 2;
+}
+.popUp3.active {
+  display: block;
+}
+
+.popUp1 {
+  display: none;
+  z-index: 2;
+}
+.popUp1.active {
+  display: block;
+}
+
+
+.copyright_container a {
+  color: #F6F1FF;
+}
+
+.copyright_container div {
+  color: #F6F1FF;
 }
 
 
@@ -81,6 +116,8 @@ html {
   align-items: center;
   position: relative;
   width: 100vw;
+
+  z-index: 2;
 }
 
 .main-title {
@@ -125,9 +162,13 @@ html {
 }
 
 .info-block {
-  background: #ffffff1a;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+
   width: 734px;
   height: 204px;
+
+  z-index: 1;
 }
 
 .range-wrapper {
@@ -227,7 +268,9 @@ body {
 }
 
 .zxc {
+  cursor: pointer;
   margin-bottom: 36px;
+  z-index: 3;
 }
 
 .left-nav-bar {
@@ -235,7 +278,7 @@ body {
   height: 200px;
   width: fit-content;
   color: #F6F1FF;
-
+  z-index: 2;
 }
 
 .left-nav-bar p {
