@@ -3,7 +3,7 @@ const thumb = document.querySelector(".range-text");
 
 const updateThumb = () => {
   const value = rangeInput.value;
-  thumb.textContent = `${value}°`;
+  thumb.textContent = `|| ${value}° ||`;
   const percentage =
     (value - rangeInput.min) / (rangeInput.max - rangeInput.min);
   const offset = percentage * (rangeInput.clientWidth - 80);
