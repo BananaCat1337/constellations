@@ -8,6 +8,21 @@
   src: url(../font/hauora_sans/fonts/web/Hauora-Regular.woff);
 }
 
+h2 {
+  font-size: 3rem;
+
+  color: #ECA100;
+}
+
+h1 {
+  font-family: 'hauora';
+  color: #f6f1ff;
+
+  font-size: 1.3rem;
+
+  line-height: 130%;
+}
+
 h5 {
   font-family: 'hauora';
   color: #f6f1ff;
@@ -16,6 +31,15 @@ h5 {
 }
 
 h3 {
+  font-family: 'hauora';
+  font-size: 18px;
+
+  line-height: 130%;
+
+  color: #ECA100;
+}
+
+.b3 {
   font-family: 'hauora';
   font-size: 18px;
 
@@ -79,36 +103,109 @@ button:hover {
   align-items: center;
 }
 
+.popUp .side-element {
+  width: 13%;
+  height: 60%;
+}
+
+.popUp .side-element .popup_close {
+  width: 13%;
+
+  cursor: pointer;
+}
+
 .popUp.active {
   display: flex;
+  justify-content: space-between;
 }
 
 .popUp-large {
-  height: 60%;
+  background-image: url(../assets/Large-popUp-backgraund.png);
+  background-size: cover;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  backdrop-filter: blur(30px);
+  background-color: rgba(24, 14, 68, 0.9);
+
+  height: 48%;
+  width: 48%;
+
+  position: relative;
+
+  padding: 4%;
+
+  z-index: 3;
+}
+
+.popUp-large .info-container {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+
+.popUp-large .info-container .left-elements {
+  height: 100%;
+}
+
+.popUp-large .info-container .left-elements img {
+  width: 100%;
+}
+
+.popUp-large .info-container .right-elements {
   width: 50%;
 
-  background: #f6f1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.popUp-large .info-container .right-elements button {
+  height: 17%;
+  width: 60%;
+}
+
+.popUp-large .info-container .right-elements img {
+  height: 70%;
+}
+
+.popUp-large .info-container .right-elements .bottom-elements {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 
-
-.popUp3 {
-  display: none;
-  z-index: 2;
-}
-
-.popUp3.active {
-  display: block;
-}
 
 .popUp1 {
   display: none;
-  z-index: 2;
 }
 
 .popUp1.active {
-  display: block;
+  display: flex;
 }
+
+.popUp2 {
+  display: none;
+}
+
+.popUp2.active {
+  display: flex;
+}
+
+.popUp3 {
+  display: none;
+}
+
+.popUp3.active {
+  display: flex;
+}
+
 
 
 .copyright_container a {
@@ -244,7 +341,7 @@ html {
   color: #F6F1FF;
 }
 
-.info-blocks .right .left-elements button h4 {
+.popup3_open h4 {
   color: #000000;
 }
 
@@ -258,6 +355,7 @@ html {
 }
 
 .info-blocks .right .right-elements img {
+  margin-left: 10%;
   width: 70%;
 }
 
@@ -414,7 +512,7 @@ body {
 }
 
 .void {
-  width: 150px;
+  width: 8vw;
 }
 
 .main-wrapper {
@@ -458,7 +556,6 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 .footerContainer {

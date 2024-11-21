@@ -18,13 +18,54 @@
 
 <body>
   <div class="popUp" id="popUp">
-    <div id="popUp3" class="popUp3 popUp-large">
-      <div class="popUp3-content">Test2</div>
-      <button id="popup_close" class="popup_close">закрыть</button>
-    </div>
+    <div class="side-element"></div>
+    
     <div id="popUp1" class="popUp1 popUp-large">
-      <div class="popUp1-content">Test1</div>
-      <button id="popup_close" class="popup_close">закрыть</button>
+      <h2>об акции</h2>
+      <div class="info-container">
+        <div class="left-elements">
+          <img src="./assets/PopUp1-image.svg" alt="">
+        </div>
+        <div class="right-elements">
+          <h1 class="b1">Детские мечты, оставленные позади из-за тяжёлой болезни, зажигаются на бескрайнем небосводе. Они превращаются во множество маленьких звёзд и составляют целые созвездия, которые видны лишь в канун Нового года.
+            <br>
+            <br>
+            Зажигая их, мы поможем детям не только найти путь к выздоровлению, но и стать ближе к осуществлению их заветной мечты.
+          </h1>
+          <button class="popup3_open">
+            <h4>Зажги созвездие</h4>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popUp2" class="popUp2 popUp-large">
+      <h2>на что пойдут средства?</h2>
+      <div class="info-container">
+        <div class="left-elements">
+          <img src="./assets/popUp2.png" alt="">
+        </div>
+        <div class="right-elements">
+          <h1 class="b1">Благотворительный фонд «Настенька» - один из старейший российских фондов и первый, который стал помогать детям с онкологическими заболеваниями.
+            <br>
+            <br>
+            Фонд оплачивает детям со всей России и из стран СНГ: операции, лечение, реабилитацию, лекарства, обследования, проживание на время лечения и многое другое.
+          </h1>
+          <div class="bottom-elements">
+            <div class="void"></div>
+            <img src="./assets/popUp2.svg" alt="">
+            <a class="b3" href="https://nastenka.ru/">Узнать больше о фонде</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popUp3" class="popUp3 popUp-large">
+      <div class="popUp3-content">Test3</div>
+    </div>
+
+    <div class="side-element">
+      <img class="popup_close" src="./assets/closseCross.svg" alt="">
     </div>
   </div>
   <div class="bgImage-container"></div>
@@ -41,9 +82,9 @@
     <main>
       <div class="main-wrapper">
         <div class="left-nav-bar">
-          <p class="zxc" id="popup1_open_zxc">Об акции</p>
-          <p class="zxc">На что пойдут   средства?</p>
-          <p class="zxc" id="popup3_open_zxc">Выбрать   созвездие</p>
+          <p class="zxc" id="popup1_open">Об акции</p>
+          <p class="zxc" id="popup2_open">На что пойдут   средства?</p>
+          <p class="zxc popup3_open">Выбрать   созвездие</p>
         </div>
         <div class="main-title-wrapper">
           <p class="main-title">
@@ -79,9 +120,9 @@
         </div>
         <div class="info-block right">
           <div class="left-elements">
-            <h3>Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!
+            <h3>Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!
             </h3>
-            <button id="popup3_open">
+            <button class="popup3_open">
               <h4>Зажги созвездие</h4>
             </button>
           </div>
