@@ -8,35 +8,16 @@
   src: url(../font/hauora_sans/fonts/web/Hauora-Regular.woff);
 }
 
-h2 {
-  font-size: 3rem;
 
-  color: #ECA100;
-}
 
-h1 {
+.b1 {
   font-family: 'hauora';
   color: #f6f1ff;
+  font-weight: normal;
 
   font-size: 1.3rem;
 
   line-height: 130%;
-}
-
-h5 {
-  font-family: 'hauora';
-  color: #f6f1ff;
-
-  font-size: 1rem;
-}
-
-h3 {
-  font-family: 'hauora';
-  font-size: 18px;
-
-  line-height: 130%;
-
-  color: #ECA100;
 }
 
 .b3 {
@@ -48,9 +29,9 @@ h3 {
   color: #ECA100;
 }
 
-h4 {
+.b3-1 {
   font-family: 'hauora';
-  font-size: 16px;
+  font-size: 1vw;
 
   line-height: 130%;
 
@@ -64,6 +45,47 @@ h4 {
 
   color: #F6F1FF;
 }
+
+h1 {
+  font-family: Angst;
+  color: #eca100;
+  font-size: 5.2vw;
+
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 3rem;
+
+  color: #ECA100;
+}
+
+h3 {
+  font-family: 'hauora';
+  font-size: 18px;
+
+  line-height: 130%;
+
+  color: #ECA100;
+}
+
+
+h4 {
+  font-family: 'hauora';
+  font-size: 16px;
+
+  line-height: 130%;
+
+  color: #F6F1FF;
+}
+
+h5 {
+  font-family: 'hauora';
+  color: #f6f1ff;
+
+  font-size: 1rem;
+}
+
 
 button {
   border: none;
@@ -222,6 +244,11 @@ html {
   font-family: "Khula", sans-serif;
 }
 
+main {
+  width: 100%;
+  height: 86vh;
+}
+
 .wrapper {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0);
@@ -238,33 +265,28 @@ html {
 }
 
 .header {
-  padding: 48px 60px 0 60px;
+  padding: 4vh 4vw 0 2.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100vw;
-
+  width: 95vw;
+  height: 10vh;
   z-index: 2;
 }
 
+
+
 .main-title {
-  font-family: Angst;
-  color: #eca100;
-  font-size: 95px;
-  margin-top: 65px;
   text-transform: uppercase;
   display: flex;
-  width: 100%;
   justify-content: center;
   text-align: center;
   top: 25%;
   transition-duration: all ease 1s;
-  width: 80%;
+  width: 90%;
 
-  width: 860px;
-  height: 307px;
-  line-height: 110px;
+  margin-top: 6%;
 
 }
 
@@ -275,7 +297,7 @@ html {
 }
 
 .main-sub-title {
-  margin-top: 3%;
+  margin-top: 2%;
 
   font-family: hauora;
   color: #f6f1ff;
@@ -283,12 +305,12 @@ html {
 }
 
 .info-blocks {
-  margin-top: 2%;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
-  column-gap: 110px;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
 }
 
 .info-block {
@@ -299,12 +321,20 @@ html {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 
-  width: 700px;
-  height: 170px;
+  width: 37%;
+  height: 65%;
 
-  padding: 30px 40px 20px 30px;
+  padding: 1vh 1vw 1vh 1vw;
 
-  z-index: 1;
+  z-index: 0;
+}
+
+.info-blocks .left {
+  margin-left: 5%;
+}
+
+.info-blocks .right {
+  margin-right: 5%;
 }
 
 .info-blocks .left .video-content {
@@ -410,8 +440,9 @@ html {
   position: relative;
   left: 5%;
   width: 80%;
+  height: 10vh;
   display: flex;
-  margin-top: 12vh;
+  align-items: flex-end;
 }
 
 input[type="range"] {
@@ -452,7 +483,6 @@ input[type="range"]::-webkit-slider-thumb {
   user-select: none;
   pointer-events: none;
   position: absolute;
-  top: 0;
   left: 0;
   display: flex;
   justify-content: center;
@@ -461,7 +491,6 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   line-height: 1;
   height: 20px;
-  top: -0.9vh;
   width: 100px;
   transform: translate(0, 2px);
 }
@@ -501,8 +530,8 @@ body {
 
 .left-nav-bar {
   padding-left: 60px;
-  height: 200px;
-  width: fit-content;
+
+  width: 8%;
   color: #F6F1FF;
   z-index: 2;
 }
@@ -516,6 +545,7 @@ body {
 }
 
 .main-wrapper {
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -577,8 +607,7 @@ a:visited {
 
 .logo {
   margin-right: 50px;
-  max-width: 144px;
-  max-height: 75px;
+  max-height: 60%;
 }
 
 .site_address {
@@ -619,7 +648,7 @@ a:visited {
 .copyright_container {
   font-size: 12px;
   height: fit-content;
-  width: 970px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;

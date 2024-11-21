@@ -1,0 +1,51 @@
+@media (max-width:2000px) {
+    .wars {
+        top: -92%;
+    }
+}
+
+@media (max-width:1800px){
+    .info-blocks .left {
+        margin-left: 0;
+    }
+      
+    .info-blocks .right {
+        margin-right: 0;
+    }
+
+    .wars {
+        top: -90%;
+    }
+}
+
+@media (max-width:1700px){
+    .starWars-container {
+        top: 5%;
+    }
+
+    .steps .step {
+        width: 25%;
+    }
+
+    .wars {
+        top: -82%;
+    }
+}
+
+@media (max-width:1600px){
+    .wars {
+        top: -75%;
+    }
+}
+
+@media (max-width:1400px){
+    .wars {
+        top: -60%;
+    }
+}
+
+@media (max-width:1150px){
+    .wars {
+        top: -50%;
+    }
+}
