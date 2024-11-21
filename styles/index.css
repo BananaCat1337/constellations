@@ -8,21 +8,46 @@
   src: url(../font/hauora_sans/fonts/web/Hauora-Regular.woff);
 }
 
+/*    В комментариях написанно какой это текст из макета    */
 
+
+/*    b1    */
 
 .b1 {
   font-family: 'hauora';
   color: #f6f1ff;
-  font-weight: normal;
 
-  font-size: 1.3rem;
+  font-size: 1.1vw;
 
   line-height: 130%;
 }
 
+/*    h1    */
+h1 {
+  font-family: 'Angst';
+  color: #eca100;
+  font-size: 5.2vw;
+  font-weight: normal;
+
+  line-height: 120%;
+}
+
+/*    h2    */
+
+h2 {
+  font-family: 'Angst';
+  font-size: 2.5vw;
+  font-weight: bold;
+
+  color: #ECA100;
+}
+
+/*    b3    */
+
 .b3 {
-  font-family: 'hauora';
-  font-size: 18px;
+  font-family: 'Angst';
+  font-size: 1vw;
+  font-weight: normal;
 
   line-height: 130%;
 
@@ -30,60 +55,57 @@
 }
 
 .b3-1 {
-  font-family: 'hauora';
+  font-family: 'Angst';
   font-size: 1vw;
+  font-weight: normal;
 
   line-height: 130%;
 
-  color: #F6F1FF;
+  color: #f6f1ff;
 }
 
-.b5 {
-  font-size: 14px;
-
-  line-height: 130%;
-
-  color: #F6F1FF;
-}
-
-h1 {
-  font-family: Angst;
-  color: #eca100;
-  font-size: 5.2vw;
-
-  line-height: 120%;
-}
-
-h2 {
-  font-size: 3rem;
-
-  color: #ECA100;
-}
-
-h3 {
-  font-family: 'hauora';
-  font-size: 18px;
-
-  line-height: 130%;
-
-  color: #ECA100;
-}
-
+/*    h4    */
 
 h4 {
   font-family: 'hauora';
-  font-size: 16px;
+  font-size: 2vw;
+  font-weight: bold;
 
   line-height: 130%;
 
-  color: #F6F1FF;
+  color: #ECA100;
 }
 
-h5 {
+
+/*    b4    */
+
+.b4 {
   font-family: 'hauora';
   color: #f6f1ff;
+  line-height: 130%;
+  font-weight: normal;
 
-  font-size: 1rem;
+  font-size: 0.9vw;
+}
+
+/*    b5    */
+
+.b5 {
+  font-family: 'hauora';
+  color: #f6f1ff;
+  line-height: 130%;
+  font-weight: normal;
+
+  font-size: 0.8vw;
+}
+
+.botton_text {
+  font-family: 'hauora';
+  color: #080839;
+  line-height: 130%;
+  font-weight: normal;
+
+  font-size: 1vw;
 }
 
 
@@ -286,7 +308,7 @@ main {
   transition-duration: all ease 1s;
   width: 90%;
 
-  margin-top: 6%;
+  margin-top: 4%;
 
 }
 
@@ -294,6 +316,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .main-sub-title {
@@ -334,6 +357,8 @@ main {
 }
 
 .info-blocks .right {
+  display: flex;
+
   margin-right: 5%;
 }
 
@@ -371,14 +396,11 @@ main {
   color: #F6F1FF;
 }
 
-.popup3_open h4 {
-  color: #000000;
-}
-
 .info-blocks .right .right-elements {
   display: flex;
 
   flex-direction: column;
+  justify-content: flex-end;
 
   height: 85%;
   width: 60%;
@@ -440,7 +462,7 @@ main {
   position: relative;
   left: 5%;
   width: 80%;
-  height: 10vh;
+  height: 9vh;
   display: flex;
   align-items: flex-end;
 }
@@ -545,7 +567,7 @@ body {
 }
 
 .main-wrapper {
-  height: 50%;
+  height: 48vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -606,8 +628,8 @@ a:visited {
 }
 
 .logo {
-  margin-right: 50px;
-  max-height: 60%;
+  margin-right: 20%;
+  height: 55%;
 }
 
 .site_address {
@@ -617,7 +639,7 @@ a:visited {
 }
 
 .contacts_container {
-  width: 196px;
+  width: 10%;
   display: flex;
   align-items: center;
 }
