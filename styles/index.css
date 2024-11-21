@@ -208,6 +208,13 @@ html {
   z-index: 1;
 }
 
+.info-blocks .left .video-content {
+  object-fit: cover;
+  width: 13vw;
+  height: 15vh;
+  max-height: 170px;
+}
+
 .info-blocks .left .right-elements {
   display: flex;
   flex-direction: column;
