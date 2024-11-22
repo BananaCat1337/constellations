@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Angst-700;
+  src: url(/constellations/fonts/angst/static/Angst-Normal.woff);
+}
+@font-face {
+  font-family: Angst-400;
+  src: url(/constellations/fonts/angst/static/Angst-Thin.otf);
+}
+@font-face {
+  font-family: Hauora-400;
+  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf);
+}
+@font-face {
+  font-family: Hauora-800;
+  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-Bold.otf);
+}
+@font-face {
+  font-family: Hauora-700;
+  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
+}
+body {
+  background: url(/constellations/mainPNG/background.svg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.backsideBody {
+  display: none;
+  background-image: url(./childInfoSvgs/backgroundBackside.svg);
+  width: 381.997px;
+  height: 492.998px;
+  flex-direction: column;
+  justify-content: end;
+}
+.cardContainer {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(47, 0, 122, 0) 0%, rgba(8, 0, 20, 0.7) 0.01%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.cardContainer .backsideBody p {
+  opacity: 50%;
+}
+.constellClische {
+  width: 168px;
+  font-family: Angst-400;
+  font-size: 24.997px;
+  line-height: 25px;
+  letter-spacing: 0.15rem;
+}
+.constellName {
+  margin-top: 8px;
+  font-family: Angst-700;
+  font-size: 35px;
+  line-height: 36px;
+  letter-spacing: 0.3rem;
+}
+.backsideInfo {
+  margin-left: 32px;
+  margin-bottom: 59px;
+}
+.frontsideBody {
+  display: flex;
+  width: 519px;
+  height: 672px;
+  background-image: url(childInfoSvgs/backgroundFrontside.svg);
+}
+.frontsideContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.namePhotoConstell {
+  display: flex;
+  flex-direction: row;
+}
+.nameConstell_Container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.infoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 397px;
+  height: 50%;
+}
+.infoText * {
+  font-family: Hauora-400;
+  font-size: 20px;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  outline: none;
+  border: none;
+  font-family: Hauora-800;
+  font-size: 19px;
+  color: #080839;
+  background-color: #eca100;
+  width: 309px;
+  height: 60px;
+}
+.whoIs {
+  margin-top: 23%;
+}
+.whoIs * {
+  display: flex;
+  justify-content: end;
+  font-family: Hauora-700;
+  font-size: 22px;
+}
+/* .cardContainer:hover .backsideBody {
+    display: none;
+    }
+    .cardcontainer:hover .frontsideBody {
+    display: flex;
+    } */
