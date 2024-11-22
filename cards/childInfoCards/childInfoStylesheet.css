@@ -25,7 +25,7 @@ body {
   height: 100vh;
 }
 .backsideBody {
-  display: none;
+  display: flex;
   background-image: url(./childInfoSvgs/backgroundBackside.svg);
   width: 381.997px;
   height: 492.998px;
@@ -62,7 +62,7 @@ body {
   margin-bottom: 59px;
 }
 .frontsideBody {
-  display: flex;
+  display: none;
   width: 519px;
   height: 672px;
   background-image: url(childInfoSvgs/backgroundFrontside.svg);
@@ -78,6 +78,8 @@ body {
 .namePhotoConstell {
   display: flex;
   flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
 }
 .nameConstell_Container {
   align-items: center;
