@@ -1,17 +1,6 @@
-@font-face {
-  font-family: "Angst";
-  src: url(../font/angst/static/Angst-Normal.otf);
-}
+/* В комментариях написанно какой это текст из макета */
 
-@font-face {
-  font-family: "hauora";
-  src: url(../font/hauora_sans/fonts/web/Hauora-Regular.woff);
-}
-
-/*    В комментариях написанно какой это текст из макета    */
-
-
-/*    b1    */
+/* b1 */
 
 .b1 {
   font-family: 'hauora';
@@ -22,7 +11,7 @@
   line-height: 130%;
 }
 
-/*    h1    */
+/* h1 */
 h1 {
   font-family: 'Angst';
   color: #eca100;
@@ -32,7 +21,7 @@ h1 {
   line-height: 120%;
 }
 
-/*    h2    */
+/* h2 */
 
 h2 {
   font-family: 'Angst';
@@ -42,7 +31,7 @@ h2 {
   color: #ECA100;
 }
 
-/*    b3    */
+/* b3 */
 
 .b3 {
   font-family: 'Angst';
@@ -64,7 +53,7 @@ h2 {
   color: #f6f1ff;
 }
 
-/*    h4    */
+/* h4 */
 
 h4 {
   font-family: 'hauora';
@@ -76,8 +65,7 @@ h4 {
   color: #ECA100;
 }
 
-
-/*    b4    */
+/* b4 */
 
 .b4 {
   font-family: 'hauora';
@@ -88,7 +76,7 @@ h4 {
   font-size: 0.9vw;
 }
 
-/*    b5    */
+/* b5 */
 
 .b5 {
   font-family: 'hauora';
@@ -108,7 +96,6 @@ h4 {
   font-size: 1vw;
 }
 
-
 button {
   border: none;
 
@@ -122,6 +109,8 @@ button:hover {
 }
 
 .copyright_container a {
+  font-size: 0.8vw;
+
   color: #F6F1FF;
 }
 
@@ -141,7 +130,7 @@ button:hover {
 
   background-color: rgba(24, 14, 68, 0.3);
   backdrop-filter: blur(5px);
-  z-index: 2;
+  z-index: 10;
 
   justify-content: center;
   align-items: center;
@@ -180,13 +169,12 @@ button:hover {
 
   padding: 4%;
 
-  z-index: 3;
+  z-index: 15;
 }
 
 .popUp-large .info-container {
   display: flex;
   justify-content: space-between;
-  
   width: 100%;
 }
 
@@ -225,7 +213,6 @@ button:hover {
 }
 
 
-
 .popUp1 {
   display: none;
 }
@@ -252,19 +239,11 @@ button:hover {
 
 
 
-.copyright_container a {
-  color: #F6F1FF;
-}
-
 .copyright_container div {
   color: #F6F1FF;
 }
 
 
-
-html {
-  font-family: "Khula", sans-serif;
-}
 
 main {
   width: 100%;
@@ -294,9 +273,12 @@ main {
   position: relative;
   width: 95vw;
   height: 10vh;
-  z-index: 2;
+  z-index: 5;
 }
 
+.menu {
+  display: none;
+}
 
 
 .main-title {
@@ -519,6 +501,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 body {
   overflow-x: hidden;
+
+}
+
+html {
+  font-family: "Khula", sans-serif;
+
 }
 
 .bolvanka {
@@ -547,13 +535,13 @@ body {
 .zxc {
   cursor: pointer;
   margin-bottom: 36px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .left-nav-bar {
   padding-left: 60px;
 
-  width: 8%;
+  width: 50%;
   color: #F6F1FF;
   z-index: 2;
 }
@@ -634,20 +622,23 @@ a:visited {
 
 .site_address {
   margin-top: 3.2%;
-  font-size: 16px;
   color: #f6f1ff;
 }
 
 .contacts_container {
-  width: 10%;
+  width: 15%;
   display: flex;
   align-items: center;
 }
 
+.contacts_container a {
+  margin-right: 10%;
+}
+
 .contactsLogo {
-  margin-right: 22px;
-  max-width: 33px;
-  max-height: 33px;
+  max-width: 4vh;
+  max-height: 4vh;
+  height: 3.5vh;
 }
 
 .numbers {
@@ -676,7 +667,7 @@ a:visited {
   justify-content: space-between;
   opacity: 50%;
   position: absolute;
-  right: 70px;
+  right: 2.5vw;
   bottom: 20px;
 }
 

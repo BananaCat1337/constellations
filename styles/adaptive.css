@@ -1,33 +1,38 @@
+/*   Тут для десктопных   */
+
 @media (max-width:2000px) {
     .wars {
-        top: -88%;
+        top: -82%;
     }
 }
 
-@media (max-width:1800px){
+@media (max-width:1800px) {
 
     .wars {
-        top: -875%;
+        top: -87%;
     }
 }
 
-@media (max-width:1700px){
+@media (max-width:1700px) {
     .b3 {
         font-size: 1.1vw;
     }
+
     .b3-1 {
         font-size: 1.1vw;
     }
+
     .b4 {
         font-size: 1vw;
     }
+
     .b5 {
         font-size: 0.9vw;
     }
+
     h1 {
         font-size: 5.5vw;
     }
-
 
     .starWars-container {
         top: 5%;
@@ -42,18 +47,19 @@
     }
 }
 
-@media (max-width:1600px){
+@media (max-width:1600px) {
     .wars {
-        top: -75%;
+        top: -95%;
     }
 }
 
-@media (max-width:1500px){
-    
+@media (max-width:1500px) {
+    .contacts_container {
+        margin-left: 2%;
+    }
 }
 
-
-@media (max-width:1400px){
+@media (max-width:1400px) {
     .steps .step {
         width: 30%;
     }
@@ -63,33 +69,43 @@
     }
 }
 
-@media (max-width:1300px){
+@media (max-width:1300px) {
     .b3 {
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
+
     .b3-1 {
         font-size: 1.3vw;
     }
+
     .b4 {
         font-size: 1.1vw;
     }
+
     .b5 {
         font-size: 1vw;
     }
+
     h1 {
-        font-size: 6.5vw;
+        font-size: 5.5vw;
     }
 
     .info-blocks .left {
         margin-left: 0;
     }
+
     .info-blocks .right {
         margin-right: 0;
     }
-    .info-block{
+
+    .info-block {
         width: 42%;
 
         justify-content: space-around;
+    }
+
+    .info-blocks .right .right-elements img {
+        width: 60%;
     }
 
     .left-nav-bar {
@@ -97,12 +113,162 @@
     }
 
     .wars {
-        top: -50%;
+        top: -80%;
+    }
+
+    .logo {
+        height: 35%;
+    }
+    .contactsLogo {
+        max-width: 4vh;
+        max-height: 4vh;
+        height: 3vh;
+    }
+    .copyright_container a {
+        font-size: 1vw;
+    }
+    .copyright_container {
+        width: 60%;
     }
 }
 
-@media (max-width:1150px){
+@media (max-width:1200px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .b3 {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width:1150px) {
+    .b3-1 {
+        font-size: 1.5vw;
+    }
+
+    .wars {
+        top: -45%;
+    }
+}
+
+@media (max-width:1000px) {
     .wars {
         top: -50%;
+    }
+
+    .main-wrapper {
+        height: 44vh;
+    }
+
+    .info-block {
+        height: 80%;
+        width: 45%;
+        padding: 1vh 0.5vw 1vh 0.5vw;
+    }
+}
+
+
+/*   Тут для мобилки   */
+
+
+@media (max-width:500px) {
+    .bgImage-container {
+        background-image: url('../assets/mobilka-Backgraund.svg');
+    }
+
+
+    .b3-1 {
+        font-size: 4vw;
+    }
+
+
+
+    .header {
+        width: 95vw;
+        padding: 4vh 2vw 0 4vw;
+        background: rgba(255, 255, 255, 0);
+    }
+    .menu {
+        display: block;
+        height: 80%;
+    }  
+    .logo-header {
+        height: 10vw;
+    }
+    .logo-center {
+        margin-right: 10vw;
+    }
+
+
+
+      
+    .menu-container {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        right: 5vw;
+        top: 13vh;
+
+        width: 38vw;
+        height: 25.5vh;
+
+        overflow: hidden;
+    }
+    .left-nav-bar {
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        padding: 2vh 4vw 3.5vh 4vw;
+        height: 20vh;
+        width: 30vw;
+
+        top: -30vh;
+
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+    }
+    .left-nav-bar.active {
+        animation: menu-open 0.5s 0s 1 ease-out;
+        top: 0;
+    }
+    .left-nav-bar.desactive {
+        animation: menu-close 0.5s 0s 1 ease-out;
+        top: -30vh;
+    }
+    .zxc {
+        margin-bottom: 0;
+        
+        text-align: right;
+    }
+
+    .main-wrapper {
+        width: 100vh;
+    }
+    .main-title-wrapper {
+        width: 100vw;
+    }
+
+}
+
+@keyframes menu-open {
+    0%{
+        top: -30vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes menu-close {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -30vh;
     }
 }
