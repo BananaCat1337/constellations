@@ -20,6 +20,7 @@
 <body>
   <div class="popUp" id="popUp">
     <div class="side-element"></div>
+
     <div id="popUp1" class="popUp1 popUp-large">
       <h2>об акции</h2>
       <div class="info-container">
@@ -65,14 +66,37 @@
       </div>
     </div>
 
-    <div id="popUp3" class="popUp3 popUp-large">
-      <div class="popUp3-content">Test3</div>
+    <div id="popUp-form" class="popUp-form popUp-large">
+        <h2>созвездие мама</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <form action="">
+              <input class="b3" type="text" placeholder="Имя">
+              <input class="b3" type="text" placeholder="Сумма">
+              <input class="b3" type="email" placeholder="E - mail">
+              <input class="b5" type="checkbox" title="Я соглашаюсь с условиями пожертвования">
+            </form>
+          </div>
+          <div class="right-elements">
+            <h1 class="b1">Несмотря на наше желание исполнить детские мечты, вырученные средства пойдут исключительно на лечение.
+              <br>
+              <br>
+              Мы уверены — сокровенное обязательно сбудется, когда дети поправятся.
+            </h1>
+            <button class="popup3_open">
+              <h4 class="botton_text">Зажги созвездие</h4>
+            </button>
+          </div>
+        </div>
     </div>
+
+
 
     <div class="side-element">
       <img class="popup_close" src="./assets/closseCross.svg" alt="">
     </div>
   </div>
+
   <div class="bgImage-container"></div>
   <div class="wrapper">
     <header class="header">
@@ -82,7 +106,7 @@
       <div class="logo-center">
         <img class="logo-header" src="./assets/logo-center.svg" alt="" />
       </div>
-      <div id="open_menu"  class="void">
+      <div id="open_menu" class="void">
         <img src="./assets/menu.svg" alt="">
       </div>
     </header>
@@ -95,7 +119,7 @@
             <h5 class="zxc b3-1 popup3_open">Выбрать созвездие</h5>
           </div>
         </div>
-        
+
         <div class="main-title-wrapper">
           <h1 class="main-title">
             СЛЕДУЙ <br>
@@ -113,7 +137,7 @@
         <img class="stars wars" src="./assets/sansara.svg" alt="">
       </div>
       <div class="input-container">
-        <input type="range" min="0" max="360" value="0" step="1" class="range" id="range">
+        <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range">
         <div class="range-text">0</div>
         <div class="marks-container" id="marks-container"></div>
       </div>

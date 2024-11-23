@@ -212,6 +212,39 @@ button:hover {
   align-items: flex-end;
 }
 
+.popUp-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popUp-form .info-container {
+  height: 70%;
+}
+
+.popUp-form .right-elements {
+  margin-top: 2%;
+}
+
+.popUp-form .left-elements {
+  width: 40%;
+}
+
+.popUp-form form input {
+  width: 100%;
+
+  margin-bottom: 3vh;
+
+  border: none;
+  border-bottom: 2px solid #F6F1FF;
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.popUp-form form input:focus {
+}
+
 
 .popUp1 {
   display: none;
@@ -229,13 +262,14 @@ button:hover {
   display: flex;
 }
 
-.popUp3 {
+.popUp-form {
   display: none;
 }
 
-.popUp3.active {
+.popUp-form.active {
   display: flex;
 }
+
 
 
 
@@ -273,10 +307,10 @@ main {
   position: relative;
   width: 95vw;
   height: 10vh;
-  z-index: 5;
+  z-index: 15;
 }
 
-.menu {
+.void img {
   display: none;
 }
 
@@ -457,7 +491,7 @@ input[type="range"] {
   padding: 0;
 }
 
-input::before {
+.slider-input::before {
   content: '';
   width: 100%;
   height: 30px;
@@ -536,6 +570,10 @@ html {
   cursor: pointer;
   margin-bottom: 36px;
   z-index: 4;
+}
+
+.menu-container {
+  z-index: 15;
 }
 
 .left-nav-bar {

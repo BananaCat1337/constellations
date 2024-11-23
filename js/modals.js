@@ -10,7 +10,7 @@ const open_menu = document.getElementById('open_menu')
 
 const popUp1 = document.getElementById('popUp1')
 const popUp2 = document.getElementById('popUp2')
-const popUp3 = document.getElementById('popUp3')
+const popUp3 = document.getElementById('popUp-form')
 const popUp = document.getElementById('popUp')
 
 const menu = document.getElementById('menu')
