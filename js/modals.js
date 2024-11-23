@@ -66,7 +66,6 @@ function openPopUps() {
 menu.addEventListener('click', function (e) {
     e.preventDefault()
     e.menu_click = true
-    console.log('menu click');
     
 })
 

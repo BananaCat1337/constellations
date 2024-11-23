@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="./styles/adaptive.css" />
 
   <title>NASTY</title>
-
 </head>
 
 <body>
@@ -67,27 +66,30 @@
     </div>
 
     <div id="popUp-form" class="popUp-form popUp-large">
-        <h2>созвездие мама</h2>
-        <div class="info-container">
-          <div class="left-elements">
-            <form action="">
-              <input class="b3" type="text" placeholder="Имя">
-              <input class="b3" type="text" placeholder="Сумма">
-              <input class="b3" type="email" placeholder="E - mail">
+      <h2>созвездие мама</h2>
+      <div class="info-container">
+        <div class="left-elements">
+          <form action="">
+            <input class="b3" id="payment_Name" type="text" placeholder="Имя">
+            <input class="b3" id="payment_amount" type="text" placeholder="Сумма">
+            <input class="b3" id="payment_email" type="email" placeholder="E - mail">
+            <div class="chekbox">
               <input class="b5" type="checkbox" title="Я соглашаюсь с условиями пожертвования">
-            </form>
-          </div>
-          <div class="right-elements">
-            <h1 class="b1">Несмотря на наше желание исполнить детские мечты, вырученные средства пойдут исключительно на лечение.
-              <br>
-              <br>
-              Мы уверены — сокровенное обязательно сбудется, когда дети поправятся.
-            </h1>
-            <button class="popup3_open">
-              <h4 class="botton_text">Зажги созвездие</h4>
-            </button>
-          </div>
+            </div>
+          </form>
         </div>
+        <div class="right-elements">
+          <h1 class="b1">Несмотря на наше желание исполнить детские мечты, вырученные средства пойдут исключительно на
+            лечение.
+            <br>
+            <br>
+            Мы уверены — сокровенное обязательно сбудется, когда дети поправятся.
+          </h1>
+          <button class="popup3_open" id="widget-open">
+            <h4 class="botton_text">Зажги созвездие</h4>
+          </button>
+        </div>
+      </div>
     </div>
 
 
@@ -235,6 +237,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="./js/Payment.js"></script>
+  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
 </body>
 
 </html>
