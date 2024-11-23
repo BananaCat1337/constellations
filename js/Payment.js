@@ -11,7 +11,7 @@ this.pay = function () {
            { //options
                publicId: 'pk_ccdef71088be717d883027ce6ba12', //id из личного кабинета
                description: 'Зажгите созвездие', //назначение
-               amount: 100, //сумма
+               amount: payment_amount, //сумма
                currency: 'RUB', //валюта
                accountId: payment_email, //идентификатор плательщика (необязательно)
                invoiceId: '1234567', //номер заказа  (необязательно)
@@ -54,7 +54,7 @@ this.pay = function () {
 widget_open.addEventListener('click', function (e) {
 
     payment_Name = document.getElementById("payment_Name").value;
-    payment_amount = document.getElementById("payment_amount").value;
+    payment_amount = parseFloat(document.getElementById("payment_amount").value);
     payment_email = document.getElementById("payment_email").value;
     
 
