@@ -1,25 +1,25 @@
 @font-face {
   font-family: Angst-700;
-  src: url(/constellations/fonts/angst/static/Angst-Normal.woff);
+  src: url(/fonts/angst/static/Angst-Normal.woff);
 }
 @font-face {
   font-family: Angst-400;
-  src: url(/constellations/fonts/angst/static/Angst-Thin.otf);
+  src: url(/fonts/angst/static/Angst-Thin.otf);
 }
 @font-face {
   font-family: Hauora-400;
-  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf);
+  src: url(/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf);
 }
 @font-face {
   font-family: Hauora-800;
-  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-Bold.otf);
+  src: url(/fonts/hauora/fonts/otf/Hauora-Bold.otf);
 }
 @font-face {
   font-family: Hauora-700;
-  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
+  src: url(/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
 }
 body {
-  background: url(/constellations/mainPNG/background.svg);
+  background: url(/mainPNG/background.svg);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
