@@ -5,9 +5,19 @@ let payment_amount = 0
 let payment_email = ''
 let payment_Name = ''
 
+
 this.pay = function () {
-    var widget = new cp.CloudPayments();
-       widget.pay('auth', // или 'charge'
+    var widget = new cp.CloudPayments({
+        language: "ru-RU",
+        email: "",
+        applePaySupport: true,
+        googlePaySupport: true,
+        yandexPaySupport: true,
+        tinkoffPaySupport: true,
+        tinkoffInstallmentSupport: false,
+        sbpSupport: true
+    });
+       widget.pay('charge', // или 'charge'
            { //options
                publicId: 'pk_ccdef71088be717d883027ce6ba12', //id из личного кабинета
                description: 'Зажгите созвездие', //назначение
@@ -16,8 +26,7 @@ this.pay = function () {
                accountId: payment_email, //идентификатор плательщика (необязательно)
                invoiceId: '1234567', //номер заказа  (необязательно)
                email: payment_email, //email плательщика (необязательно)
-               skin: "mini", //дизайн виджета (необязательно)
-               autoClose: 3, //время в секундах до авто-закрытия виджета (необязательный)
+               skin: "classic", //дизайн виджета (необязательно)
                data: {
                    myProp: 'myProp value'
                },
