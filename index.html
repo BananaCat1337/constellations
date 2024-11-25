@@ -1,269 +1,313 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="./cardStylesheet.css" />
+    <link rel="stylesheet" href="./styles/text.css" />
+    <link rel="stylesheet" href="./styles/adaptive-pc.css" />
+    <link rel="stylesheet" href="./styles/adaptive-mobile.css" />
+    <link rel="stylesheet" href="/constellations/wheelSVG/styles/wheelStylesheet.css" />
 
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" href="./cardStylesheet.css" />
-  <link rel="stylesheet" href="./styles/text.css">
-  <link rel="stylesheet" href="./styles/adaptive-pc.css" />
-  <link rel="stylesheet" href="./styles/adaptive-mobile.css">
+    <title>NASTY</title>
+  </head>
 
-  <title>NASTY</title>
-</head>
-
-<body>
-  <div class="popUp" id="popUp">
-    <div class="side-element"></div>
-    <div id="popUp1" class="popUp1 popUp-large">
-      <h2>об акции</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <img src="./assets/PopUp1-image.svg" alt="">
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">Детские мечты, оставленные позади из-за тяжёлой болезни, зажигаются на бескрайнем небосводе.
-            Они превращаются во множество маленьких звёзд и составляют целые созвездия, которые видны лишь в канун
-            Нового года.
-            <br>
-            <br>
-            Зажигая их, мы поможем детям не только найти путь к выздоровлению, но и стать ближе к осуществлению их
-            заветной мечты.
-          </h1>
-          <button class="popup3_open">
-            <h4 class="botton_text">Зажги созвездие</h4>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div id="popUp2" class="popUp2 popUp-large">
-      <h2>на что пойдут средства?</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <img src="./assets/popUp2.png" alt="">
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">Благотворительный фонд «Настенька» - один из старейший российских фондов и первый, который стал
-            помогать детям с онкологическими заболеваниями.
-            <br>
-            <br>
-            Фонд оплачивает детям со всей России и из стран СНГ: операции, лечение, реабилитацию, лекарства,
-            обследования, проживание на время лечения и многое другое.
-          </h1>
-          <div class="bottom-elements">
-            <div class="void"></div>
-            <img src="./assets/popUp2.svg" alt="">
-            <a class="b3" href="https://nastenka.ru/">Узнать больше о фонде</a>
+  <body>
+    <div class="popUp" id="popUp">
+      <div class="side-element"></div>
+      <div id="popUp1" class="popUp1 popUp-large">
+        <h2>об акции</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <img src="./assets/PopUp1-image.svg" alt="" />
+          </div>
+          <div class="right-elements">
+            <h1 class="b1">
+              Детские мечты, оставленные позади из-за тяжёлой болезни, зажигаются на бескрайнем небосводе. Они превращаются во множество маленьких звёзд и составляют целые созвездия, которые видны
+              лишь в канун Нового года.
+              <br />
+              <br />
+              Зажигая их, мы поможем детям не только найти путь к выздоровлению, но и стать ближе к осуществлению их заветной мечты.
+            </h1>
+            <button class="popup3_open">
+              <h4 class="botton_text">Зажги созвездие</h4>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-    <div id="popUp-form" class="popUp-form popUp-large">
-      <h2>созвездие мама</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <form action="">
-            <input class="b3" id="payment_Name" type="text" placeholder="Имя">
-            <input class="b3" id="payment_amount" type="text" placeholder="Сумма">
-            <input class="b3" id="payment_email" type="email" placeholder="E - mail">
-            <div class="chekbox">
-              <input class="b5" type="checkbox" title="Я соглашаюсь с условиями пожертвования">
+      <div id="popUp2" class="popUp2 popUp-large">
+        <h2>на что пойдут средства?</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <img src="./assets/popUp2.png" alt="" />
+          </div>
+          <div class="right-elements">
+            <h1 class="b1">
+              Благотворительный фонд «Настенька» - один из старейший российских фондов и первый, который стал помогать детям с онкологическими заболеваниями.
+              <br />
+              <br />
+              Фонд оплачивает детям со всей России и из стран СНГ: операции, лечение, реабилитацию, лекарства, обследования, проживание на время лечения и многое другое.
+            </h1>
+            <div class="bottom-elements">
+              <div class="void"></div>
+              <img src="./assets/popUp2.svg" alt="" />
+              <a class="b3" href="https://nastenka.ru/">Узнать больше о фонде</a>
             </div>
-          </form>
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">Несмотря на наше желание исполнить детские мечты, вырученные средства пойдут исключительно на
-            лечение.
-            <br>
-            <br>
-            Мы уверены — сокровенное обязательно сбудется, когда дети поправятся.
-          </h1>
-          <button class="popup3_open" id="widget-open">
-            <h4 class="botton_text">Зажги созвездие</h4>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="side-element">
-      <img class="popup_close" src="./assets/closseCross.svg" alt="">
-    </div>
-  </div>
-
-  <div class="bgImage-container"></div>
-  <div class="wrapper">
-    <header class="header">
-      <div class="logo-left">
-        <img class="logo-header" src="./assets/logo-left.svg" alt="" />
-      </div>
-      <div class="logo-center">
-        <img class="logo-header" src="./assets/logo-center.svg" alt="" />
-      </div>
-      <div id="open_menu" class="void">
-        <img src="./assets/menu.svg" alt="">
-      </div>
-    </header>
-    <main>
-      <div class="main-wrapper">
-        <div class="menu-container">
-          <div class="left-nav-bar" id="menu">
-            <h5 class="zxc b3-1" id="popup1_open">Об акции</h5>
-            <h5 class="zxc b3-1" id="popup2_open">На что пойдут средства?</h5>
-            <h5 class="zxc b3-1 popup3_open">Выбрать созвездие</h5>
           </div>
         </div>
-
-        <div class="main-title-wrapper">
-          <h1 class="main-title">
-            СЛЕДУЙ <br>
-            ЗА СОЗВЕЗДИЕМ
-            МЕЧТЫ!
-          </h1>
-          <p class="main-sub-title b3">
-            С начала акции <span id="donation-count">1 500</span> человек сделали небосвод ярче
-          </p>
-        </div>
-        <div class="bolvanka"> </div>
-
       </div>
-      <div class="starWars-container">
+      <div id="popUp-form" class="popUp-form popUp-large">
+        <h2>созвездие мама</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <form action="">
+              <input class="b3" id="payment_Name" type="text" placeholder="Имя" />
+              <input class="b3" id="payment_amount" type="text" placeholder="Сумма" />
+              <input class="b3" id="payment_email" type="email" placeholder="E - mail" />
+              <div class="chekbox">
+                <input class="b5" type="checkbox" title="Я соглашаюсь с условиями пожертвования" />
+              </div>
+            </form>
+          </div>
+          <div class="right-elements">
+            <h1 class="b1">
+              Несмотря на наше желание исполнить детские мечты, вырученные средства пойдут исключительно на лечение.
+              <br />
+              <br />
+              Мы уверены — сокровенное обязательно сбудется, когда дети поправятся.
+            </h1>
+            <button class="popup3_open" id="widget-open">
+              <h4 class="botton_text">Зажги созвездие</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="side-element">
+        <img class="popup_close" src="./assets/closseCross.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="bgImage-container"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo-left">
+          <img class="logo-header" src="./assets/logo-left.svg" alt="" />
+        </div>
+        <div class="logo-center">
+          <img class="logo-header" src="./assets/logo-center.svg" alt="" />
+        </div>
+        <div id="open_menu" class="void">
+          <img src="./assets/menu.svg" alt="" />
+        </div>
+      </header>
+      <main>
+        <div class="main-wrapper">
+          <div class="menu-container">
+            <div class="left-nav-bar" id="menu">
+              <h5 class="zxc b3-1" id="popup1_open">Об акции</h5>
+              <h5 class="zxc b3-1" id="popup2_open">На что пойдут средства?</h5>
+              <h5 class="zxc b3-1 popup3_open">Выбрать созвездие</h5>
+            </div>
+          </div>
+
+          <div class="main-title-wrapper">
+            <h1 class="main-title">
+              СЛЕДУЙ <br />
+              ЗА СОЗВЕЗДИЕМ МЕЧТЫ!
+            </h1>
+            <p class="main-sub-title b3">С начала акции <span id="donation-count">1 500</span> человек сделали небосвод ярче</p>
+          </div>
+          <div class="bolvanka"></div>
+        </div>
+        <div class="constellationGroup__slider">
+          <!-- <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick" src="./wheelSVG/group1/firecar.svg" alt="" />
+            <img class="constellationToClick" src="./wheelSVG/group1/dog.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick" src="./wheelSVG/group1/cat.svg" alt="" />
+            <img class="constellationToClick" src="./wheelSVG/group1/mama.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- <div class="constellationGroup__slider">
+          <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/parrot.svg" alt="" />
+            <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/hokkey.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-60" src="./wheelSVG/group2/bycicle.svg" alt="" />
+            <img class="constellationToClick rotate-60" src="./wheelSVG/group2/plane.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
+          <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/hedgehog.svg" alt="" />
+            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/helicopter.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/turtle.svg" alt="" />
+            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/skates.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- <div class="constellationGroup__slider">
+          <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/trafficLight.svg" alt="" />
+            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/train.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/cam.svg" alt="" />
+            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/PC.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
+          <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/shoe.svg" alt="" />
+            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/mountain.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/doctor.svg" alt="" />
+            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/ship.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
+          <div class="topConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/doll.svg" alt="" />
+            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/cake.svg" alt="" />
+          </div>
+          <div class="bottomConstellationPair_constellationGroup__slider">
+            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/iceCream.svg" alt="" />
+            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/ball.svg" alt="" />
+          </div>
+        </div> -->
+        <!-- 
+        <div class="starWars-container">
         <img class="stars wars" src="./assets/sansara.svg" alt="">
-      </div>
+      </div> -->
+        <!-- <div class="starWars-container">
+        <img class="stars wars" src="./assets/sansara.svg" alt="">
+      </div> -->
 
-      <div class="main-lover-elements">
-        <div class="input-container">
-          <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range">
-          <div class="range-text">0</div>
-          <div class="marks-container" id="marks-container"></div>
-        </div>
-        <div class="info-blocks">
-          <div class="lower-popUp-wraper" id="lower_popUp"> 
-            <div class="info-block left" id="left_info_block">
-              <button class="lower-popUp-botton" id="lower_popUp_botton">
-                <img src="./assets/bottom-menu-button.svg" alt="">
-              </button>
-              <div class="left-info-block-conainer">
-                <p class="b2 title_lower_popUp" id="lower_popUp_title">Кому и как помочь?</p>
-                <video id="videoElement" class="video-content" width="100%" height="auto"
-                  poster="./assets/videoZaglushka.svg">
-                  <source src="./assets/video/настенька 9.0.mp4" type="video/mp4">
-                  Ваш браузер не поддерживает видео.
-                </video>
-                <div class="right-elements">
-                  <h3 class="b3">Мы попросили наших подопечных нарисовать свои заветные мечты — то, чего им так не
-                    хватает,
-                    пока они болеют.</h3>
-                  <h4 class="b4">Каждый рисунок — это лишь одна маленькая звёздочка в созвездии мечты, ведь порой желания
-                    совпадают.</h4>
-                  <div class="lover-elements">
-                    <h4 class="b4">Осветите небосвод мечтами и помогите детям выздороветь, чтобы их исполнить!</h4>
-                    <button class="popup3_open" id="widget-open">
-                      <h4 class="botton_text">Зажги созвездие</h4>
-                    </button>
+        <div class="main-lover-elements">
+          <div class="input-container">
+            <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range" />
+            <div class="range-text">0</div>
+            <div class="marks-container" id="marks-container"></div>
+          </div>
+          <div class="info-blocks">
+            <div class="lower-popUp-wraper" id="lower_popUp">
+              <div class="info-block left" id="left_info_block">
+                <button class="lower-popUp-botton" id="lower_popUp_botton">
+                  <img src="./assets/bottom-menu-button.svg" alt="" />
+                </button>
+                <div class="left-info-block-conainer">
+                  <p class="b2 title_lower_popUp" id="lower_popUp_title">Кому и как помочь?</p>
+                  <video id="videoElement" class="video-content" width="100%" height="auto" poster="./assets/videoZaglushka.svg">
+                    <source src="./assets/video/настенька 9.0.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                  <div class="right-elements">
+                    <h3 class="b3">Мы попросили наших подопечных нарисовать свои заветные мечты — то, чего им так не хватает, пока они болеют.</h3>
+                    <h4 class="b4">Каждый рисунок — это лишь одна маленькая звёздочка в созвездии мечты, ведь порой желания совпадают.</h4>
+                    <div class="lover-elements">
+                      <h4 class="b4">Осветите небосвод мечтами и помогите детям выздороветь, чтобы их исполнить!</h4>
+                      <button class="popup3_open" id="widget-open">
+                        <h4 class="botton_text">Зажги созвездие</h4>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-  
             </div>
-          </div>
-          
-          <div class="info-block right">
-            <div class="left-elements">
-              <h3 class="b3">Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!
-              </h3>
-              <button class="popup3_open">
-                <h4 class="botton_text">Зажги созвездие</h4>
-              </button>
-            </div>
-            <div class="right-elements">
-              <img class="graphic" src="./assets/Graphic.svg" alt="">
-              <div class="steps">
-                <div class="step">
-                  <h4>ШАГ 1</h4>
-                  <h5 class="b5">Выбери созвездие</h5>
-                </div>
-                <div class="step">
-                  <h4>ШАГ 2</h4>
-                  <h5 class="b5">Определи сумму пожертвования</h5>
-                </div>
-                <div class="step">
-                  <h4>ШАГ 3</h4>
-                  <h5 class="b5">Следуй за созвездием мечты!</h5>
+
+            <div class="info-block right">
+              <div class="left-elements">
+                <h3 class="b3">Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!</h3>
+                <button class="popup3_open">
+                  <h4 class="botton_text">Зажги созвездие</h4>
+                </button>
+              </div>
+              <div class="right-elements">
+                <img class="graphic" src="./assets/Graphic.svg" alt="" />
+                <div class="steps">
+                  <div class="step">
+                    <h4>ШАГ 1</h4>
+                    <h5 class="b5">Выбери созвездие</h5>
+                  </div>
+                  <div class="step">
+                    <h4>ШАГ 2</h4>
+                    <h5 class="b5">Определи сумму пожертвования</h5>
+                  </div>
+                  <div class="step">
+                    <h4>ШАГ 3</h4>
+                    <h5 class="b5">Следуй за созвездием мечты!</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
+    </div>
 
-
-
-    </main>
-  </div>
-
-  <footer>
-    <div class="footerContainer">
-
-      <div class="logo_container">
-        <img class="logo" src="assets/logo-left.svg" alt="Logo SVG" />
-        <img class="logo" id="nastenkaLogo" src="assets/logo-center.svg" alt="LogoNastenka SVG" />
-      </div>
-      <div class="footer-central-container">
-        <div class="contacts_container">
-          <a href="https://ok.ru/fondnastenka">
-            <img class="contactsLogo" src="assets/Odnoklassniki.svg" alt="Odnoklassniki SVG" />
-          </a>
-          <a href="https://vk.com/fondnastenka">
-            <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
-          </a>
-          <a href="https://t.me/bf_nastenka">
-            <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
-          </a>
-          <a href="https://zen.yandex.ru/id/5cdbc32fd0418e00b317c46e?lang=ru">
-            <img class="contactsLogo" src="assets/Dzen.svg" alt="Dzen SVG" />
-          </a>
+    <footer>
+      <div class="footerContainer">
+        <div class="logo_container">
+          <img class="logo" src="assets/logo-left.svg" alt="Logo SVG" />
+          <img class="logo" id="nastenkaLogo" src="assets/logo-center.svg" alt="LogoNastenka SVG" />
         </div>
-        <div class="footer-right-elements">
+        <div class="footer-central-container">
+          <div class="contacts_container">
+            <a href="https://ok.ru/fondnastenka">
+              <img class="contactsLogo" src="assets/Odnoklassniki.svg" alt="Odnoklassniki SVG" />
+            </a>
+            <a href="https://vk.com/fondnastenka">
+              <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
+            </a>
+            <a href="https://t.me/bf_nastenka">
+              <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
+            </a>
+            <a href="https://zen.yandex.ru/id/5cdbc32fd0418e00b317c46e?lang=ru">
+              <img class="contactsLogo" src="assets/Dzen.svg" alt="Dzen SVG" />
+            </a>
+          </div>
+          <div class="footer-right-elements">
             <h5 class="site_address b4">fond@nastenka.ru</h5>
-          <div class="numbers">
-            <h5 class="b4">+7 925 585-41-01</h5>
-            <h5 class="b4">+7 985 550-17-46</h5>
-          </div>
-          <div class="addresses">
-            <h5 class="b4">117105, г. Москва, Варшавское шоссе, д. 39Б, 3 эт, пом.XI, комн.1.</h5>
-            <h5 class="b4">пн-пт с 10:00 до 18:00</h5>
+            <div class="numbers">
+              <h5 class="b4">+7 925 585-41-01</h5>
+              <h5 class="b4">+7 985 550-17-46</h5>
+            </div>
+            <div class="addresses">
+              <h5 class="b4">117105, г. Москва, Варшавское шоссе, д. 39Б, 3 эт, пом.XI, комн.1.</h5>
+              <h5 class="b4">пн-пт с 10:00 до 18:00</h5>
+            </div>
           </div>
         </div>
       </div>
-      
-      
 
-    </div>
-
-    <div class="copyright_container">
-      <a href="https://nastenka.ru/wp-content/uploads/publichnaja-oferta.pdf">
-        <div>Оферта</div>
-      </a>
-      <a href="https://nastenka.ru/wp-content/uploads/Politika_personal'nye_dannye_Nasten'ka.pdf">
-        <div>Политика конфинденциальности</div>
-      </a>
-      <div>© 2002 — 2024 Благотворительный фонд «Настенька». Все права защищены.</div>
-    </div>
-  </footer>
-  <script src="./js/sansaroWill.js"></script>
-  <script src="./js/video.js"></script>
-  <script src="./js/buttonSansara.js"></script>
-  <script src="./js/donateCount.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/modals.js"></script>
-  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
-  <script src="./js/Payment.js"></script>
-  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
-</body>
-
+      <div class="copyright_container">
+        <a href="https://nastenka.ru/wp-content/uploads/publichnaja-oferta.pdf">
+          <div>Оферта</div>
+        </a>
+        <a href="https://nastenka.ru/wp-content/uploads/Politika_personal'nye_dannye_Nasten'ka.pdf">
+          <div>Политика конфинденциальности</div>
+        </a>
+        <div>© 2002 — 2024 Благотворительный фонд «Настенька». Все права защищены.</div>
+      </div>
+    </footer>
+    <script src="./js/sansaroWill.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/buttonSansara.js"></script>
+    <script src="./js/donateCount.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modals.js"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script src="./js/Payment.js"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+  </body>
 </html>
