@@ -1,3 +1,6 @@
+html {
+  background-color: black;
+}
 
 button {
   border: none;
@@ -489,7 +492,7 @@ html {
 }
 
 .bolvanka {
-  padding-left: 150px;
+  padding-left: 15%;
   height: 200px;
   width: fit-content;
 }
