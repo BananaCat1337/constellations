@@ -49,7 +49,7 @@
 
 @media (max-width:1600px) {
     .wars {
-        top: -95%;
+        top: -80%;
     }
 }
 
@@ -108,8 +108,11 @@
         width: 60%;
     }
 
+    .menu-container {
+        width: 25%;
+    }
     .left-nav-bar {
-        width: 10%;
+        width: 90%;
     }
 
     .wars {
@@ -154,7 +157,7 @@
 
 @media (max-width:1000px) {
     .wars {
-        top: -50%;
+        top: -20%;
     }
 
     .main-wrapper {
