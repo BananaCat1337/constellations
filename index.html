@@ -8,10 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
+
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="styles/index.css" />
   <link rel="stylesheet" href="./cardStylesheet.css" />
-  <link rel="stylesheet" href="./styles/adaptive.css" />
+  <link rel="stylesheet" href="./styles/text.css">
+  <link rel="stylesheet" href="./styles/adaptive-pc.css" />
+  <link rel="stylesheet" href="./styles/adaptive-mobile.css">
 
   <title>NASTY</title>
 </head>
@@ -138,51 +141,75 @@
       <div class="starWars-container">
         <img class="stars wars" src="./assets/sansara.svg" alt="">
       </div>
-      <div class="input-container">
-        <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range">
-        <div class="range-text">0</div>
-        <div class="marks-container" id="marks-container"></div>
-      </div>
-      <div class="info-blocks">
-        <div class="info-block left">
-          <video id="videoElement" class="video-content" width="100%" height="auto" poster="./assets/videoZaglushka.svg">
-            <source src="./assets/video/настенька 9.0.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-          </video>
-          <div class="right-elements">
-            <h3 class="b3">Мы попросили наших подопечных нарисовать свои заветные мечты — то, чего им так не хватает,
-              пока они болеют.</h3>
-            <h4 class="b4">Каждый рисунок — это лишь одна маленькая звёздочка в созвездии мечты, ведь порой желания
-              совпадают.</h4>
-          </div>
+
+      <div class="main-lover-elements">
+        <div class="input-container">
+          <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range">
+          <div class="range-text">0</div>
+          <div class="marks-container" id="marks-container"></div>
         </div>
-        <div class="info-block right">
-          <div class="left-elements">
-            <h3 class="b3">Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!
-            </h3>
-            <button class="popup3_open">
-              <h4 class="botton_text">Зажги созвездие</h4>
-            </button>
+        <div class="info-blocks">
+          <div class="lower-popUp-wraper" id="lower_popUp"> 
+            <div class="info-block left" id="left_info_block">
+              <button class="lower-popUp-botton" id="lower_popUp_botton">
+                <img src="./assets/bottom-menu-button.svg" alt="">
+              </button>
+              <div class="left-info-block-conainer">
+                <p class="b3 title_lower_popUp" id="lower_popUp_title">Кому и как помочь?</p>
+                <video id="videoElement" class="video-content" width="100%" height="auto"
+                  poster="./assets/videoZaglushka.svg">
+                  <source src="./assets/video/настенька 9.0.mp4" type="video/mp4">
+                  Ваш браузер не поддерживает видео.
+                </video>
+                <div class="right-elements">
+                  <h3 class="b3">Мы попросили наших подопечных нарисовать свои заветные мечты — то, чего им так не
+                    хватает,
+                    пока они болеют.</h3>
+                  <h4 class="b4">Каждый рисунок — это лишь одна маленькая звёздочка в созвездии мечты, ведь порой желания
+                    совпадают.</h4>
+                  <div class="lover-elements">
+                    <h4 class="b4">Осветите небосвод мечтами и помогите детям выздороветь, чтобы их исполнить!</h4>
+                    <button class="popup3_open" id="widget-open">
+                      <h4 class="botton_text">Зажги созвездие</h4>
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
           </div>
-          <div class="right-elements">
-            <img class="graphic" src="./assets/Graphic.svg" alt="">
-            <div class="steps">
-              <div class="step">
-                <h4>ШАГ 1</h4>
-                <h5 class="b5">Выбери созвездие</h5>
-              </div>
-              <div class="step">
-                <h4>ШАГ 2</h4>
-                <h5 class="b5">Определи сумму пожертвования</h5>
-              </div>
-              <div class="step">
-                <h4>ШАГ 3</h4>
-                <h5 class="b5">Следуй за созвездием мечты!</h5>
+          
+          <div class="info-block right">
+            <div class="left-elements">
+              <h3 class="b3">Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!
+              </h3>
+              <button class="popup3_open">
+                <h4 class="botton_text">Зажги созвездие</h4>
+              </button>
+            </div>
+            <div class="right-elements">
+              <img class="graphic" src="./assets/Graphic.svg" alt="">
+              <div class="steps">
+                <div class="step">
+                  <h4>ШАГ 1</h4>
+                  <h5 class="b5">Выбери созвездие</h5>
+                </div>
+                <div class="step">
+                  <h4>ШАГ 2</h4>
+                  <h5 class="b5">Определи сумму пожертвования</h5>
+                </div>
+                <div class="step">
+                  <h4>ШАГ 3</h4>
+                  <h5 class="b5">Следуй за созвездием мечты!</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
     </main>
     <footer></footer>
   </div>
@@ -234,7 +261,7 @@
   <script src="./js/index.js"></script>
   <script src="./js/modals.js"></script>
   <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
-    <script src="./js/Payment.js"></script>
+  <script src="./js/Payment.js"></script>
   <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
 </body>
 

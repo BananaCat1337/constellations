@@ -6,16 +6,30 @@ const openPopUp_1 = document.getElementById('popup1_open');
 const openPopUp_2 = document.getElementById('popup2_open');
 const openPopUp_3 = document.getElementsByClassName('popup3_open');
 
-const open_menu = document.getElementById('open_menu')
-
 const popUp1 = document.getElementById('popUp1')
 const popUp2 = document.getElementById('popUp2')
 const popUp3 = document.getElementById('popUp-form')
 const popUp = document.getElementById('popUp')
 
+
+const lower_popUp_botton = document.getElementById('lower_popUp_botton')
+const open_menu = document.getElementById('open_menu')
+
 const menu = document.getElementById('menu')
+const lower_popUp = document.getElementById('lower_popUp')
+const lower_popUp_title = document.getElementById('lower_popUp_title')
 
 let countWindows = 0
+let mobile_menu_open = false
+let lower_popUp_open = false
+
+function openPopUps() {
+    if (countWindows > 1) {
+        popUp1.classList.remove('active')
+        popUp2.classList.remove('active')
+        popUp3.classList.remove('active')
+    }
+}
 
 for (var i = 0; i < closePopUp.length; i++) {
     closePopUp[i].addEventListener('click', function (e) {
@@ -55,14 +69,6 @@ openPopUp_2.addEventListener('click', function (e) {
     popUp.classList.add('active')
 })
 
-function openPopUps() {
-    if (countWindows > 1) {
-        popUp1.classList.remove('active')
-        popUp2.classList.remove('active')
-        popUp3.classList.remove('active')
-    }
-}
-
 menu.addEventListener('click', function (e) {
     e.preventDefault()
     e.menu_click = true
@@ -72,14 +78,36 @@ menu.addEventListener('click', function (e) {
 open_menu.addEventListener('click', function (e) {
     e.preventDefault()
     e.open_menu_button = true
+    mobile_menu_open = true
     menu.classList.add('active')
     menu.classList.remove('desactive')
 })
 
 document.body.addEventListener('click', function (e) {
-    e.preventDefault()
-    if (!e.open_menu_button && !e.menu_click) {
+    if (!e.open_menu_button && !e.menu_click && mobile_menu_open) {
         menu.classList.remove('active')
         menu.classList.add('desactive')
+        mobile_menu_open = false
+    }
+})
+
+lower_popUp_botton.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    console.log(lower_popUp_open);
+    
+    
+    if (lower_popUp_open == false) {
+        lower_popUp_title.classList.add('active')
+        lower_popUp.classList.add('active')
+        lower_popUp.classList.remove('desactive')
+        lower_popUp_botton.classList.add('active')
+        lower_popUp_open = true
+    }else {
+        lower_popUp_title.classList.remove('active')
+        lower_popUp.classList.remove('active')
+        lower_popUp.classList.add('desactive')
+        lower_popUp_botton.classList.remove('active')
+        lower_popUp_open = false
     }
 })

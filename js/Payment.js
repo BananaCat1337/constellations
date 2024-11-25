@@ -20,7 +20,7 @@ this.pay = function () {
     })
     
     payments.pay("charge", {
-        publicId: "test_api_00000000000000000000002",
+        publicId: "pk_ccdef71088be717d883027ce6ba12",
         description: "Тестовая оплата",
         amount: payment_amount,
         currency: "RUB",
@@ -35,7 +35,7 @@ this.pay = function () {
         console.log('error', error);
     });
    };
-
+ 
 
 widget_open.addEventListener('click', function (e) {
 

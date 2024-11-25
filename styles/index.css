@@ -1,100 +1,3 @@
-/* В комментариях написанно какой это текст из макета */
-
-/* b1 */
-
-.b1 {
-  font-family: 'hauora';
-  color: #f6f1ff;
-
-  font-size: 1.1vw;
-
-  line-height: 130%;
-}
-
-/* h1 */
-h1 {
-  font-family: 'Angst';
-  color: #eca100;
-  font-size: 5.2vw;
-  font-weight: normal;
-
-  line-height: 120%;
-}
-
-/* h2 */
-
-h2 {
-  font-family: 'Angst';
-  font-size: 2.5vw;
-  font-weight: bold;
-
-  color: #ECA100;
-}
-
-/* b3 */
-
-.b3 {
-  font-family: 'Angst';
-  font-size: 1vw;
-  font-weight: normal;
-
-  line-height: 130%;
-
-  color: #ECA100;
-}
-
-.b3-1 {
-  font-family: 'Angst';
-  font-size: 1vw;
-  font-weight: normal;
-
-  line-height: 130%;
-
-  color: #f6f1ff;
-}
-
-/* h4 */
-
-h4 {
-  font-family: 'hauora';
-  font-size: 2vw;
-  font-weight: bold;
-
-  line-height: 130%;
-
-  color: #ECA100;
-}
-
-/* b4 */
-
-.b4 {
-  font-family: 'hauora';
-  color: #f6f1ff;
-  line-height: 130%;
-  font-weight: normal;
-
-  font-size: 0.9vw;
-}
-
-/* b5 */
-
-.b5 {
-  font-family: 'hauora';
-  color: #f6f1ff;
-  line-height: 130%;
-  font-weight: normal;
-
-  font-size: 0.8vw;
-}
-
-.botton_text {
-  font-family: 'hauora';
-  color: #080839;
-  line-height: 130%;
-  font-weight: normal;
-
-  font-size: 1vw;
-}
 
 button {
   border: none;
@@ -162,8 +65,8 @@ button:hover {
   backdrop-filter: blur(30px);
   background-color: rgba(24, 14, 68, 0.9);
 
-  height: 48%;
-  width: 48%;
+  height: 62%;
+  width: 55%;
 
   position: relative;
 
@@ -333,14 +236,6 @@ main {
   height: 100%;
 }
 
-.main-sub-title {
-  margin-top: 2%;
-
-  font-family: hauora;
-  color: #f6f1ff;
-  font-size: 16px;
-}
-
 .info-blocks {
   position: relative;
   display: flex;
@@ -359,15 +254,39 @@ main {
   backdrop-filter: blur(5px);
 
   width: 37%;
-  height: 65%;
+  height: 75%;
 
   padding: 1vh 1vw 1vh 1vw;
 
   z-index: 0;
 }
 
+.lower-popUp-wraper {
+  height: 75%;
+  width: 37%;
+}
+
 .info-blocks .left {
-  margin-left: 5%;
+  margin-left: 4vw;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.left-info-block-conainer {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+  width: 100%;
+}
+
+.lower-popUp-botton {
+  display: none;
 }
 
 .info-blocks .right {
@@ -390,6 +309,14 @@ main {
 
   height: 85%;
   width: 60%;
+}
+
+.info-blocks .left .right-elements .lover-elements {
+  display: none;
+}
+
+.title_lower_popUp {
+  display: none;
 }
 
 .info-blocks .right button {
@@ -597,7 +524,7 @@ html {
 .left-nav-bar {
   padding-left: 60px;
 
-  width: 50%;
+  width: 70%;
   color: #F6F1FF;
   z-index: 2;
 }
@@ -640,6 +567,8 @@ footer {
   position: absolute;
   width: 100vw;
   height: 18vh;
+
+  overflow: hidden;
 }
 
 a {
