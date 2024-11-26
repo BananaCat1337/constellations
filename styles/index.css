@@ -78,6 +78,14 @@ button:hover {
   z-index: 15;
 }
 
+iframe {
+  height: 80%;
+  width: 100%;
+
+  z-index: 15;
+}
+
+
 .popUp-large .info-container {
   display: flex;
   justify-content: space-between;
