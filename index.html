@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/constellations/wheelSVG/styles/wheelStylesheet.css" />
+    <link rel="stylesheet" href="./wheelSVG/styles/wheelStylesheet.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="./cardStylesheet.css" />
     <link rel="stylesheet" href="./styles/text.css" />
     <link rel="stylesheet" href="./styles/adaptive-pc.css" />
     <link rel="stylesheet" href="./styles/adaptive-mobile.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
     <title>NASTY</title>
   </head>
@@ -125,71 +129,80 @@
           </div>
           <div class="bolvanka"></div>
         </div>
-        <!-- <div class="constellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick" src="./wheelSVG/group1/firecar.svg" alt="" />
-            <img class="constellationToClick" src="./wheelSVG/group1/dog.svg" alt="" />
+        <swiper-container class="constellation__slider">
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider">
+                <img class="constellationToClick" src="./wheelSVG/group1/firecar.svg" alt="" />
+                <img class="constellationToClick" src="./wheelSVG/group1/dog.svg" alt="" />
+              </div>
+              <div class="bottomConstellationPair_constellationGroup__slider">
+                <img class="constellationToClick" src="./wheelSVG/group1/cat.svg" alt="" />
+                <img class="constellationToClick" src="./wheelSVG/group1/mama.svg" alt="" />
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/parrot.svg" alt="" />
+                <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/hokkey.svg" alt="" />
+              </div>
+              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-60" src="./wheelSVG/group2/bycicle.svg" alt="" />
+                <img class="constellationToClick rotate-60" src="./wheelSVG/group2/plane.svg" alt="" />
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+              <img class="constellationToClick rotate-120" src="./wheelSVG/group3/hedgehog.svg" alt="" />
+              <img class="constellationToClick rotate-120" src="./wheelSVG/group3/helicopter.svg" alt="" />
+            </div>
+            <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+              <img class="constellationToClick rotate-120" src="./wheelSVG/group3/turtle.svg" alt="" />
+              <img class="constellationToClick rotate-120" src="./wheelSVG/group3/skates.svg" alt="" />
+            </div>
           </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick" src="./wheelSVG/group1/cat.svg" alt="" />
-            <img class="constellationToClick" src="./wheelSVG/group1/mama.svg" alt="" />
-          </div>
-        </div> -->
-        <!-- <div class="constellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/parrot.svg" alt="" />
-            <img class="constellationToClick rotate-60" id="" src="./wheelSVG/group2/hokkey.svg" alt="" />
-          </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-60" src="./wheelSVG/group2/bycicle.svg" alt="" />
-            <img class="constellationToClick rotate-60" src="./wheelSVG/group2/plane.svg" alt="" />
-          </div>
-        </div> -->
-        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/hedgehog.svg" alt="" />
-            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/helicopter.svg" alt="" />
-          </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/turtle.svg" alt="" />
-            <img class="constellationToClick rotate-120" src="./wheelSVG/group3/skates.svg" alt="" />
-          </div>
-        </div> -->
-        <!-- <div class="constellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/trafficLight.svg" alt="" />
-            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/train.svg" alt="" />
-          </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/cam.svg" alt="" />
-            <img class="constellationToClick rotate-180" src="./wheelSVG/group4/PC.svg" alt="" />
-          </div>
-        </div> -->
-        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/shoe.svg" alt="" />
-            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/mountain.svg" alt="" />
-          </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/doctor.svg" alt="" />
-            <img class="constellationToClick rotate-240" src="./wheelSVG/group5/ship.svg" alt="" />
-          </div>
-        </div> -->
-        <!-- <div class="constellationGroup__slider hideConstellationGroup__slider">
-          <div class="topConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/doll.svg" alt="" />
-            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/cake.svg" alt="" />
-          </div>
-          <div class="bottomConstellationPair_constellationGroup__slider">
-            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/iceCream.svg" alt="" />
-            <img class="constellationToClick rotate-300" src="./wheelSVG/group6/ball.svg" alt="" />
-          </div>
-        </div> -->
-
-        <div class="starWars-container">
-          <img class="stars wars" src="./assets/sansara.svg" alt="" />
-        </div>
-
+        </swiper-slide>
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-180" src="./wheelSVG/group4/trafficLight.svg" alt="" />
+                <img class="constellationToClick rotate-180" src="./wheelSVG/group4/train.svg" alt="" />
+              </div>
+              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-180" src="./wheelSVG/group4/cam.svg" alt="" />
+                <img class="constellationToClick rotate-180" src="./wheelSVG/group4/PC.svg" alt="" />
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-240" src="./wheelSVG/group5/shoe.svg" alt="" />
+                <img class="constellationToClick rotate-240" src="./wheelSVG/group5/mountain.svg" alt="" />
+              </div>
+              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-240" src="./wheelSVG/group5/doctor.svg" alt="" />
+                <img class="constellationToClick rotate-240" src="./wheelSVG/group5/ship.svg" alt="" />
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="constellationGroup__slider">
+              <div class="topConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-300" src="./wheelSVG/group6/doll.svg" alt="" />
+                <img class="constellationToClick rotate-300" src="./wheelSVG/group6/cake.svg" alt="" />
+              </div>
+              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
+                <img class="constellationToClick rotate-300" src="./wheelSVG/group6/iceCream.svg" alt="" />
+                <img class="constellationToClick rotate-300" src="./wheelSVG/group6/ball.svg" alt="" />
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
         <div class="main-lover-elements">
           <div class="input-container">
             <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range" />
@@ -297,6 +310,8 @@
         <div>© 2002 — 2024 Благотворительный фонд «Настенька». Все права защищены.</div>
       </div>
     </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="module" src="./js/constellationSwiper.js" 
     <script src="./js/sansaroWill.js"></script>
     <script src="./js/video.js"></script>
     <script src="./js/buttonSansara.js"></script>
