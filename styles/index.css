@@ -166,6 +166,14 @@ button:hover {
   display: flex;
 }
 
+.popUp3 {
+  display: none;
+}
+
+.popUp3.active {
+  display: flex;
+}
+
 .popUp-form {
   display: none;
 }
@@ -242,6 +250,8 @@ main {
   align-items: center;
   height: 30vh;
   width: 100%;
+
+  z-index: 5;
 }
 
 .info-block {
