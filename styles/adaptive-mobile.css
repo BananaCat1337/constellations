@@ -30,11 +30,11 @@ button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(24, 14, 68, 0.3);
+  background: rgba(24, 14, 68, 0.7);
   backdrop-filter: blur(5px);
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 30;
 }
 
 .popUp.active {
@@ -56,37 +56,144 @@ button:hover {
   }
 
 
+
+
   h1 {
     font-size: 10vw;
   }
-
-  .b3-1 {
+  h2 {
+    font-size: 5vw;
+  }
+  .b1 {
     font-size: 4vw;
   }
+  .b2 {
+    font-size: 3.7vw;
+  }
+  .b3-1 {
+    font-size: 3.5vw;
+  }
   .b3 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .b4 {
     font-size: 3.5vw;
   }
 
-  .b2 {
-    font-size: 4vw;
-  }
+  
   .botton_text {
-    font-size: 5vw;
+    font-size: 4.6vw;
     font-weight: bold;
   }
 
   .copyright_container a {
-    font-size: 3vw;
+    font-size: 2.7vw;
   }
 
 
+  .constellationToClick {
+    width: 60%;
+    height: 60%;
+  }
+
+  .constellation__slider {
+    margin-top: 38vh;
+    z-index: 15;
+    height: 40vh;
+  }
+
+  .popup_close {
+    display: block;
+
+    position: fixed;
+
+    height: 5vh;
+    width: 5vh;
+
+    top: 10vh;
+
+    z-index: 20;
+  }
 
   .popUp-large {
+
     width: 90%;
     height: 75%;
+  }
+  .popUp.active {
+    justify-content: center;
+  }
+  .popUp1.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw 5vh 3vw;
+  }
+
+  .popUp3.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw 5vh 3vw;
+  }
+  
+  .popUp-form.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw 5vh 3vw;
+  }
+
+  .popUp-large .info-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+  }
+  .popUp-large .info-container .left-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+  }
+  .popUp-large .info-container .left-elements img {
+    width: 100%;
+  }
+  .popUp-large .info-container .right-elements {
+    display: flex;
+    align-items: center;
+
+    height: 60%;
+    width: 100%;
+  }
+  .popUp .side-element {
+    display: none;
+  }
+  .PopUp-image-mobile{
+    display: block;
+  }
+  .PopUp-image {
+    display: none;
+  }
+  .popUp-large .info-container .right-elements button {
+    width: 80%;
+    height: 20%;
+  }
+
+
+  .popUp2.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw 5vh 3vw;
+  }
+
+  .popUp-large .info-container .right-elements .bottom-elements {
+    flex-direction: row;
+  }
+  .popUp2 .info-container .left-elements img {
+    width: 100%;
+    height: 70%;
   }
 
 
@@ -95,6 +202,8 @@ button:hover {
     height: 10vh;
     padding: 4vh 2vw 0 4vw;
     background: rgba(255, 255, 255, 0);
+
+    z-index: 31;
   }
 
   main {
@@ -183,6 +292,10 @@ button:hover {
   .main-title-wrapper {
     width: 100vw;
   }
+  .main-sub-title {
+    width: 60%;
+    text-align: center;
+  }
 
   .bolvanka {
     padding-left: 0;
@@ -198,9 +311,11 @@ button:hover {
     width: 90%;
   }
 
-  .info-blocks {
-    display: flex;
+  .info-blocks { 
     position: absolute;
+
+    display: flex;
+    align-items: flex-end;
 
     left: 0;
     top: 42vh;
@@ -208,7 +323,8 @@ button:hover {
     overflow: hidden;
 
     height: 58vh;
-    align-items: flex-end;
+    
+    z-index: revert-layer;
   }
 
   .lower-popUp-wraper {
@@ -232,9 +348,9 @@ button:hover {
   .lower-popUp-wraper.active {
     animation: lower-popUp-on 0.5s 0s 1 ease-out;
 
-    z-index: 5;
-
     top: 0;
+
+    z-index: 20;
   }
   .lower-popUp-wraper.desactive {
     animation: lower-popUp-off 0.5s 0s 1 ease-out;
@@ -248,8 +364,6 @@ button:hover {
     justify-content: space-around;
 
     height: 100%;
-
-    
   }
   .title_lower_popUp {
     display: block;
@@ -318,6 +432,7 @@ button:hover {
   .info-blocks .right {
     display: none;
   }
+
 
 
 
