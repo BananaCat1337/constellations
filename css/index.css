@@ -5,23 +5,23 @@ html {
 button {
   border: none;
 
-  background-color: #ECA100;
+  background-color: #eca100;
 
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #FFB007;
+  background-color: #ffb007;
 }
 
 .copyright_container a {
   font-size: 0.8vw;
 
-  color: #F6F1FF;
+  color: #f6f1ff;
 }
 
 .copyright_container div {
-  color: #F6F1FF;
+  color: #f6f1ff;
 }
 
 .popUp {
@@ -84,7 +84,6 @@ iframe {
 
   z-index: 15;
 }
-
 
 .popUp-large .info-container {
   display: flex;
@@ -150,7 +149,7 @@ iframe {
   margin-bottom: 3vh;
 
   border: none;
-  border-bottom: 2px solid #F6F1FF;
+  border-bottom: 2px solid #f6f1ff;
   background: none;
   box-shadow: none;
   outline: none;
@@ -200,20 +199,16 @@ iframe {
   height: 55%;
   width: 100%;
 }
-.popUp-form form{
+.popUp-form form {
   width: 100%;
 }
 .popUp-form form input {
   font-size: 4vw;
 }
 
-
-
-
-
 main {
   width: 100%;
-  height: 86vh;
+  height: 90vh;
 }
 
 .wrapper {
@@ -246,7 +241,6 @@ main {
   display: none;
 }
 
-
 .main-title {
   text-transform: uppercase;
   display: flex;
@@ -257,7 +251,6 @@ main {
   width: 90%;
 
   margin-top: 4%;
-
 }
 
 .main-title-wrapper {
@@ -306,11 +299,9 @@ main {
   height: 100%;
 }
 
-
-
 .left-info-block-conainer {
   display: flex;
-  
+
   align-items: center;
   justify-content: space-between;
 
@@ -367,7 +358,7 @@ main {
 }
 
 .info-blocks .right .left-elements h3 {
-  color: #F6F1FF;
+  color: #f6f1ff;
 }
 
 .info-blocks .right .right-elements {
@@ -406,13 +397,13 @@ main {
 }
 
 .step h4 {
-  font-family: "Angst";
+  font-family: 'Angst';
 
   font-size: 1.5rem;
 
   line-height: 130%;
 
-  color: #ECA100;
+  color: #eca100;
 }
 
 .range {
@@ -441,7 +432,7 @@ main {
   align-items: flex-end;
 }
 
-input[type="range"] {
+input[type='range'] {
   appearance: none;
   background-color: white;
   width: 100%;
@@ -461,30 +452,30 @@ input[type="range"] {
 }
 
 .slider-input.threeScroll::before {
-  background-image: url(../assets/scroll/144scroll.svg );
+  background-image: url(../assets/scroll/144scroll.svg);
 }
 
 .slider-input.fourScroll::before {
-  background-image: url(../assets/scroll/216scroll.svg );
+  background-image: url(../assets/scroll/216scroll.svg);
 }
 
 .slider-input.fiveScroll::before {
-  background-image: url(../assets/scroll/288scroll.svg );
+  background-image: url(../assets/scroll/288scroll.svg);
 }
 
 .slider-input.sixScroll::before {
-  background-image: url(../assets/scroll/360scroll.svg );
+  background-image: url(../assets/scroll/360scroll.svg);
 }
 
 .slider-input.twoScroll::before {
-  background-image: url(../assets/scroll/72scroll.svg );
+  background-image: url(../assets/scroll/72scroll.svg);
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   /* background-image: url(../assets/scroll/zeroScroll.svg); */
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -moz-appearance: none !important;
   appearance: none !important;
   position: relative;
@@ -507,18 +498,17 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   line-height: 1;
   height: 20px;
+  color: #080839;
   width: 100px;
   transform: translate(0, 2px);
 }
 
 body {
   overflow-x: hidden;
-
 }
 
 html {
-  font-family: "Khula", sans-serif;
-
+  font-family: 'Khula', sans-serif;
 }
 
 .bolvanka {
@@ -558,7 +548,7 @@ html {
   padding-left: 60px;
 
   width: 70%;
-  color: #F6F1FF;
+  color: #f6f1ff;
   z-index: 2;
 }
 
@@ -597,14 +587,13 @@ html {
 
 footer {
   font-family: Hauora;
-  position: absolute;
   width: 100vw;
   height: 18vh;
-
+  position: relative;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
-
   background-color: #080839;
-
 }
 
 a {

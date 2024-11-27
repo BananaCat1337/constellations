@@ -42,7 +42,7 @@
   transform: rotate(-300deg);
 }
 .constellation__slider {
-  height: 100vh;
+  height: 66vh;
   width: 100vw;
   position: absolute;
   top: 0;

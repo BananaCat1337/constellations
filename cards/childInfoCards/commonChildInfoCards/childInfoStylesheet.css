@@ -19,14 +19,13 @@
   src: url(/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
 }
 body {
-  background: url(/mainPNG/background.svg);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 .backsideBody {
   display: none;
-  background-image: url(./childInfoSvgs/backgroundBackside.svg);
+  background-image: url(../../childInfoCards/childInfoSvgs/backgroundBackside.svg);
   width: 381.997px;
   height: 492.998px;
   flex-direction: column;
@@ -71,7 +70,7 @@ p {
   width: 519px;
   color: #fff;
   height: 672px;
-  background-image: url(childInfoSvgs/backgroundFrontside.svg);
+  background-image: url(../childInfoSvgs/backgroundFrontside.svg);
 }
 .frontsideContainer {
   height: 100%;

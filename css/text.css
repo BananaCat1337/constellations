@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Angst-Bold';
+  src: url(../fonts/angst/static/Angst-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Angst-Normal';
+  src: url(../fonts/angst/static/Angst-Normal.otf);
+}
+
+@font-face {
+  font-family: 'Haora-Bold';
+  src: url(../fonts/hauora/fonts/otf/Hauora-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Haora-Normal';
+  src: url(../fonts/hauora/fonts/otf/Hauora-Light.otf);
+}
+
+
+
+.b1 {
+    font-family: 'Haora-Normal';
+    color: #f6f1ff;
+  
+    font-size: 1vw;
+  
+    line-height: 130%;
+  }
+  
+  /* h1 */
+  h1 {
+    font-family: 'Angst-Normal';
+    color: #eca100;
+    font-size: 5vw;
+    font-weight: normal;
+  
+    line-height: 120%;
+  }
+  
+  /* h2 */
+  
+  h2 {
+    font-family: 'Angst-Bold';
+    font-size: 2.3vw;
+    font-weight: bold;
+  
+    color: #ECA100;
+  }
+
+  /* b2 */
+
+  .b2 {
+    font-family: 'Angst-Normal';
+    font-size: 2.7vw;
+    font-weight: normal;
+  
+    line-height: 130%;
+  
+    color: #f6f1ff;
+  }
+  
+  /* b3 */
+  
+  .b3 {
+    font-family: 'Angst-Normal';
+    font-size: 0.8vw;
+    font-weight: normal;
+  
+    line-height: 130%;
+  
+    color: #ECA100;
+  }
+  
+  .b3-1 {
+    font-family: 'Angst-Normal';
+    font-size: 0.8vw;
+    font-weight: normal;
+  
+    line-height: 130%;
+  
+    color: #f6f1ff;
+  }
+  
+  /* h4 */
+  
+  h4 {
+    font-family: 'Haora-Bold';
+    font-size: 2vw;
+  
+    line-height: 130%;
+  
+    color: #ECA100;
+  }
+  
+  /* b4 */
+  
+  .b4 {
+    font-family: 'Haora-Normal';
+    color: #f6f1ff;
+    line-height: 130%;
+  
+    font-size: 0.8vw;
+  }
+  
+  /* b5 */
+  
+  .b5 {
+    font-family: 'Haora-Normal';
+    color: #f6f1ff;
+    line-height: 130%;
+  
+    font-size: 0.8svw;
+  }
+  
+  .botton_text {
+    font-family: 'Haora-Normal';
+    color: #080839;
+    line-height: 130%;
+  
+    font-size: 0.8vw;
+  }
+
+  .main-sub-title {
+    margin-top: 2%;
+  
+    font-family: 'Haora-Normal';
+    color: #f6f1ff;
+    font-size: 1vw;
+  }

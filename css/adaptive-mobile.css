@@ -10,27 +10,16 @@ body {
   overflow-x: hidden;
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
   .b2 {
     font-size: 4vw;
   }
-
 }
 
-
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .bgImage-container {
     background-image: url('../assets/mobilka-Backgraund.svg');
   }
-
-
-
-
   h1 {
     font-size: 10vw;
   }
@@ -53,7 +42,6 @@ body {
     font-size: 3.5vw;
   }
 
-  
   .botton_text {
     font-size: 4.6vw;
     font-weight: bold;
@@ -62,7 +50,6 @@ body {
   .copyright_container a {
     font-size: 2.7vw;
   }
-
 
   .constellationToClick {
     width: 60%;
@@ -77,15 +64,15 @@ body {
 
   button {
     border: none;
-    background-color: #ECA100;
+    background-color: #eca100;
     cursor: pointer;
     padding: 1.5vh 2vh;
   }
-  
+
   button:hover {
-    background-color: #FFB007;
+    background-color: #ffb007;
   }
-  
+
   .popUp {
     display: none;
     position: fixed;
@@ -99,7 +86,7 @@ body {
     align-items: center;
     z-index: 30;
   }
-  
+
   .popUp.active {
     display: flex;
   }
@@ -118,7 +105,6 @@ body {
   }
 
   .popUp-large {
-
     width: 90%;
     height: 75%;
   }
@@ -138,7 +124,7 @@ body {
     justify-content: space-between;
     padding: 5vh 3vw 5vh 3vw;
   }
-  
+
   .popUp-form.active {
     display: flex;
     flex-direction: column;
@@ -171,7 +157,7 @@ body {
   .popUp .side-element {
     display: none;
   }
-  .PopUp-image-mobile{
+  .PopUp-image-mobile {
     display: block;
   }
   .PopUp-image {
@@ -181,7 +167,6 @@ body {
     width: 80%;
     height: 20%;
   }
-
 
   .popUp2.active {
     display: flex;
@@ -198,7 +183,6 @@ body {
     height: 70%;
   }
 
-
   .header {
     width: 95vw;
     height: 10vh;
@@ -212,9 +196,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     overflow: hidden;
-
     height: 90vh;
   }
 
@@ -234,7 +216,6 @@ body {
   .void img {
     display: block;
   }
-
 
   .menu-container {
     display: block;
@@ -313,7 +294,7 @@ body {
     width: 90%;
   }
 
-  .info-blocks { 
+  .info-blocks {
     position: absolute;
 
     display: flex;
@@ -325,7 +306,7 @@ body {
     overflow: hidden;
 
     height: 58vh;
-    
+
     z-index: revert-layer;
   }
 
@@ -421,22 +402,19 @@ body {
     transform: rotate(0);
 
     display: block;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
   }
   .lower-popUp-botton.active {
     transform: rotate(180deg);
   }
 
   .lower-popUp-botton:hover {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .info-blocks .right {
     display: none;
   }
-
-
-
 
   footer {
     display: flex;
