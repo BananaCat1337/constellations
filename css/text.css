@@ -18,114 +18,129 @@
   src: url(../fonts/hauora/fonts/otf/Hauora-Light.otf);
 }
 
+/* Стили для свайпера */
 
+.whoIs p {
+  font-family: sans-serif;
+  color: #f6f1ff;
 
+  font-size: 1.4vw;
+
+  line-height: 130%;
+}
+
+.infoText .b1 {
+  font: 1.2vw sans-serif;
+}
+
+/* b1 */
 .b1 {
-    font-family: 'Haora-Normal';
-    color: #f6f1ff;
-  
-    font-size: 1vw;
-  
-    line-height: 130%;
-  }
-  
-  /* h1 */
-  h1 {
-    font-family: 'Angst-Normal';
-    color: #eca100;
-    font-size: 5vw;
-    font-weight: normal;
-  
-    line-height: 120%;
-  }
-  
-  /* h2 */
-  
-  h2 {
-    font-family: 'Angst-Bold';
-    font-size: 2.3vw;
-    font-weight: bold;
-  
-    color: #ECA100;
-  }
+  font-family: 'Haora-Normal';
+  color: #f6f1ff;
 
-  /* b2 */
+  font-size: 1vw;
 
-  .b2 {
-    font-family: 'Angst-Normal';
-    font-size: 2.7vw;
-    font-weight: normal;
-  
-    line-height: 130%;
-  
-    color: #f6f1ff;
-  }
-  
-  /* b3 */
-  
-  .b3 {
-    font-family: 'Angst-Normal';
-    font-size: 0.8vw;
-    font-weight: normal;
-  
-    line-height: 130%;
-  
-    color: #ECA100;
-  }
-  
-  .b3-1 {
-    font-family: 'Angst-Normal';
-    font-size: 0.8vw;
-    font-weight: normal;
-  
-    line-height: 130%;
-  
-    color: #f6f1ff;
-  }
-  
-  /* h4 */
-  
-  h4 {
-    font-family: 'Haora-Bold';
-    font-size: 2vw;
-  
-    line-height: 130%;
-  
-    color: #ECA100;
-  }
-  
-  /* b4 */
-  
-  .b4 {
-    font-family: 'Haora-Normal';
-    color: #f6f1ff;
-    line-height: 130%;
-  
-    font-size: 0.8vw;
-  }
-  
-  /* b5 */
-  
-  .b5 {
-    font-family: 'Haora-Normal';
-    color: #f6f1ff;
-    line-height: 130%;
-  
-    font-size: 0.8svw;
-  }
-  
-  .botton_text {
-    font-family: 'Haora-Normal';
-    color: #080839;
-    line-height: 130%;
-  
-    font-size: 0.8vw;
-  }
+  line-height: 130%;
+}
 
-  .main-sub-title {
-    margin-top: 2%;
-  
-    font-family: 'Haora-Normal';
-    color: #f6f1ff;
-    font-size: 1vw;
-  }
+
+/* h1 */
+h1 {
+  font-family: 'Angst-Normal';
+  color: #eca100;
+  font-size: 5vw;
+  font-weight: normal;
+
+  line-height: 120%;
+}
+
+/* h2 */
+
+h2 {
+  font-family: 'Angst-Bold';
+  font-size: 2.3vw;
+  font-weight: bold;
+
+  color: #ECA100;
+}
+
+/* b2 */
+
+.b2 {
+  font-family: 'Angst-Normal';
+  font-size: 2.7vw;
+  font-weight: normal;
+
+  line-height: 130%;
+
+  color: #f6f1ff;
+}
+
+/* b3 */
+
+.b3 {
+  font-family: 'Angst-Normal';
+  font-size: 0.8vw;
+  font-weight: normal;
+
+  line-height: 130%;
+
+  color: #ECA100;
+}
+
+.b3-1 {
+  font-family: 'Angst-Normal';
+  font-size: 0.8vw;
+  font-weight: normal;
+
+  line-height: 130%;
+
+  color: #f6f1ff;
+}
+
+/* h4 */
+
+h4 {
+  font-family: 'Haora-Bold';
+  font-size: 2vw;
+
+  line-height: 130%;
+
+  color: #ECA100;
+}
+
+/* b4 */
+
+.b4 {
+  font-family: 'Haora-Normal';
+  color: #f6f1ff;
+  line-height: 130%;
+
+  font-size: 0.8vw;
+}
+
+/* b5 */
+
+.b5 {
+  font-family: 'Haora-Normal';
+  color: #f6f1ff;
+  line-height: 130%;
+
+  font-size: 0.8svw;
+}
+
+.botton_text {
+  font-family: 'Haora-Normal';
+  color: #080839;
+  line-height: 130%;
+
+  font-size: 0.8vw;
+}
+
+.main-sub-title {
+  margin-top: 2%;
+
+  font-family: 'Haora-Normal';
+  color: #f6f1ff;
+  font-size: 1vw;
+}

@@ -18,14 +18,19 @@
   font-family: Hauora-700;
   src: url(/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
 }
+
+.b1-swiper {
+  font-size: 1.1vw;
+}
+
 body {
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
+  width: 95%;
+  height: 95%;
 }
 .backsideBody {
   display: none;
-  background-image: url(../../childInfoCards/childInfoSvgs/backgroundBackside.svg);
+  background-image: url(./childInfoSvgs/backgroundBackside.svg);
   width: 381.997px;
   height: 492.998px;
   flex-direction: column;
@@ -67,36 +72,47 @@ p {
 }
 .frontsideBody {
   display: flex;
-  width: 519px;
+  width: 100%;
   color: #fff;
-  height: 672px;
-  background-image: url(../childInfoSvgs/backgroundFrontside.svg);
+  height: 100%;
+  background-image: url(/cards/childInfoCards/childInfoSvgs/backgroundFrontside.svg);
+  background-size: cover;
+
 }
 .frontsideContainer {
-  height: 100%;
+  margin-top: 7%;
+
+  height: 70%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .namePhotoConstell {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 85%;
   justify-content: space-between;
 }
+
+.namePhotoConstell img {
+  width: 70%;
+}
 .nameConstell_Container {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.dream {
+  margin-bottom: 7%;
 }
 .infoText {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 397px;
+  width: 80%;
   height: 50%;
 }
 .infoText * {
@@ -108,6 +124,13 @@ p {
   display: flex;
   align-items: center;
 }
+.btnContainer {
+  position: absolute;
+  bottom: 8%;
+
+  width: 80%;
+  height: 10%;
+}
 .btn {
   outline: none;
   border: none;
@@ -115,11 +138,20 @@ p {
   font-size: 19px;
   color: #080839;
   background-color: #eca100;
-  width: 309px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFB007;
 }
 .whoIs {
-  margin-top: 23%;
+  
+}
+
+.nameConstell_Container img {
+  width: 90%;
 }
 
 .whoIs * {

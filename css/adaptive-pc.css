@@ -15,7 +15,7 @@
 
 @media (max-width:1700px) {
     .b3 {
-        font-size: 1.1vw;
+        font-size: 0.9vw;
     }
 
     .b3-1 {
@@ -27,7 +27,7 @@
     }
 
     .b5 {
-        font-size: 0.9vw;
+        font-size: 0.8vw;
     }
 
     h1 {
@@ -45,11 +45,24 @@
     .wars {
         top: -82%;
     }
+
+    .steps .step {
+        width: 30%;
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 5%;
+    }
 }
 
 @media (max-width:1600px) {
     .wars {
         top: -80%;
+    }
+
+    .infoText .b1 {
+        font-size: 1.2vw;
     }
 }
 
@@ -57,9 +70,25 @@
     .contacts_container {
         margin-left: 2%;
     }
+
+    .swiper-slide {
+        width: 35% !important;
+        margin-left: 7%;
+    }
+
+    .infoText .b1 {
+        font-size: 1.4vw;
+    }
 }
 
 @media (max-width:1400px) {
+    .whoIs p {
+        font-size: 1.8vw;
+    }
+    .infoText .b1 {
+        font-size: 1.6vw;
+    }
+
     .steps .step {
         width: 30%;
     }
