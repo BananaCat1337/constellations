@@ -1,8 +1,8 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 console.log(Swiper)
-document.addEventListener('DOMContentLoaded', () => {
 
- const swiper = new Swiper('.constellation__slider', {
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.constellation__slider', {
     observer: true,
     observeParents: true,
     slidesPerView: 1,
@@ -11,31 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     watchOverflow: true,
     speed: 800,
     loop: false,
-    // Dots
     pagination: false,
     navigation: {
-      nextEl: '.slider__arrow_next',
-      prevEl: '.slider__arrow_prev',
-    },
-    
-    // Адаптив Breakpoints ---------------------------
-    breakpoints: {
-      0: {
-        slidesPerView: 1.1,
-        spaceBetween: 15,
-      },
-      480: {
-        slidesPerView: 'auto',
-        navigation: false,
-      },
-      767.98: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      991.98: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
+      nextEl: '.constellation__slider_button-next',
+      prevEl: '.constellation__slider_button-prev',
     },
   });
   const hiddenSlides = document.querySelectorAll('.hideConstellationGroup__slider')
@@ -52,6 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.remove('hideConstellationGroup__slider')
     })
   },
-  200)
+    200)
 })
 
