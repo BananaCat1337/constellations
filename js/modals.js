@@ -50,7 +50,6 @@ for (var i = 0; i < closePopUp.length; i++) {
 
 for (var i = 0; i < openPopUp_3.length; i++) {
     openPopUp_3[i].addEventListener('click', function (e) {
-        console.log('najato');
         
         countWindows += 1
         openPopUps()
@@ -69,6 +68,8 @@ for (var i = 0; i < openPopUp_form.length; i++) {
         popUp.classList.add('active')
     })
 }
+
+console.log(openPopUp_form)
 
 openPopUp_1.addEventListener('click', function (e) {
     countWindows += 1

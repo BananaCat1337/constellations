@@ -78,13 +78,6 @@ button:hover {
   z-index: 15;
 }
 
-iframe {
-  height: 80%;
-  width: 100%;
-
-  z-index: 15;
-}
-
 .popUp-large .info-container {
   display: flex;
   justify-content: space-between;
@@ -129,6 +122,8 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  width: 80%;
 }
 
 .popUp-form .info-container {
@@ -178,6 +173,11 @@ iframe {
 }
 
 .popUp3 {
+  height: 80%;
+  width: 74%;
+
+  z-index: 15;
+
   display: none;
 }
 
@@ -194,16 +194,10 @@ iframe {
 }
 
 .popUp-form .info-container .left-elements {
-  margin-top: 10%;
+  margin-top: 3%;
 
   height: 55%;
-  width: 100%;
-}
-.popUp-form form {
-  width: 100%;
-}
-.popUp-form form input {
-  font-size: 4vw;
+  width: 60%;
 }
 
 main {

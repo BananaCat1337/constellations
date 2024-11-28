@@ -72,20 +72,23 @@ html {
     height: 90%;
     position: relative;
     transition-property: transform;
-    
+
     margin-top: 5vh;
 }
 
 body .container {
     height: 100%;
+    width: 100%;
 }
 
 .card__container {
     height: 100%;
+    width: 100%;
 }
 
 .card__content {
     height: 100%;
+    width: 100%;
 }
 
 .swiper-slide-invisible-blank {
