@@ -72,8 +72,7 @@ html {
     height: 90%;
     position: relative;
     transition-property: transform;
-
-    margin-left: 5%;
+    
     margin-top: 5vh;
 }
 
