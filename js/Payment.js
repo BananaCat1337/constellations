@@ -5,7 +5,6 @@ let payment_email = '';
 let payment_Name = '';
 let agreementChecked = document.getElementById("payment_agreement").checked;
 
-// Функции для валидации
 function isValidEmail(email) {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
@@ -42,10 +41,8 @@ this.pay = function () {
         email: payment_email,
         skin: "classic",
         requireEmail: false,
-    }).then(function (widgetResult) {
-        console.log('result', widgetResult);
-    }).catch(function (error) {
-        console.log('error', error);
+    }).then(function () {
+    }).catch(function () {
     });
 };
 
@@ -105,10 +102,7 @@ widget_open.addEventListener('click', function (e) {
     }
 
     if (hasError) {
-        console.log("Некорректные данные, оплата невозможна.");
         return;
     }
-
-    console.log("Все данные корректны, продолжаем оплату.");
     pay();
 });
