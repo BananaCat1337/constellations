@@ -746,10 +746,16 @@
           <div class="left-elements">
             <form action="">
               <input class="b3" id="payment_Name" type="text" placeholder="Имя" />
+              <div id="name-error" class="error-message">Введите корректное имя</div>
+
               <input class="b3" id="payment_amount" type="text" placeholder="Сумма" />
+              <div id="amount-error" class="error-message">Введите сумму от 10 рублей</div>
               <input class="b3" id="payment_email" type="email" placeholder="E - mail" />
+              <div id="email-error" class="error-message">Введите корректный e-mail</div>
               <div class="chekbox">
-                <input class="b5" type="checkbox" title="Я соглашаюсь с условиями пожертвования" />
+                <input class="b5" id="payment_agreement" type="checkbox" title="Я соглашаюсь с условиями пожертвования" />
+    <label for="payment_agreement">Я соглашаюсь с условиями пожертвования</label>
+    <p id="checkbox-error" class="error-message" style="display: none; color: red;">Вы должны согласиться с условиями пожертвования.</p>
               </div>
             </form>
           </div>

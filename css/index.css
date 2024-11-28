@@ -702,3 +702,29 @@ a:visited {
   overflow: hidden;
   z-index: -2;
 }
+/* настройка когда не проходит эмэйл, имя ввод */
+input.b3 {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+  padding: 5px;
+  outline: none;
+}
+
+input.b3:focus {
+  border-bottom: 2px solid #007BFF;
+}
+
+input.b3.invalid {
+  border-bottom: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none; /* Сообщение скрыто по умолчанию */
+}
+
+.b5 {
+  color: #F6F1FF;
+}
