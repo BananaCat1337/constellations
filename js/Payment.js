@@ -29,10 +29,10 @@ this.pay = function () {
         tinkoffPaySupport: false,
         tinkoffInstallmentSupport: false,
         sbpSupport: true
-    });
-
+    })
+    
     payments.pay("charge", {
-        publicId: "pk_ccdef71088be717d883027ce6ba12",
+        publicId: "test_api_00000000000000000000002",
         description: "Тестовая оплата",
         amount: payment_amount,
         currency: "RUB",
@@ -41,10 +41,12 @@ this.pay = function () {
         email: payment_email,
         skin: "classic",
         requireEmail: false,
-    }).then(function () {
-    }).catch(function () {
+    }).then(function(widgetResult) {
+        console.log('result', widgetResult);
+    }).catch(function(error) {
+        console.log('error', error);
     });
-};
+   };
 
 widget_open.addEventListener('click', function (e) {
     e.preventDefault();
