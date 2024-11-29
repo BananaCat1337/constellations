@@ -1,3 +1,5 @@
+import { sozvezdie} from '../js/modals.js'
+
 const widget_open = document.getElementById("widget-open");
 
 let payment_amount = 0;
@@ -19,7 +21,8 @@ function isValidAmount(amount) {
     return /^[0-9]+$/.test(amount) && parseFloat(amount) >= 10;
 }
 
-this.pay = function () {
+
+const pay = function () {
     var payments = new cp.CloudPayments({
         language: "ru-RU",
         email: "",
@@ -29,10 +32,11 @@ this.pay = function () {
         tinkoffPaySupport: false,
         tinkoffInstallmentSupport: false,
         sbpSupport: true
-    });
-
+    })
+    
     payments.pay("charge", {
-        publicId: "pk_ccdef71088be717d883027ce6ba12",
+        // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
+        publicId: "test_api_00000000000000000000002",  //Тестовый id
         description: "Тестовая оплата",
         amount: payment_amount,
         currency: "RUB",
@@ -41,10 +45,14 @@ this.pay = function () {
         email: payment_email,
         skin: "classic",
         requireEmail: false,
-    }).then(function () {
-    }).catch(function () {
+    }).then(function(widgetResult) {
+        sozvezdie()
+
+        console.log('result', widgetResult);
+    }).catch(function(error) {
+        console.log('error', error);
     });
-};
+   };
 
 widget_open.addEventListener('click', function (e) {
     e.preventDefault();

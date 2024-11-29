@@ -200,6 +200,20 @@ button:hover {
   width: 60%;
 }
 
+.popUp-sozvezdie {
+  display: none;
+
+  height: 80%;
+  width: 74%;
+
+  z-index: 15;
+}
+.popUp-sozvezdie.active {
+  display: flex;
+}
+
+
+
 main {
   width: 100%;
   height: 90vh;

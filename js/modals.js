@@ -1,5 +1,3 @@
-
-
 const closePopUp = document.getElementsByClassName('popup_close');
 
 const openPopUp_1 = document.getElementById('popup1_open');
@@ -11,6 +9,7 @@ const popUp1 = document.getElementById('popUp1')
 const popUp2 = document.getElementById('popUp2')
 const popUp3 = document.getElementById('popUp3')
 const popUp_form = document.getElementById('popUp-form')
+const popUp_sozvezdie = document.getElementById('popUp-sozvezdie')
 const popUp = document.getElementById('popUp')
 
 
@@ -31,9 +30,18 @@ function openPopUps() {
         popUp2.classList.remove('active')
         popUp3.classList.remove('active')
         popUp_form.classList.remove('active')
-
+        popUp_sozvezdie.classList.remove('active')
     }
 }
+
+export function sozvezdie() {
+    openPopUps()
+    popUp_sozvezdie.classList.add('active')
+    popUp.classList.remove('active')
+    popUp.classList.add('active')
+}
+
+
 
 for (var i = 0; i < closePopUp.length; i++) {
     closePopUp[i].addEventListener('click', function (e) {
@@ -42,6 +50,7 @@ for (var i = 0; i < closePopUp.length; i++) {
         popUp2.classList.remove('active')
         popUp3.classList.remove('active')
         popUp_form.classList.remove('active')
+        popUp_sozvezdie.classList.remove('active')
         popUp.classList.remove('active')
 
         countWindows = 0
@@ -68,8 +77,6 @@ for (var i = 0; i < openPopUp_form.length; i++) {
         popUp.classList.add('active')
     })
 }
-
-console.log(openPopUp_form)
 
 openPopUp_1.addEventListener('click', function (e) {
     countWindows += 1
