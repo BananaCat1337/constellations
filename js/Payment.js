@@ -34,6 +34,8 @@ const pay = function () {
         sbpSupport: true
     })
     
+    })
+    
     payments.pay("charge", {
         // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
         publicId: "test_api_00000000000000000000002",  //Тестовый id
@@ -52,6 +54,7 @@ const pay = function () {
     }).catch(function(error) {
         console.log('error', error);
     });
+   };
    };
 
 widget_open.addEventListener('click', function (e) {
