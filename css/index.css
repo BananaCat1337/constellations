@@ -155,19 +155,22 @@ button:hover {
   outline: none;
 }
 
-.chekbox .b5 {
+.chekbox .payment_agreement {
   width: 2vh;
   height: 2vh;
 
   margin-bottom: 0;
 }
-.chekbox a {
+.chekbox a,label {
   width: 110%;
 
   font-size: 0.7vw;
   color: rgba(246, 241, 255, 0.4);
 
   text-align: center;
+}
+.chekbox {
+  width: 100%;
 }
 
 .chekbox {
