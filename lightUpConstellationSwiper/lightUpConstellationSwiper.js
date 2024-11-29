@@ -14,13 +14,14 @@ let swiperCards = new Swiper(".card__content", {
       slidesPerView: 1,
     },
     500: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
-    968: {
-      
+    1150: {
+      slidesPerView: 2,
     },
     1500: {
       spaceBetween: 50,
+      slidesPerView: 3,
     },
     1600: {
       spaceBetween: 60,

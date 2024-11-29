@@ -23,7 +23,7 @@
     }
 
     .b4 {
-        font-size: 1vw;
+        font-size: 0.9vw;
     }
 
     .b5 {
@@ -69,11 +69,15 @@
     }
 
     .infoText .b1 {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
     }
 }
 
 @media (max-width:1500px) {
+
+    .popUp-large .info-container .right-elements .b1 {
+        font-size: 1.2vw;
+    }
     .contacts_container {
         margin-left: 2%;
     }
@@ -82,7 +86,14 @@
     }
 
     .infoText .b1 {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
+    }
+    .popUp-large .info-container {
+        height: 85%;
+    }
+
+    .popUp-large .info-container .left-elements img{
+        width: 90%;
     }
 }
 
@@ -114,9 +125,7 @@
         width: 65%;
     }
 
-    .popUp-large .info-container {
-        height: 85%;
-    }
+    
     /*
     .popUp-large .info-container .left-elements {
         width: 40%;
@@ -135,7 +144,7 @@
     }
 
     .b4 {
-        font-size: 1.1vw;
+        font-size: 1vw;
     }
 
     .b5 {
@@ -145,6 +154,19 @@
     h1 {
         font-size: 5.5vw;
     }
+
+    .footer-central-container{
+        width: 75%;
+    }
+
+    .constellationToClick {
+        width: 25vh;
+        height: 25vh;
+    }
+    .constellation__slider {
+        top: 6vh;
+    }
+      
 
     .infoText {
         height: 65%;
@@ -206,13 +228,19 @@
     }
 
     .b3 {
-        font-size: 1.5vw;
+        font-size: 1.1vw;
     }
 }
 
 @media (max-width:1150px) {
     .b3-1 {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
+    }
+    .popUp-large .info-container .right-elements .b1 {
+        font-size: 1.3vw;
+    }
+    .left-nav-bar {
+        width: 65%;
     }
 
     .wars {
@@ -225,6 +253,8 @@
         top: -20%;
     }
 
+    
+
     .main-wrapper {
         height: 44vh;
     }
@@ -236,3 +266,12 @@
     }
 }
 
+
+
+
+
+@media (max-width:900px) {
+    .infoText .b1 {
+        font-size: 1.8vw;
+    }
+}
