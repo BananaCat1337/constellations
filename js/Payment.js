@@ -47,9 +47,9 @@ const pay = function () {
       skin: "classic",
       requireEmail: false,
     })
-    .then(function (widgetResult) {
-      sozvezdie(payment_Name);
+    .then((widgetResult) => {
       console.log("result", widgetResult);
+      sozvezdie(payment_Name);
     })
     .catch(function (error) {
       console.log("error", error);

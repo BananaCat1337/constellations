@@ -23,7 +23,8 @@
   .infoText .b1 {
     font-size: 4vw !important;
   }
-  .chekbox a, label {
+  .chekbox a,
+  label {
     font-size: 3vw;
   }
   h1 {

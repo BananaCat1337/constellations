@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 90,
     watchOverflow: true,
     speed: 1200,
+    initialSlide: 1,
     loop: false,
     pagination: false,
     navigation: {

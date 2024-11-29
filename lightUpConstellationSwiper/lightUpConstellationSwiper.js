@@ -5,7 +5,8 @@ let swiperCards = new Swiper(".card__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
+  initialSlide: 2,
+  centeredSlides: true,
   slidesPerView: 3,
   spaceBetween: 80,
 

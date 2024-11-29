@@ -1,3 +1,6 @@
+:root {
+  --constellationColor: red;
+}
 html {
   background-color: black;
 }
@@ -161,7 +164,8 @@ button:hover {
 
   margin-bottom: 0;
 }
-.chekbox a,label {
+.chekbox a,
+label {
   width: 110%;
 
   font-size: 0.7vw;
@@ -203,16 +207,20 @@ button:hover {
 }
 
 .popUp3 {
+  position: absolute;
   height: 80%;
   width: 74%;
+  display: flex;
 
-  z-index: 15;
+  z-index: -10;
 
-  display: none;
+  opacity: 0;
 }
 
 .popUp3.active {
-  display: flex;
+  position: static;
+  opacity: 1;
+  z-index: 15;
 }
 
 .popUp-form {
@@ -543,8 +551,16 @@ input[type="range"]::-webkit-slider-thumb {
   z-index: 2;
 }
 .constellationToClick {
+  opacity: 0.7;
   width: 28vh;
   height: 28vh;
+}
+.constellationToClick:hover {
+  opacity: 1;
+  filter: contrast(1.75) brightness(1.75);
+}
+.hideSmth {
+  display: none;
 }
 
 .range-text {

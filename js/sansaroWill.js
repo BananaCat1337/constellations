@@ -1,7 +1,6 @@
 addEventListener("DOMContentLoaded", (event) => {
   const rangeInput = document.querySelector("#range");
   const swiper = document.querySelector(".constellation__slider").swiper;
-
   rangeInput.addEventListener("input", () => {
     updateThumb();
   });
@@ -24,14 +23,14 @@ addEventListener("DOMContentLoaded", (event) => {
     const value = rangeInput.value;
     if (value < 72) {
       prevPart = currPart;
-      text.classList.remove("nevidimka")
-      text.classList.add("antinevidimka")
+      text.classList.remove("nevidimka");
+      text.classList.add("antinevidimka");
       currPart = 0;
       changeCurrentSlide(currPart, prevPart);
     } else if (value >= 72 && value < 144) {
       prevPart = currPart;
-      text.classList.remove("antinevidimka")
-      text.classList.add("nevidimka")
+      text.classList.remove("antinevidimka");
+      text.classList.add("nevidimka");
       currPart = 1;
       changeCurrentSlide(currPart, prevPart);
     } else if (value >= 144 && value < 216) {

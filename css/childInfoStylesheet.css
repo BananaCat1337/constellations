@@ -29,7 +29,7 @@ body {
   height: 95%;
 }
 .backsideBody {
-  display: none;
+  display: flex;
   background-image: url(./childInfoSvgs/backgroundBackside.svg);
   width: 381.997px;
   height: 492.998px;
@@ -144,10 +144,9 @@ p {
 }
 
 .btn:hover {
-  background-color: #FFB007;
+  background-color: #ffb007;
 }
 .whoIs {
-  
 }
 
 .nameConstell_Container img {
@@ -166,3 +165,13 @@ p {
     .cardcontainer:hover .frontsideBody {
     display: flex;
     } */
+/* .swiper-slide .swiper-slide-active .backsideBody .frontsideBody */
+.frontsideBody {
+  display: none;
+}
+.swiper-slide-active .frontsideBody {
+  display: flex;
+}
+.swiper-slide-active .backsideBody {
+  display: none;
+}
