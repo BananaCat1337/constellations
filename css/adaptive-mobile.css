@@ -14,6 +14,9 @@
   .bgImage-container {
     background-image: url("../assets/mobilka-Backgraund.svg");
   }
+  .input-container {
+    display: none;
+  }
   .whoIs p {
     font-size: 4.5vw;
   }
