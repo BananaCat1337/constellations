@@ -50,6 +50,8 @@ button:hover {
 .popUp .side-element .popup_close {
   width: 13%;
 
+  margin-left: 2vw;
+
   cursor: pointer;
 }
 
@@ -148,6 +150,28 @@ button:hover {
   background: none;
   box-shadow: none;
   outline: none;
+}
+
+.chekbox .b5 {
+  width: 2vh;
+  height: 2vh;
+
+  margin-bottom: 0;
+}
+.chekbox a {
+  width: 110%;
+
+  font-size: 0.7vw;
+  color:rgba(246, 241, 255, 0.4);
+
+  text-align: center;
+}
+
+.chekbox {
+  display: flex;
+  width: 100%;
+
+  align-items: flex-end;
 }
 .PopUp-image-mobile {
   display: none;
@@ -553,7 +577,7 @@ html {
 }
 
 .left-nav-bar {
-  padding-left: 60px;
+  padding-left: 3vw;
 
   width: 70%;
   color: #f6f1ff;

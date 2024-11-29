@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-}
 
 @media (max-width: 768px) {
   .b2 {
@@ -19,6 +14,15 @@ body {
 @media (max-width: 500px) {
   .bgImage-container {
     background-image: url('../assets/mobilka-Backgraund.svg');
+  }
+  .whoIs p {
+    font-size: 4.5vw;
+  }
+  .infoText .b1 {
+    font-size: 4vw;
+  }
+  .chekbox a {
+    font-size: 3vw;
   }
   h1 {
     font-size: 10vw;
@@ -41,6 +45,7 @@ body {
   .b4 {
     font-size: 3.5vw;
   }
+  
 
   .botton_text {
     font-size: 4.6vw;
@@ -59,6 +64,9 @@ body {
   .constellation__slider {
     margin-top: 38vh;
     z-index: 15;
+    height: 40vh;
+  }
+  .constellationGroup__slider {
     height: 40vh;
   }
 
@@ -122,15 +130,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 85%;
     padding: 5vh 3vw 5vh 3vw;
+  }
+
+  
+  .namePhotoConstell img {
+    height: 100%;
+    width: 55%; 
+  }
+  .nameConstell_Container img {
+    width: 50%;
+  }
+  .nameConstell_Container {
+    display: flex;
+
+    align-items: center;
+    
+    width: 45%;
   }
 
   .popUp-form.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 5vh 3vw 5vh 3vw;
   }
+
+
 
   .popUp-large .info-container {
     display: flex;
@@ -145,6 +173,12 @@ body {
     height: 45%;
   }
   .popUp-large .info-container .left-elements img {
+    width: 100%;
+  }
+  .popUp-form .info-container .left-elements {
+    width: 100%;
+  }
+  .popUp-form form {
     width: 100%;
   }
   .popUp-large .info-container .right-elements {
@@ -263,6 +297,7 @@ body {
 
     text-align: right;
   }
+
 
   .main-wrapper {
     width: 100vw;

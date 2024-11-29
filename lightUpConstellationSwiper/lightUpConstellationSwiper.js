@@ -6,11 +6,27 @@ let swiperCards = new Swiper(".card__content", {
     prevEl: ".swiper-button-prev",
   },
 
+  slidesPerView: 3,
   spaceBetween: 80,
 
   breakpoints: {
-    968: {
+    200: {
+      slidesPerView: 1,
+    },
+    500: {
       slidesPerView: 3,
+    },
+    968: {
+      
+    },
+    1500: {
+      spaceBetween: 50,
+    },
+    1600: {
+      spaceBetween: 60,
+    },
+    1700: {
+      spaceBetween: 70,
     },
   },
 });

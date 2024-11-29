@@ -19,7 +19,7 @@
     }
 
     .b3-1 {
-        font-size: 1.1vw;
+        font-size: 1vw;
     }
 
     .b4 {
@@ -32,6 +32,9 @@
 
     h1 {
         font-size: 5.5vw;
+    }
+    .botton_text {
+        font-size: 1vw;
     }
 
     .starWars-container {
@@ -54,6 +57,10 @@
         width: 100%;
         margin-left: 5%;
     }
+
+    .popUp-form .info-container {
+        height: 80%;
+    }
 }
 
 @media (max-width:1600px) {
@@ -72,21 +79,27 @@
     }
 
     .swiper-slide {
-        width: 35% !important;
-        margin-left: 7%;
     }
 
     .infoText .b1 {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 }
 
 @media (max-width:1400px) {
+    .b1 {
+        font-size: 1.2vw;
+    }
+    .botton_text {
+        font-size: 1.2vw;
+    }
+
+
     .whoIs p {
-        font-size: 1.8vw;
+        font-size: 1.3vw;
     }
     .infoText .b1 {
-        font-size: 1.6vw;
+        font-size: 1.2vw;
     }
 
     .steps .step {
@@ -96,15 +109,29 @@
     .wars {
         top: -60%;
     }
+
+    .popUp-large {
+        width: 65%;
+    }
+
+    .popUp-large .info-container {
+        height: 85%;
+    }
+    /*
+    .popUp-large .info-container .left-elements {
+        width: 40%;
+    } */
 }
 
 @media (max-width:1300px) {
+    
+
     .b3 {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
     }
 
     .b3-1 {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
     }
 
     .b4 {
@@ -119,11 +146,16 @@
         font-size: 5.5vw;
     }
 
+    .infoText {
+        height: 65%;
+    }
+
     .info-blocks .left {
         margin-left: 0;
     }
 
     .info-blocks .right {
+        width: 43%;
         margin-right: 0;
     }
 
@@ -137,11 +169,15 @@
         width: 60%;
     }
 
+    .lower-popUp-wraper {
+        width: 43%;
+    }
+
     .menu-container {
         width: 25%;
     }
     .left-nav-bar {
-        width: 90%;
+        width: 60%;
     }
 
     .wars {
