@@ -71,6 +71,12 @@
     .infoText .b1 {
         font-size: 1.1vw;
     }
+
+    .popUp-large .info-container .left-elements img{
+        width: 90%;
+
+        max-height: 100%;
+    }
 }
 
 @media (max-width:1500px) {
@@ -92,9 +98,7 @@
         height: 85%;
     }
 
-    .popUp-large .info-container .left-elements img{
-        width: 90%;
-    }
+    
 }
 
 @media (max-width:1400px) {
