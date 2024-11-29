@@ -61,9 +61,9 @@
 
   .constellation__slider {
     overflow: hidden;
-    margin-top: 38vh;
+    margin-top: 32vh;
     z-index: 15;
-    height: 40vh;
+    height: 50vh;
   }
   .constellationGroup__slider {
     height: 40vh;
