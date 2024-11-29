@@ -13,13 +13,14 @@
 
   <link rel="stylesheet" href="./css/wheelStylesheet.css" />
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./cards/childInfoCards/commonChildInfoCards/childInfoStylesheet.css" />
-  <link rel="stylesheet" href="./cards/shareCards/commonShareCardsCss/cardStylesheet.css" />
+  <link rel="stylesheet" href="./css/childInfoStylesheet.css" />
+  <link rel="stylesheet" href="./css/cardStylesheet.css" />
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/text.css" />
   <link rel="stylesheet" href="./css/adaptive-pc.css" />
   <link rel="stylesheet" href="./css/adaptive-mobile.css" />
   <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/cardStylesheet.css" />
 
   <title>Настенька 2.0</title>
 </head>
@@ -85,7 +86,7 @@
         <div class="card__container swiper">
           <div class="card__content">
             <div class="swiper-wrapper">
-              <div class="cardContainer swiper-slide" data-constellation="кошка">
+              <div class="cardContainer swiper-slide" data-constellation="кошка" img-constellation="catInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -114,7 +115,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="пожарная машина">
+              <div class="cardContainer swiper-slide" data-constellation="пожарная машина" img-constellation="fireCarInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -143,7 +144,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="собака">
+              <div class="cardContainer swiper-slide" data-constellation="собака" img-constellation="dogInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -172,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="мама">
+              <div class="cardContainer swiper-slide" data-constellation="мама" img-constellation="mamaInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -201,7 +202,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="попучайчик">
+              <div class="cardContainer swiper-slide" data-constellation="попучайчик" img-constellation="parrotInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -230,7 +231,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="велосипед">
+              <div class="cardContainer swiper-slide" data-constellation="велосипед" img-constellation="bycicleInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -259,7 +260,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="самолёт">
+              <div class="cardContainer swiper-slide" data-constellation="самолёт" img-constellation="planeInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -288,7 +289,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="хоккей">
+              <div class="cardContainer swiper-slide" data-constellation="хоккей" img-constellation="hokkeyInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -317,7 +318,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="ёжик">
+              <div class="cardContainer swiper-slide" data-constellation="ёжик" img-constellation="hedgehogInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -346,7 +347,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="черепашка">
+              <div class="cardContainer swiper-slide" data-constellation="черепашка" img-constellation="turtleInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -375,7 +376,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="коньки">
+              <div class="cardContainer swiper-slide" data-constellation="коньки" img-constellation="skatesInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -404,7 +405,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="вертолёт">
+              <div class="cardContainer swiper-slide" data-constellation="вертолёт" img-constellation="helicopterInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -433,7 +434,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="светофор">
+              <div class="cardContainer swiper-slide" data-constellation="светофор" img-constellation="trafficLight">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -463,7 +464,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="фотоаппарат">
+              <div class="cardContainer swiper-slide" data-constellation="фотоаппарат" img-constellation="camInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -492,7 +493,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="компьютер">
+              <div class="cardContainer swiper-slide" data-constellation="компьютер" img-constellation="PCInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -521,7 +522,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="паровоз">
+              <div class="cardContainer swiper-slide" data-constellation="паровоз" img-constellation="trainInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -550,7 +551,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="туфелька">
+              <div class="cardContainer swiper-slide" data-constellation="туфелька" img-constellation="shoeInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -579,7 +580,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="врач">
+              <div class="cardContainer swiper-slide" data-constellation="врач" img-constellation="doctorInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -608,7 +609,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="кораблик">
+              <div class="cardContainer swiper-slide" data-constellation="кораблик" img-constellation="shipInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -637,7 +638,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="горы">
+              <div class="cardContainer swiper-slide" data-constellation="горы" img-constellation="mountainInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -666,7 +667,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="кукла">
+              <div class="cardContainer swiper-slide" data-constellation="кукла" img-constellation="dollInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -695,7 +696,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="мороженое">
+              <div class="cardContainer swiper-slide" data-constellation="мороженое" img-constellation="iceCreamInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -724,7 +725,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="мячик">
+              <div class="cardContainer swiper-slide" data-constellation="мячик" img-constellation="ballInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -734,7 +735,7 @@
                 <div class="frontsideBody">
                   <div class="frontsideContainer">
                     <div class="namePhotoConstell">
-                      <img src="/cards/childInfoCards/childInfoSvgs/leonidPhoto.svg" alt="Фото Ребёнка" />
+                      <img src="./cards/childInfoCards/childInfoSvgs/leonidPhoto.svg" alt="Фото Ребёнка" />
                       <div class="nameConstell_Container">
                         <div class="whoIs">
                           <p class="name">Лёня,</p>
@@ -753,7 +754,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cardContainer swiper-slide" data-constellation="торт">
+              <div class="cardContainer swiper-slide" data-constellation="торт" img-constellation="cakeInfo">
                 <div class="backsideBody">
                   <div class="backsideInfo">
                     <p class="constellClische">Созвездие</p>
@@ -769,7 +770,7 @@
                           <p class="name">Канышай,</p>
                           <p class="age">15 лет</p>
                         </div>
-                        <img src="/cards/childInfoCards/childInfoSvgs/cakeInfo.svg" alt="Созвездие" />
+                        <img src="./cards/childInfoCards/childInfoSvgs/cakeInfo.svg" alt="Созвездие" />
                       </div>
                     </div>
                     <div class="infoText">
@@ -795,7 +796,7 @@
 
 
     <div id="popUp-form" class="popUp-form popUp-large">
-      <h2 id="constellation-title">созвездие мама</h2>
+      <h2>созвездие</h2><h2 id="constellation-title"> мама</h2>
       <div class="info-container">
         <div class="left-elements">
           <form action="">
@@ -829,6 +830,22 @@
 
 
     <div class="popUp-sozvezdie" id="popUp-sozvezdie">
+      <div class="cardBody">
+        <div class="constellationContainer">
+          <h2 class="constellationName">
+            ВАШЕ СОЗВЕЗДИЕ </h2>
+            <h2 id="constellation-title-share"></h2>
+          <div>
+            <img class="constellationImage" src="" alt="" />
+          </div>
+        </div>
+        <div class="doneInfoContainer">
+          <h3 class="userName" id="userName"></h3>
+          <h4 class="shareThisInfo">вы зажгли созвездие и помогли детской мечте засиять на карте звёздного неба. 
+            Поделитесь этой новостью со всеми, чтобы карта созвездий стала ещё ярче!</h4>
+          <div class="buttonContainer"><button class="btn">Поделиться</button></div>
+        </div>
+      </div>
 
     </div>
 

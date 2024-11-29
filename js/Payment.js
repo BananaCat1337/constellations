@@ -1,4 +1,4 @@
-import { sozvezdie} from '../js/modals.js'
+import { sozvezdie } from '../js/modals.js'
 
 const widget_open = document.getElementById("widget-open");
 
@@ -34,7 +34,6 @@ const pay = function () {
         sbpSupport: true
     })
     
-    })
     
     payments.pay("charge", {
         // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
@@ -48,14 +47,13 @@ const pay = function () {
         skin: "classic",
         requireEmail: false,
     }).then(function(widgetResult) {
-        sozvezdie()
+        sozvezdie(payment_Name)
 
         console.log('result', widgetResult);
     }).catch(function(error) {
         console.log('error', error);
     });
-   };
-   };
+};
 
 widget_open.addEventListener('click', function (e) {
     e.preventDefault();
