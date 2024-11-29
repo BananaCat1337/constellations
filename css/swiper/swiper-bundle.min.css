@@ -51,6 +51,10 @@ html {
     box-sizing: content-box
 }
 
+.constellation__slider {
+    overflow: hidden;
+}
+
 .swiper-android .swiper-slide,
 .swiper-wrapper {
     transform: translate3d(0px, 0, 0)
