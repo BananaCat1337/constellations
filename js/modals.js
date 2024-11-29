@@ -40,7 +40,7 @@ export function sozvezdie(name) {
   popUp.classList.add("active");
   const popUpSozvezdie = document.getElementById("popUp-sozvezdie");
   const userNameElement = popUpSozvezdie.querySelector("#userName");
-  userNameElement.innerHTML = `${name},`;
+  userNameElement.innerHTML = `${name.toUpperCase()},`;
 }
 
 for (var i = 0; i < closePopUp.length; i++) {
