@@ -1,15 +1,18 @@
 @font-face {
   font-family: Angst-Bold;
-  src: url('../../../fonts/angst/static/Angst-Bold.woff');
+  src: url('/constellations/fonts/angst/static/Angst-Bold.woff');
 }
+
 @font-face {
   font-family: Hauora-Medium;
-  src: url('../../../fonts/hauora/fonts/otf/Hauora-Medium.otf');
+  src: url('/constellations/fonts/hauora/fonts/otf/Hauora-Medium.otf');
 }
+
 @font-face {
   font-family: Hauora-ExtraLight;
-  src: url('../../../fonts/hauora/fonts/otf/Hauora-ExtraLight.otf');
+  src: url('/constellations/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf');
 }
+
 body {
   font-family: 'Angst-Bold';
   color: white;
@@ -19,16 +22,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .cardBody {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1100px;
   height: 588px;
-  background-image: url('../../../assets/cardSvgs/background.svg');
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0.05%, rgba(1, 21, 171, 0.2) 100%);
   backdrop-filter: blur(28.6857px);
 }
+
 .constellationName {
   display: flex;
   font-family: 'Angst-Bold';
@@ -37,6 +41,7 @@ body {
   color: #eca100;
   line-height: 60px;
 }
+
 .constellationContainer {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@ body {
   margin-left: 5%;
   margin-bottom: 5%;
 }
+
 .doneInfoContainer {
   display: flex;
   flex-direction: column;
@@ -51,21 +57,25 @@ body {
   width: 50%;
   height: 100%;
 }
+
 .constellationImage {
   margin-top: 10%;
   margin-left: 10%;
 }
+
 .userName {
   margin-top: 20%;
   font-family: Hauora-Medium;
   font-size: 22px;
   margin-bottom: 40px;
 }
+
 .shareThisInfo {
   width: 70%;
   font-family: Hauora-ExtraLight;
   font-size: 20px;
 }
+
 .buttonContainer {
   margin-top: 10%;
 
@@ -73,6 +83,7 @@ body {
   width: 309px;
   height: 60px;
 }
+
 .btn {
   border: none;
   color: #080839;
