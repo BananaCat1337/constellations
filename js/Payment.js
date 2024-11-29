@@ -48,7 +48,6 @@ const pay = function () {
     })
     .then(function (widgetResult) {
       sozvezdie(payment_Name);
-
       console.log("result", widgetResult);
     })
     .catch(function (error) {

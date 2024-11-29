@@ -22,13 +22,16 @@ addEventListener("DOMContentLoaded", (event) => {
   const updateThumb = () => {
     const text = document.querySelector(".main-title");
     const value = rangeInput.value;
-    text.classList.add("nevidimka");
     if (value < 72) {
       prevPart = currPart;
+      text.classList.remove("nevidimka")
+      text.classList.add("antinevidimka")
       currPart = 0;
       changeCurrentSlide(currPart, prevPart);
     } else if (value >= 72 && value < 144) {
       prevPart = currPart;
+      text.classList.remove("antinevidimka")
+      text.classList.add("nevidimka")
       currPart = 1;
       changeCurrentSlide(currPart, prevPart);
     } else if (value >= 144 && value < 216) {
