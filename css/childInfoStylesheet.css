@@ -75,7 +75,7 @@ p {
   width: 100%;
   color: #fff;
   height: 100%;
-  background-image: url(../childInfoSvgs/backgroundFrontside.svg);
+  background-image: url(/constellations/cards/childInfoCards/childInfoSvgs/backgroundFrontside.svg);
   background-size: cover;
 }
 .frontsideContainer {
