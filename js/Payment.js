@@ -40,6 +40,7 @@ const pay = function () {
       description: "Тестовая оплата",
       amount: payment_amount,
       currency: "RUB",
+      autoClose: 5,
       invoiceId: "123",
       accountId: "123",
       email: payment_email,
