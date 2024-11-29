@@ -29,6 +29,16 @@
   line-height: 130%;
 }
 
+.userName {
+  font-family: sans-serif;
+  color: #f6f1ff;
+
+  font-size: 1.2vw;
+
+  line-height: 130%;
+}
+
+
 .infoText .b1 {
   font: 1vw sans-serif;
 }

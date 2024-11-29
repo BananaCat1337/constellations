@@ -224,16 +224,36 @@ button:hover {
   width: 60%;
 }
 
+.popUp-sozvezdie .info-container .right-elements {
+  width: 45%;
+}
+.popUp-sozvezdie .info-container .left-elements {
+  width: 35%;
+}
+.popUp-sozvezdie .info-container .left-elements img {
+  height: 60%;
+}
+.popUp-sozvezdie .info-container {
+  width: 95%;
+  height: 72%;
+}
+
 .popUp-sozvezdie {
   display: none;
-
-  height: 80%;
-  width: 74%;
 
   z-index: 15;
 }
 .popUp-sozvezdie.active {
   display: flex;
+}
+
+.popUp-share {
+  display: none;
+}
+.popUp-share.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
