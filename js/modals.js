@@ -50,7 +50,7 @@ for (var i = 0; i < closePopUp.length; i++) {
 
 for (var i = 0; i < openPopUp_3.length; i++) {
     openPopUp_3[i].addEventListener('click', function (e) {
-        
+
         countWindows += 1
         openPopUps()
         e.preventDefault()
@@ -69,7 +69,6 @@ for (var i = 0; i < openPopUp_form.length; i++) {
     })
 }
 
-console.log(openPopUp_form)
 
 openPopUp_1.addEventListener('click', function (e) {
     countWindows += 1
@@ -90,7 +89,7 @@ openPopUp_2.addEventListener('click', function (e) {
 menu.addEventListener('click', function (e) {
     e.preventDefault()
     e.menu_click = true
-    
+
 })
 
 open_menu.addEventListener('click', function (e) {
@@ -111,15 +110,15 @@ document.body.addEventListener('click', function (e) {
 
 lower_popUp_botton.addEventListener('click', function (e) {
     e.preventDefault()
-    
-    
+
+
     if (lower_popUp_open == false) {
         lower_popUp_title.classList.add('active')
         lower_popUp.classList.add('active')
         lower_popUp.classList.remove('desactive')
         lower_popUp_botton.classList.add('active')
         lower_popUp_open = true
-    }else {
+    } else {
         lower_popUp_title.classList.remove('active')
         lower_popUp.classList.remove('active')
         lower_popUp.classList.add('desactive')
