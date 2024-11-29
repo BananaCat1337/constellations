@@ -19,7 +19,7 @@
     font-size: 4.5vw;
   }
   .infoText .b1 {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }
   .chekbox a {
     font-size: 3vw;
@@ -31,7 +31,7 @@
     font-size: 5vw;
   }
   .b1 {
-    font-size: 4vw;
+    font-size: 3.5vw !important;
   }
   .b2 {
     font-size: 3.7vw;
