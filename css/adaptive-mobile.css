@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 @media (max-width: 768px) {
   .b2 {
     font-size: 4vw;
@@ -13,7 +12,7 @@
 
 @media (max-width: 500px) {
   .bgImage-container {
-    background-image: url('../assets/mobilka-Backgraund.svg');
+    background-image: url("../assets/mobilka-Backgraund.svg");
   }
   .whoIs p {
     font-size: 4.5vw;
@@ -45,7 +44,6 @@
   .b4 {
     font-size: 3.5vw;
   }
-  
 
   .botton_text {
     font-size: 4.6vw;
@@ -62,6 +60,7 @@
   }
 
   .constellation__slider {
+    overflow: hidden;
     margin-top: 38vh;
     z-index: 15;
     height: 40vh;
@@ -134,10 +133,9 @@
     padding: 5vh 3vw 5vh 3vw;
   }
 
-  
   .namePhotoConstell img {
     height: 100%;
-    width: 55%; 
+    width: 55%;
   }
   .nameConstell_Container img {
     width: 50%;
@@ -146,7 +144,7 @@
     display: flex;
 
     align-items: center;
-    
+
     width: 45%;
   }
 
@@ -157,8 +155,6 @@
     align-items: center;
     padding: 5vh 3vw 5vh 3vw;
   }
-
-
 
   .popUp-large .info-container {
     display: flex;
@@ -297,7 +293,6 @@
 
     text-align: right;
   }
-
 
   .main-wrapper {
     width: 100vw;

@@ -22,6 +22,7 @@ addEventListener("DOMContentLoaded", (event) => {
   const updateThumb = () => {
     const text = document.querySelector(".main-title");
     const value = rangeInput.value;
+    text.classList.add("nevidimka");
     if (value < 72) {
       prevPart = currPart;
       currPart = 0;

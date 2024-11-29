@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   let swiper = new Swiper(".constellation__slider", {
     slidesPerView: 1,
-    allowTouchMove: false,
+    allowTouchMove: true,
     spaceBetween: 90,
     watchOverflow: true,
-    speed: 400,
+    speed: 1200,
     loop: false,
     pagination: false,
     navigation: {

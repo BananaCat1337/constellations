@@ -165,7 +165,7 @@ button:hover {
   width: 110%;
 
   font-size: 0.7vw;
-  color:rgba(246, 241, 255, 0.4);
+  color: rgba(246, 241, 255, 0.4);
 
   text-align: center;
 }
@@ -258,8 +258,6 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
-
 
 main {
   width: 100%;
@@ -452,7 +450,7 @@ main {
 }
 
 .step h4 {
-  font-family: 'Angst';
+  font-family: "Angst";
 
   font-size: 1.5rem;
 
@@ -487,7 +485,7 @@ main {
   align-items: flex-end;
 }
 
-input[type='range'] {
+input[type="range"] {
   appearance: none;
   background-color: white;
   width: 100%;
@@ -496,7 +494,7 @@ input[type='range'] {
 }
 
 .slider-input::before {
-  content: '';
+  content: "";
   width: 98%;
   height: 36px;
   bottom: 3%;
@@ -526,11 +524,11 @@ input[type='range'] {
   background-image: url(../assets/scroll/72scroll.svg);
 }
 
-input[type='range']::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   /* background-image: url(../assets/scroll/zeroScroll.svg); */
 }
 
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -moz-appearance: none !important;
   appearance: none !important;
   position: relative;
@@ -567,7 +565,7 @@ body {
 }
 
 html {
-  font-family: 'Khula', sans-serif;
+  font-family: "Khula", sans-serif;
 }
 
 .bolvanka {
@@ -633,7 +631,11 @@ html {
   transition-duration: all ease 1s;
   animation: smooth 1s ease-in;
 }
-
+.antinevidimka {
+  opacity: 100 !important;
+  transition-duration: all ease 1s !important;
+  animation: smooth 1s ease-in !important;
+}
 @-webkit-keyframes smooth {
   0% {
     opacity: 1;
@@ -777,7 +779,7 @@ input.b3 {
 }
 
 input.b3:focus {
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid #007bff;
 }
 
 input.b3.invalid {
@@ -791,5 +793,5 @@ input.b3.invalid {
 }
 
 .b5 {
-  color: #F6F1FF;
+  color: #f6f1ff;
 }
