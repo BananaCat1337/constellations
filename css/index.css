@@ -303,7 +303,7 @@ main {
   transition-duration: all ease 1s;
   width: 90%;
 
-  margin-top: 4%;
+  margin-top: 6%;
 }
 
 .main-title-wrapper {
@@ -539,8 +539,8 @@ input[type='range']::-webkit-slider-thumb {
   z-index: 2;
 }
 .constellationToClick {
-  width: 30vh;
-  height: 30vh;
+  width: 28vh;
+  height: 28vh;
 }
 
 .range-text {
