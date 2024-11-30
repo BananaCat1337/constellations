@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: ".constellation__slider_button-next",
       prevEl: ".constellation__slider_button-prev",
     },
+    allowTouchMove: false,
   });
 
   const hiddenSlides = document.querySelectorAll(".hideConstellationGroup__slider");

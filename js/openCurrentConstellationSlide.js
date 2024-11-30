@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     effect: "coverflow",
     coverflowEffect: {
       rotate: 180,
-      stretch: 10,
+      stretch: 0,
       depth: 0,
       modifier: 1,
     },
