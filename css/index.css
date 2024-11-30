@@ -528,53 +528,14 @@ input[type="range"] {
 }
 
 .slider-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
+  /* -webkit-appearance: none; */
+  /* appearance: none; */
   width: 80px;
   height: 16px;
   background: orange;
   border-radius: 50%;
   cursor: pointer;
   margin-top: -2px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -moz-appearance: none !important;
-  appearance: none !important;
-  position: relative;
-  height: 20px;
-  width: 100px;
-  background: transparent;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.constellationToClick {
-  opacity: 0.7;
-  width: 28vh;
-  height: 28vh;
-}
-
-.small_picture {
-  width: 24vh;
-  height: 24vh;
-}
-
-.constellationToClick.mountains {
-  height: 38vh;
-  width: 30vh;
-
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.constellationToClick:hover {
-  opacity: 1;
-  filter: contrast(1.75) brightness(1.75);
-}
-
-.hideSmth {
-  display: none;
 }
 
 .range-text {
@@ -591,6 +552,46 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 5px;
   padding: 2px 6px;
   z-index: 11;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -moz-appearance: none !important;
+  appearance: none !important;
+  transform: scaleX(5) scaleY(1.2);
+  bottom: 5px;
+  position: relative;
+  height: 20px;
+  width: 100px;
+  background: transparent !important;
+  cursor: pointer;
+  z-index: 2;
+  z-index: 200;
+}
+
+.constellationToClick {
+  opacity: 0.7;
+  width: 28vh;
+  height: 28vh;
+}
+
+.small_picture {
+  width: 24vh;
+  height: 24vh;
+}
+
+.constellationToClick.mountains {
+  height: 38vh;
+  width: 30vh;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.constellationToClick:hover {
+  opacity: 1;
+  filter: contrast(1.75) brightness(1.75);
+}
+
+.hideSmth {
+  display: none;
 }
 
 .marks-container {

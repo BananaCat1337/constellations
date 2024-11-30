@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const value = rangeInput.value;
     thumb.textContent = `||${value}°||`;
 
-    const percentage =
-      (value - rangeInput.min) / (rangeInput.max - rangeInput.min);
+    const percentage = (value - rangeInput.min) / (rangeInput.max - rangeInput.min);
     const offset = percentage * rangeInput.clientWidth;
-    thumb.style.left = `${offset}px`;
+    let pos = 5;
 
+    thumb.style.left = `${offset}px`;
     const marks = document.querySelectorAll(".mark");
     marks.forEach((mark) => {
       const markValue = parseInt(mark.dataset.value, 10);
