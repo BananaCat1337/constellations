@@ -555,9 +555,17 @@ input[type="range"]::-webkit-slider-thumb {
   height: 28vh;
 }
 
+.small_picture {
+  width: 24vh;
+  height: 24vh;
+}
+
 .constellationToClick.mountains {
-  height: 35vh;
-  width: 35vh;
+  height: 38vh;
+  width: 30vh;
+
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .constellationToClick:hover {
