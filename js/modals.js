@@ -76,6 +76,7 @@ for (var i = 0; i < openPopUp_form.length; i++) {
     countWindows += 1;
     openPopUps();
     e.preventDefault();
+    popUp3.classList.remove("active");
     popUp_form.classList.add("active");
     popUp.classList.add("active");
   });

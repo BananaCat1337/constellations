@@ -17,10 +17,14 @@
   fill: red !important;
   max-width: 300px;
   max-height: 300px;
+  cursor: pointer;
 }
 .constellationToClick > svg > circle,
 .constellationToClick > svg > path .constellationToClick > svg > g {
   fill: red !important;
+}
+.topConstellationPair_constellationGroup__slider.traffic_lights {
+  height: 60%;
 }
 .topConstellationPair_constellationGroup__slider {
   width: 60%;
