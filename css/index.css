@@ -228,6 +228,10 @@ label {
   z-index: 15;
 }
 
+.swiper-button-next-mobyle, .swiper-button-prev-mobyle {
+  display: none !important;
+}
+
 .popUp-form {
   display: none;
 }
