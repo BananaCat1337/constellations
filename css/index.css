@@ -594,8 +594,9 @@ input[type="range"]::-webkit-slider-thumb {
   top: 50%;
   transform: translate(-50%, 76%);
   height: 22px;
+  opacity: 0.8;
   width: 1px;
-  background: #fff;
+  background: #F6F1FF;
 }
 
 .mark[style*="hidden"] {
