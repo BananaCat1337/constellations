@@ -1,6 +1,7 @@
 :root {
   --constellationColor: red;
 }
+
 html {
   background-color: black;
 }
@@ -164,6 +165,7 @@ button:hover {
 
   margin-bottom: 0;
 }
+
 .chekbox a,
 label {
   width: 110%;
@@ -173,6 +175,7 @@ label {
 
   text-align: center;
 }
+
 .chekbox {
   width: 100%;
 }
@@ -183,6 +186,7 @@ label {
 
   align-items: flex-end;
 }
+
 .PopUp-image-mobile {
   display: none;
 }
@@ -190,6 +194,7 @@ label {
 .popup_close_mobile {
   display: none;
 }
+
 .popUp1 {
   display: none;
 }
@@ -241,12 +246,15 @@ label {
 .popUp-sozvezdie .info-container .right-elements {
   width: 45%;
 }
+
 .popUp-sozvezdie .info-container .left-elements {
   width: 35%;
 }
+
 .popUp-sozvezdie .info-container .left-elements img {
   height: 60%;
 }
+
 .popUp-sozvezdie .info-container {
   width: 95%;
   height: 72%;
@@ -257,6 +265,7 @@ label {
 
   z-index: 15;
 }
+
 .popUp-sozvezdie.active {
   display: flex;
 }
@@ -264,6 +273,7 @@ label {
 .popUp-share {
   display: none;
 }
+
 .popUp-share.active {
   display: flex;
   align-items: center;
@@ -550,15 +560,18 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   z-index: 2;
 }
+
 .constellationToClick {
   opacity: 0.7;
   width: 28vh;
   height: 28vh;
 }
+
 .constellationToClick:hover {
   opacity: 1;
   filter: contrast(1.75) brightness(1.75);
 }
+
 .hideSmth {
   display: none;
 }
@@ -790,6 +803,7 @@ a:visited {
   overflow: hidden;
   z-index: -2;
 }
+
 /* настройка когда не проходит эмэйл, имя ввод */
 input.b3 {
   border: none;
@@ -810,7 +824,8 @@ input.b3.invalid {
 .error-message {
   color: red;
   font-size: 12px;
-  display: none; /* Сообщение скрыто по умолчанию */
+  display: none;
+  /* Сообщение скрыто по умолчанию */
 }
 
 .b5 {

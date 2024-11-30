@@ -6,13 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const swiperCards = new Swiper(".card__content", {
     loop: true,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 180,
+      stretch: 10,
+      depth: 0,
+      modifier: 1,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     centeredSlides: true,
     slidesPerView: 3,
-    spaceBetween: 80,
+    spaceBetween: 50,
     breakpoints: {
       200: { slidesPerView: 1 },
       500: { slidesPerView: 2 },
@@ -28,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetConstellation = el.getAttribute("data-constellation");
 
       const targetCardIndex = [...cardContainers].findIndex(
-        (card) => card.getAttribute("data-constellation") === targetConstellation
+        (card) =>
+          card.getAttribute("data-constellation") === targetConstellation
       );
 
       if (targetCardIndex !== -1) {
