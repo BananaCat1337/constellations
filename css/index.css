@@ -567,6 +567,11 @@ input[type="range"]::-webkit-slider-thumb {
   height: 28vh;
 }
 
+.constellationToClick.mountains {
+  height: 35vh;
+  width: 35vh;
+}
+
 .constellationToClick:hover {
   opacity: 1;
   filter: contrast(1.75) brightness(1.75);

@@ -198,6 +198,7 @@ p {
 
 .swiper-slide-active .frontsideBody {
   display: flex;
+  z-index: 10;
 }
 
 .swiper-slide-active .backsideBody {
