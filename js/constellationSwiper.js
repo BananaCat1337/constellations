@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: false,
     pagination: false,
     navigation: {
-      nextEl: ".constellation__slider_button-next",
-      prevEl: ".constellation__slider_button-prev",
+      nextEl: ".swiper-button-next-mobyle",
+      prevEl: ".swiper-button-prev-mobyle",
     },
   });
 
