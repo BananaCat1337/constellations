@@ -20,6 +20,15 @@
 
 /* Стили для свайпера */
 
+.constellClische {
+  font-size: 1.2vw;
+  
+}
+
+.constellName {
+  font-size: 1.4vw;
+}
+
 .whoIs p {
   font-family: sans-serif;
   color: #f6f1ff;
