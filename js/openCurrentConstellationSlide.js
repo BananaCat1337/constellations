@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const swiperCards = new Swiper(".card__content", {
     loop: true,
     effect: "coverflow",
+    speed: 1000,
     coverflowEffect: {
       rotate: 180,
       stretch: 0,
@@ -35,10 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.addEventListener("click", () => {
       const targetConstellation = el.getAttribute("data-constellation");
 
-      const targetCardIndex = [...cardContainers].findIndex(
-        (card) =>
-          card.getAttribute("data-constellation") === targetConstellation
-      );
+      const targetCardIndex = [...cardContainers].findIndex((card) => card.getAttribute("data-constellation") === targetConstellation);
 
       if (targetCardIndex !== -1) {
         popUp3.classList.add("active");

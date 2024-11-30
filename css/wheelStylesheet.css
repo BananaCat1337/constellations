@@ -12,17 +12,6 @@
   top: 0;
 }
 
-.constellationToClick {
-  z-index: 10;
-  fill: red !important;
-  max-width: 300px;
-  max-height: 300px;
-  cursor: pointer;
-}
-.constellationToClick > svg > circle,
-.constellationToClick > svg > path .constellationToClick > svg > g {
-  fill: red !important;
-}
 .topConstellationPair_constellationGroup__slider.reduce_line {
   height: 60%;
 }
@@ -60,4 +49,7 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.collapsedGroup {
+  width: 40%;
 }

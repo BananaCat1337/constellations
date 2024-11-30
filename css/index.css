@@ -609,7 +609,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 22px;
   opacity: 0.8;
   width: 1px;
-  background: #F6F1FF;
+  background: #f6f1ff;
 }
 
 .mark[style*="hidden"] {
