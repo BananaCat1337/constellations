@@ -190,11 +190,14 @@ p {
     }
     .cardcontainer:hover .frontsideBody {
     display: flex;
+    animation: disappearance 0.3s 0s 1 ease-out;
     } */
 /* .swiper-slide .swiper-slide-active .backsideBody .frontsideBody */
 .frontsideBody {
   display: none;
 }
+
+
 
 .swiper-slide-active .frontsideBody {
   display: flex;

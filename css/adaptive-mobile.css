@@ -65,9 +65,21 @@
     right: 0;
   }
 
+
+  .collapsedGroup {
+    /* width: 70%; */
+    width: inherit;
+  }
+  .topConstellationPair_constellationGroup__slider {
+    width: 70%;
+  }
+  .bottomConstellationPair_constellationGroup__slider {
+    width: 90%;
+  }
+
   .constellationToClick {
-    width: 60%;
-    height: 60%;
+    width: 30vw;
+    height: 30vw;
   }
   .constellationToClick.mountains {
     width: 70%;
