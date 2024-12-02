@@ -149,7 +149,7 @@
     height: 5vh;
     width: 5vh;
 
-    top: 16%;
+    top: 10%;
 
     z-index: 40;
   }
@@ -338,9 +338,6 @@
     text-align: right;
   }
 
-  .wrapper {
-    height: 90vh;
-  }
   .main-wrapper {
     width: 100vw;
   }
@@ -382,7 +379,7 @@
 
     overflow: hidden;
 
-    height: 58vh;
+    height: 63vh;
 
     z-index: 10;
   }
