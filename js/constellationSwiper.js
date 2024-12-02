@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let swiper = new Swiper(".constellation__slider", {
     slidesPerView: 1,
-    allowTouchMove: true,
+    allowTouchMove: false,
     spaceBetween: 90,
     watchOverflow: true,
     speed: 1200,
@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: ".swiper-button-next-mobyle",
       prevEl: ".swiper-button-prev-mobyle",
+    },
+    breakpoints: {
+      200: { allowTouchMove: true },
+      500: {},
+      1150: {},
+      1500: {},
+      1600: {},
+      1700: {},
     },
   });
 
