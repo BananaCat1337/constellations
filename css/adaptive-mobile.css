@@ -12,7 +12,7 @@
 
 @media (max-width: 500px) {
   .bgImage-container {
-    height: 95vh;
+    height: 92vh;
     background-image: url("../assets/mobileBackground.png");
   }
   .input-container {
@@ -340,7 +340,7 @@
   }
 
   .wrapper {
-    height: 95vh;
+    height: 92vh;
   }
 
   .main-wrapper {
