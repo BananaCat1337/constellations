@@ -14,6 +14,12 @@
   .bgImage-container {
     background-image: url("../assets/mobileBackground.png");
   }
+  html {
+    background-color: #ffb007;
+  }
+  body {
+    background-color: #07ff30;
+  }
   .input-container {
     display: none;
   }
@@ -384,7 +390,7 @@
 
     height: 58vh;
 
-    z-index: revert-layer;
+    z-index: 50;
   }
 
   .lower-popUp-wraper {
