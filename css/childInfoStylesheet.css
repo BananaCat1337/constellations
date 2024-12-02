@@ -168,9 +168,6 @@ p {
   background-color: #ffb007;
 }
 
-.whoIs {
-}
-
 .nameConstell_Container img {
   width: 90%;
 }
@@ -186,14 +183,6 @@ p {
   transform-style: preserve-3d;
 }
 
-/* .cardContainer:hover .backsideBody {
-    display: none;
-    }
-    .cardcontainer:hover .frontsideBody {
-    display: flex;
-    animation: disappearance 0.3s 0s 1 ease-out;
-    } */
-/* .swiper-slide .swiper-slide-active .backsideBody .frontsideBody */
 .frontsideBody {
   display: none;
 }
