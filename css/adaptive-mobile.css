@@ -414,7 +414,7 @@
   }
   .lower-popUp-wraper.desactive {
     animation: lower-popUp-off 0.5s 0s 1 ease-out;
-    top: 44vh;
+    top: 48vh;
   }
 
   .info-blocks .left {
@@ -595,7 +595,7 @@
   }
 
   100% {
-    top: 44vh;
+    top: 48vh;
   }
 }
 
