@@ -9,7 +9,7 @@ constellationCards.forEach((card) => {
   card.addEventListener("click", () => {
     const newTitle = card.getAttribute("data-constellation");
     const constellation = card.getAttribute("img-constellation");
-    constellationImage.src = `./cards/childInfoCards/childInfoSvgs/${constellation}.svg`;
+    constellationImage.src = `/constellations/cards/childInfoCards/childInfoSvgs/${constellation}.svg`;
     constellationTitle.textContent = `${newTitle}`;
     constellationTitleShare.textContent = `${newTitle}`;
   });
