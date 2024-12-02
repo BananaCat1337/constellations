@@ -429,7 +429,7 @@
     display: block;
 
     margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 20vh;
   }
   .title_lower_popUp.active {
     display: none;
