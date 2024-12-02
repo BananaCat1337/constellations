@@ -12,6 +12,7 @@
 
 @media (max-width: 500px) {
   .bgImage-container {
+    height: 90vh;
     background-image: url("../assets/mobileBackground.png");
   }
   .input-container {
