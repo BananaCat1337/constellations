@@ -258,7 +258,7 @@
 
   .header {
     width: 95vw;
-    height: 10vh;
+    height: 10%;
     padding: 4vh 2vw 0 4vw;
     background: rgba(255, 255, 255, 0);
 
@@ -270,7 +270,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    height: 90vh;
+    height: 90%;
   }
 
   .menu {
@@ -338,6 +338,9 @@
     text-align: right;
   }
 
+  .wrapper {
+    height: 90vh;
+  }
   .main-wrapper {
     width: 100vw;
   }
@@ -375,7 +378,7 @@
     align-items: flex-end;
 
     left: 0;
-    top: 42vh;
+    top: 37%;
 
     overflow: hidden;
 
@@ -471,6 +474,8 @@
   .lower-popUp-botton {
     position: absolute;
     top: -3.5vh;
+
+    width: 100%;
 
     z-index: 4;
     transform: rotate(0);
