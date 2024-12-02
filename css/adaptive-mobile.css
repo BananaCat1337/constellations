@@ -12,7 +12,7 @@
 
 @media (max-width: 500px) {
   .bgImage-container {
-    height: 90vh;
+    height: 95vh;
     background-image: url("../assets/mobileBackground.png");
   }
   .input-container {
@@ -339,6 +339,10 @@
     text-align: right;
   }
 
+  .wrapper {
+    height: 95vh;
+  }
+
   .main-wrapper {
     width: 100vw;
   }
@@ -380,7 +384,7 @@
 
     overflow: hidden;
 
-    height: 63vh;
+    height: 58vh;
 
     z-index: 10;
   }
