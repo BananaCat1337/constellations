@@ -301,7 +301,7 @@ main {
 .bgImage-container {
   position: absolute;
   background-image: url(../assets/bg.png);
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   background-size: cover;
   overflow-x: hidden;
