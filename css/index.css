@@ -40,7 +40,7 @@ button:hover {
 
   background-color: rgba(8, 0, 20, 0.7);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   z-index: 12;
 
   justify-content: center;
@@ -66,7 +66,7 @@ button:hover {
 }
 
 .popUp-large {
-  background-image: url(../assets/Large-popUp-backgraund.png);
+  background-image: url(../assets/Large-popUp-background.png);
   background-size: cover;
 
   flex-direction: column;
@@ -74,7 +74,7 @@ button:hover {
 
   -webkit-backdrop-filter: blur(30px);
 
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   background-color: rgba(24, 14, 68, 0.9);
 
   height: 62%;
@@ -337,9 +337,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition:
-    opacity 1s ease-in-out,
-    transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   height: 100%;
   opacity: 1;
   transform: scale(0.9);
@@ -363,7 +361,7 @@ main {
 
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
   width: 37%;
   height: 75%;
@@ -407,7 +405,7 @@ main {
 
 .info-blocks .left .video-content {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 13vw;
   height: 15vh;
   max-height: 170px;
@@ -484,7 +482,7 @@ main {
 }
 
 .step h4 {
-  font-family: 'Angst';
+  font-family: "Angst";
 
   font-size: 1.5rem;
 
@@ -515,10 +513,10 @@ main {
   margin: 54px auto 0 auto;
 }
 
-input[type='range'] {
+input[type="range"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: white;
   width: 100%;
   height: 0;
@@ -553,8 +551,8 @@ input[type='range'] {
 
 .range-text {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   width: 4vw;
   pointer-events: none;
   position: absolute;
@@ -568,10 +566,10 @@ input[type='range'] {
   padding: 2px 6px;
   z-index: 11;
 }
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
-          appearance: none !important;
+  appearance: none !important;
   transform: scaleX(5) scaleY(1.2);
   bottom: 5px;
   position: relative;
@@ -585,8 +583,8 @@ input[type='range']::-webkit-slider-thumb {
 
 .constellationToClick {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   opacity: 0.7;
   width: 28vh;
   height: 28vh;
@@ -632,7 +630,7 @@ input[type='range']::-webkit-slider-thumb {
   background: #f6f1ff;
 }
 
-.mark[style*='hidden'] {
+.mark[style*="hidden"] {
   opacity: 0;
   visibility: hidden;
 }
@@ -651,7 +649,7 @@ body {
 }
 
 html {
-  font-family: 'Khula', sans-serif;
+  font-family: "Khula", sans-serif;
 }
 
 .bolvanka {
@@ -716,16 +714,12 @@ html {
 .nevidimka {
   opacity: 0;
   transform: scale(0.9);
-  transition:
-    opacity 1s ease-in-out,
-    transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .antinevidimka {
   opacity: 100;
-  transition:
-    opacity 1s ease-in-out,
-    transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 footer {
