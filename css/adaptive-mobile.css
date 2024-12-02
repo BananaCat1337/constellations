@@ -384,9 +384,11 @@
 
     height: 58vh;
 
-    z-index: 15;
+    z-index: 10;
   }
-
+  .info-blocks.active {
+    z-index: 20;
+  }
   .lower-popUp-wraper {
     display: flex;
     justify-content: center;

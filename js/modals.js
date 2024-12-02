@@ -19,6 +19,7 @@ const open_menu = document.getElementById("open_menu");
 
 const menu = document.getElementById("menu");
 const lower_popUp = document.getElementById("lower_popUp");
+const info_blocks = document.getElementById('info_blocks');
 const lower_popUp_title = document.getElementById("lower_popUp_title");
 
 let countWindows = 0;
@@ -66,6 +67,12 @@ for (var i = 0; i < openPopUp_3.length; i++) {
     countWindows += 1;
     openPopUps();
     e.preventDefault();
+    info_blocks.classList.remove("active");
+    lower_popUp_title.classList.remove("active");
+    lower_popUp.classList.remove("active");
+    lower_popUp.classList.add("desactive");
+    lower_popUp_botton.classList.remove("active");
+    lower_popUp_open = false;
     popUp3.classList.add("active");
     popUp.classList.add("active");
   });
@@ -131,12 +138,14 @@ lower_popUp_botton.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (lower_popUp_open == false) {
+    info_blocks.classList.add("active");
     lower_popUp_title.classList.add("active");
     lower_popUp.classList.add("active");
     lower_popUp.classList.remove("desactive");
     lower_popUp_botton.classList.add("active");
     lower_popUp_open = true;
   } else {
+    info_blocks.classList.remove("active");
     lower_popUp_title.classList.remove("active");
     lower_popUp.classList.remove("active");
     lower_popUp.classList.add("desactive");
