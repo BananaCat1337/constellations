@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'Hauora-regular';
+  src: url(/constellations/fonts/hauora/fonts/web/Hauora-Regular.woff);
+}
+
+@font-face {
   font-family: 'Angst-Normal';
   src: url(../fonts/angst/static/Angst-Normal.otf);
 }
@@ -54,7 +59,7 @@
 
 /* b1 */
 .b1 {
-  font-family: 'Haora-Normal';
+  font-family: 'Hauora-regular';
   color: #f6f1ff;
 
   font-size: 1vw;
@@ -86,7 +91,7 @@ h2 {
 /* b2 */
 
 .b2 {
-  font-family: 'Angst-Normal';
+  font-family: 'Hauora-regular';
   font-size: 2.7vw;
   font-weight: normal;
 
@@ -98,7 +103,7 @@ h2 {
 /* b3 */
 
 .b3 {
-  font-family: 'Angst-Normal';
+  font-family: 'Hauora-regular';
   font-size: 0.8vw;
   font-weight: normal;
 
@@ -107,8 +112,8 @@ h2 {
   color: #ECA100;
 }
 
-.b3-1 {
-  font-family: 'Angst-Normal';
+.button-nav {
+  font-family: 'Hauora-regular';
   font-size: 0.8vw;
   font-weight: normal;
 
@@ -131,7 +136,7 @@ h4 {
 /* b4 */
 
 .b4 {
-  font-family: 'Haora-Normal';
+  font-family: 'Hauora-regular';
   color: #f6f1ff;
   line-height: 130%;
 
@@ -141,7 +146,7 @@ h4 {
 /* b5 */
 
 .b5 {
-  font-family: 'Haora-Normal';
+  font-family: 'Hauora-regular';
   color: #f6f1ff;
   line-height: 130%;
 
@@ -149,7 +154,7 @@ h4 {
 }
 
 .botton_text {
-  font-family: 'Haora-Normal';
+  font-family: 'Hauora-regular';
   color: #080839;
   line-height: 130%;
 
@@ -159,7 +164,7 @@ h4 {
 .main-sub-title {
   margin-top: 2%;
 
-  font-family: 'Haora-Normal';
+  font-family: 'Hauora-regular';
   color: #f6f1ff;
   font-size: 1vw;
 }
