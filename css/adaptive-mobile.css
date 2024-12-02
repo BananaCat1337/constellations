@@ -149,9 +149,9 @@
     height: 5vh;
     width: 5vh;
 
-    top: 10vh;
+    top: 16%;
 
-    z-index: 20;
+    z-index: 40;
   }
 
   .popUp-large {
@@ -482,6 +482,8 @@
 
     display: block;
     background-color: rgba(0, 0, 0, 0);
+
+    z-index: 50;
   }
   .lower-popUp-botton.active {
     transform: rotate(180deg);
