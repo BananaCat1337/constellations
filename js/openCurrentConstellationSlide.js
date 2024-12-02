@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
     centeredSlides: true,
+
     initialSlide: 2,
     slidesPerView: 3,
     spaceBetween: 50,
