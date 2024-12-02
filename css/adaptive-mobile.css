@@ -14,9 +14,6 @@
   .bgImage-container {
     background-image: url("../assets/mobileBackground.png");
   }
-  html {
-    background-color: #ffb007;
-  }
   .input-container {
     display: none;
   }
@@ -476,10 +473,9 @@
   }
   .lower-popUp-botton {
     position: absolute;
-    top: -5.5vh;
+    top: -3.5vh;
 
     width: 100%;
-    height: 20%;
 
     z-index: 4;
     transform: rotate(0);
