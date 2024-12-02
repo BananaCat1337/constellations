@@ -384,7 +384,7 @@
 
     height: 58vh;
 
-    z-index: 50;
+    z-index: 15;
   }
 
   .lower-popUp-wraper {
@@ -473,7 +473,7 @@
   }
   .lower-popUp-botton {
     position: absolute;
-    top: -5.5vh;
+    top: -3.5vh;
 
     width: 100%;
 
