@@ -87,6 +87,13 @@ button:hover {
   z-index: 15;
 }
 
+.PopUp_video {
+  display: none;
+}
+.PopUp_video.active {
+  display: flex;
+}
+
 .popUp-large .info-container {
   display: flex;
   justify-content: space-between;

@@ -5,6 +5,7 @@ const openPopUp_2 = document.getElementById("popup2_open");
 const openPopUp_3 = document.getElementsByClassName("popup3_open");
 const openPopUp_form = document.getElementsByClassName("popup_form_open");
 const openPopUp_share = document.getElementById("openPopUp_share");
+const openPopUp_video = document.getElementById("openPopUp_video");
 
 const popUp1 = document.getElementById("popUp1");
 const popUp2 = document.getElementById("popUp2");
@@ -12,6 +13,7 @@ const popUp3 = document.getElementById("popUp3");
 const popUp_form = document.getElementById("popUp-form");
 const popUp_sozvezdie = document.getElementById("popUp-sozvezdie");
 const popUp_share = document.getElementById("popUp_share");
+const PopUp_video = document.getElementById("PopUp_video");
 const popUp = document.getElementById("popUp");
 
 const lower_popUp_botton = document.getElementById("lower_popUp_botton");
@@ -56,6 +58,7 @@ for (var i = 0; i < closePopUp.length; i++) {
     popUp_form.classList.remove("active");
     popUp_sozvezdie.classList.remove("active");
     popUp_share.classList.remove("active");
+    PopUp_video.classList.remove('active')
     popUp.classList.remove("active");
 
     countWindows = 0;
@@ -88,6 +91,14 @@ for (var i = 0; i < openPopUp_form.length; i++) {
     popUp.classList.add("active");
   });
 }
+
+openPopUp_video.addEventListener("click", function (e) {
+  countWindows += 1;
+  openPopUps();
+  e.preventDefault();
+  PopUp_video.classList.add("active");
+  popUp.classList.add("active");
+});
 
 openPopUp_1.addEventListener("click", function (e) {
   countWindows += 1;
