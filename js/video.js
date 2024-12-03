@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   openPopUpBtn.addEventListener("click", () => {
     videoElement.style.display = "block";
-    videoElement
-      .play()
-      .catch((error) => console.error("Ошибка при воспроизведении:", error));
+    videoElement.play();
   });
 
   parentContainer.addEventListener("click", (event) => {
@@ -23,21 +21,17 @@ document.addEventListener("keydown", (event) => {
       event.preventDefault();
       if (videoElement.paused) {
         videoElement.play();
-        console.log("Видео воспроизводится");
       } else {
         videoElement.pause();
-        console.log("Видео на паузе");
       }
     }
   }
-  if (event.code === 'KeyF') {
+  if (event.code === "KeyF") {
     event.preventDefault();
     if (!document.fullscreenElement) {
-      videoElement.requestFullscreen().catch((err) => console.error("Ошибка при переходе в полноэкранный режим:", err));
-      console.log('Вошли в полноэкранный режим');
+      videoElement.requestFullscreen();
     } else {
-      document.exitFullscreen().catch((err) => console.error("Ошибка при выходе из полноэкранного режима:", err));
-      console.log('Выход из полноэкранного режима');
+      document.exitFullscreen();
     }
   }
 });
