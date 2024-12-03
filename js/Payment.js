@@ -12,6 +12,10 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+function isValidAmount(amount) {
+  return /^[0-9]+$/.test(amount) && parseFloat(amount) >= 10;
+}
+
 const pay = function () {
   var payments = new cp.CloudPayments({
     language: "ru-RU",
@@ -29,7 +33,7 @@ const pay = function () {
       // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
       publicId: "test_api_00000000000000000000002", //Тестовый id
       description: "Зажги созвездие!",
-      amount: payment_amount = 10,
+      amount: payment_amount,
       currency: "RUB",
       autoClose: 5,
       invoiceId: "123",
@@ -60,6 +64,11 @@ widget_open.addEventListener("click", function (e) {
   const checkboxError = document.getElementById("checkbox-error");
 
   let hasError = false;
+
+
+  if (!isValidAmount(payment_amount)) {
+    payment_amount = 10;
+  }
 
   if (!isValidEmail(payment_email)) {
     emailField.classList.add("invalid");
