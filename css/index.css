@@ -716,6 +716,10 @@ html {
   width: 8vw;
 }
 
+.menu-container {
+  z-index: 20;
+}
+
 .main-wrapper {
   height: 48vh;
   width: 100%;

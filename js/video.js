@@ -2,14 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const videoElement = document.getElementById("videoElement");
   const openPopUpBtn = document.getElementById("openPopUp_video");
   const parentContainer = document.body;
+  const menuContainer = document.querySelector(".menu-container");
 
   openPopUpBtn.addEventListener("click", () => {
+    menuContainer.style.zIndex = "0";
     videoElement.style.display = "block";
     videoElement.play();
   });
 
   parentContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("popup_close")) {
+      menuContainer.style.zIndex = "20";
       handleClosePopup(videoElement);
     }
   });
