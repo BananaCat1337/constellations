@@ -328,7 +328,6 @@ main {
   position: relative;
   width: 95vw;
   height: 10vh;
-  z-index: 20;
 }
 
 .void img {
@@ -699,10 +698,6 @@ html {
   cursor: pointer;
   margin-bottom: 36px;
   z-index: 4;
-}
-
-.menu-container {
-  z-index: 20;
 }
 
 .left-nav-bar {
