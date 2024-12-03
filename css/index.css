@@ -388,6 +388,10 @@ main {
   width: 37%;
 }
 
+.main-lover-elements {
+  height: 36vh;
+}
+
 .info-blocks .left {
   margin-left: 4vw;
 
@@ -403,6 +407,9 @@ main {
 
   height: 100%;
   width: 100%;
+}
+.left-info-block-conainer img {
+  width: 40%;
 }
 
 .lower-popUp-botton {
@@ -471,6 +478,7 @@ main {
 .info-blocks .right .right-elements img {
   margin-left: 10%;
   width: 70%;
+  max-height: 40%;
 }
 
 .info-blocks .steps {
@@ -522,6 +530,7 @@ main {
 .input-container {
   position: relative;
   width: 96vw;
+  height: 6vh;
   margin: 54px auto 0 auto;
 }
 
