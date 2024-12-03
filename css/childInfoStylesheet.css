@@ -19,6 +19,11 @@
 }
 
 @font-face {
+  font-family: Hauora-900;
+  src: url(/constellations/fonts/hauora/fonts/otf/Hauora-Regular.otf);
+}
+
+@font-face {
   font-family: Hauora-700;
   src: url(/fonts/hauora/fonts/otf/Hauora-SemiBold.otf);
 }
@@ -349,6 +354,10 @@ p {
 
   width: 80%;
   height: 10%;
+}
+
+.btnCard {
+  font-family: Hauora-900;
 }
 
 .btn {

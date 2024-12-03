@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: hauora-redular;
+  src: url("/fonts/hauora/fonts/otf/Hauora-Regular.otf");
+}
+
+@font-face {
   font-family: Hauora-ExtraLight;
   src: url("/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf");
 }
@@ -75,10 +80,14 @@ body {
   height: 60px;
 }
 
+.btnCard {
+  font-family: Hauora-900;
+}
+
 .btn {
   border: none;
   color: #080839;
-  font-family: Hauora-Medium;
+  font-family: hauora-redular;
   font-weight: 800;
   font-size: 19px;
   width: 100%;
