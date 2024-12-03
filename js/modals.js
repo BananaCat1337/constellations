@@ -36,6 +36,7 @@ function openPopUps() {
     popUp_form.classList.remove("active");
     popUp_sozvezdie.classList.remove("active");
     popUp_share.classList.remove("active");
+    PopUp_video.classList.remove("active");
   }
 }
 
