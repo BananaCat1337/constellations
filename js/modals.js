@@ -21,7 +21,7 @@ const open_menu = document.getElementById("open_menu");
 
 const menu = document.getElementById("menu");
 const lower_popUp = document.getElementById("lower_popUp");
-const info_blocks = document.getElementById('info_blocks');
+const info_blocks = document.getElementById("info_blocks");
 const lower_popUp_title = document.getElementById("lower_popUp_title");
 
 let countWindows = 0;
@@ -47,7 +47,9 @@ export function sozvezdie(name) {
   popUp.classList.add("active");
   const popUpSozvezdie = document.getElementById("popUp-sozvezdie");
   const userNameElement = popUpSozvezdie.querySelector("#userName");
-  userNameElement.innerHTML = `${name.toUpperCase()},`;
+  if (name) {
+    userNameElement.innerHTML = `${name.toUpperCase()},`;
+  }
 }
 
 for (var i = 0; i < closePopUp.length; i++) {
@@ -59,7 +61,7 @@ for (var i = 0; i < closePopUp.length; i++) {
     popUp_form.classList.remove("active");
     popUp_sozvezdie.classList.remove("active");
     popUp_share.classList.remove("active");
-    PopUp_video.classList.remove('active')
+    PopUp_video.classList.remove("active");
     popUp.classList.remove("active");
 
     countWindows = 0;

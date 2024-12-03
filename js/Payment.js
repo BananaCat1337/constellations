@@ -12,15 +12,6 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
-function isValidName(name) {
-  const nameRegex = /^[А-Яа-яЁё\s-]+$/;
-  return nameRegex.test(name);
-}
-
-function isValidAmount(amount) {
-  return /^[0-9]+$/.test(amount) && parseFloat(amount) >= 10;
-}
-
 const pay = function () {
   var payments = new cp.CloudPayments({
     language: "ru-RU",
@@ -35,10 +26,10 @@ const pay = function () {
 
   payments
     .pay("charge", {
-      publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
-      //publicId: "test_api_00000000000000000000002", //Тестовый id
+      // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
+      publicId: "test_api_00000000000000000000002", //Тестовый id
       description: "Зажги созвездие!",
-      amount: payment_amount,
+      amount: payment_amount = 10,
       currency: "RUB",
       autoClose: 5,
       invoiceId: "123",
@@ -63,37 +54,12 @@ widget_open.addEventListener("click", function (e) {
   payment_amount = parseFloat(document.getElementById("payment_amount").value);
   payment_email = document.getElementById("payment_email").value;
   const agreementChecked = document.getElementById("payment_agreement").checked;
-
-  const nameField = document.getElementById("payment_Name");
-  const nameError = document.getElementById("name-error");
-
-  const amountField = document.getElementById("payment_amount");
-  const amountError = document.getElementById("amount-error");
-
   const emailField = document.getElementById("payment_email");
   const emailError = document.getElementById("email-error");
 
   const checkboxError = document.getElementById("checkbox-error");
 
   let hasError = false;
-
-  if (!isValidName(payment_Name)) {
-    nameField.classList.add("invalid");
-    nameError.style.display = "block";
-    hasError = true;
-  } else {
-    nameField.classList.remove("invalid");
-    nameError.style.display = "none";
-  }
-
-  if (!isValidAmount(payment_amount)) {
-    amountField.classList.add("invalid");
-    amountError.style.display = "block";
-    hasError = true;
-  } else {
-    amountField.classList.remove("invalid");
-    amountError.style.display = "none";
-  }
 
   if (!isValidEmail(payment_email)) {
     emailField.classList.add("invalid");
