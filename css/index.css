@@ -409,7 +409,7 @@ main {
   width: 100%;
 }
 .left-info-block-conainer img {
-  width: 40%;
+  width: 37%;
 }
 
 .lower-popUp-botton {
@@ -449,12 +449,12 @@ main {
 
 .info-blocks .right button {
   height: 25%;
-  width: 90%;
+  width: 100%;
 }
 
 .info-blocks .right .left-elements {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
 
   height: 85%;
