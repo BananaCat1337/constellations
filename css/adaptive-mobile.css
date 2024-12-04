@@ -192,7 +192,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 85%;
-    padding: 5vh 3vw 5vh 3vw;
+    /* padding: 5vh 3vw 5vh 3vw; */
   }
 
   .namePhotoConstell {
@@ -206,7 +206,7 @@
     display: block;
   }
   .namePhotoConstell img {
-    height: 95%;
+    height: 100%;
     width: 50%;
   }
   .nameConstell_Container img {
