@@ -14,8 +14,8 @@ constellationCards.forEach((card) => {
     constellationTitleShare.textContent = `${newTitle}`;
 
     
-const imagePath = `https://mechta.nastenka.ru/constellations/assets/share/${newTitle}.jpg`;
-console.log(newTitle)
+    const imagePath = `https://mechta.nastenka.ru/constellations/assets/share/${newTitle}.jpg`;
+console.log(imagePath)
 
 const shareText = `Благотворительный фонд "Настенька" попросил подопечных нарисовать свои заветные мечты. Эти рисунки обратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты.`;
 
