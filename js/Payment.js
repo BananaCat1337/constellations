@@ -30,8 +30,8 @@ const pay = function () {
 
   payments
     .pay("charge", {
-      // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
-      publicId: "test_api_00000000000000000000002", //Тестовый id
+      publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
+      // publicId: "test_api_00000000000000000000002", //Тестовый id
       description: "Зажги созвездие!",
       amount: payment_amount,
       currency: "RUB",
@@ -43,8 +43,7 @@ const pay = function () {
       requireEmail: false,
     })
     .then((widgetResult) => {
-      console.log("result", widgetResult);
-      sozvezdie(payment_Name);
+      if (widgetResult.status === "success") sozvezdie(payment_Name);
     })
     .catch(function (error) {
       console.log("error", error);
@@ -65,9 +64,8 @@ widget_open.addEventListener("click", function (e) {
 
   let hasError = false;
 
-
   if (!isValidAmount(payment_amount)) {
-    payment_amount = 10;
+    payment_amount = 1;
   }
 
   if (!isValidEmail(payment_email)) {

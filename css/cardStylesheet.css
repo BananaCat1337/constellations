@@ -9,11 +9,6 @@
 }
 
 @font-face {
-  font-family: hauora-redular;
-  src: url("/fonts/hauora/fonts/otf/Hauora-Regular.otf");
-}
-
-@font-face {
   font-family: Hauora-ExtraLight;
   src: url("/fonts/hauora/fonts/otf/Hauora-ExtraLight.otf");
 }
@@ -87,7 +82,7 @@ body {
 .btn {
   border: none;
   color: #080839;
-  font-family: hauora-redular;
+  font-family: Hauora-Medium;
   font-weight: 800;
   font-size: 19px;
   width: 100%;
