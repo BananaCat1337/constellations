@@ -23,7 +23,7 @@ const pay = function () {
     applePaySupport: false,
     googlePaySupport: false,
     yandexPaySupport: false,
-    tinkoffPaySupport: false,
+    tinkoffPaySupport: true,
     tinkoffInstallmentSupport: false,
     sbpSupport: true,
   });
@@ -65,7 +65,7 @@ widget_open.addEventListener("click", function (e) {
   let hasError = false;
 
   if (!isValidAmount(payment_amount)) {
-    payment_amount = 1;
+    payment_amount = 10;
   }
 
   if (!isValidEmail(payment_email)) {
