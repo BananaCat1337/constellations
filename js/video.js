@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("keydown", (event) => {
+  const activeElement = document.activeElement;
+  if (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA") {
+    return;
+  }
+
   if (event.code === "Space") {
     if (videoElement.style.display === "block") {
       event.preventDefault();
@@ -29,18 +34,21 @@ document.addEventListener("keydown", (event) => {
       }
     }
   }
+
   if (event.code === "KeyF") {
-    event.preventDefault();
-    if (!document.fullscreenElement) {
-      videoElement.requestFullscreen();
-    } else {
-      document.exitFullscreen();
+    if (videoElement.style.display === "block") {
+      event.preventDefault();
+      if (!document.fullscreenElement) {
+        videoElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
     }
   }
 });
 
 function handleClosePopup(videoElement) {
-  videoElement.pause();
-  videoElement.currentTime = 0;
-  videoElement.style.display = "none";
+videoElement.pause();
+videoElement.currentTime = 0;
+videoElement.style.display = "none";
 }
