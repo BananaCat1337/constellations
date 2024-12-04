@@ -207,11 +207,11 @@
   }
   .namePhotoConstell img {
     height: 100%;
-    width: 55%;
+    width: 48%;
   }
   .nameConstell_Container img {
-    width: 80%;
-    max-height: 60%;
+    width: 58%;
+    max-height: 15vh;
   }
   .nameConstell_Container {
     display: flex;
