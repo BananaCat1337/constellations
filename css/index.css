@@ -440,7 +440,9 @@ main {
   height: 15vh;
   max-height: 170px;
 }
-
+.graphic-element-mobile {
+  display: none;
+}
 .info-blocks .left .right-elements {
   display: flex;
   flex-direction: column;

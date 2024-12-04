@@ -51,6 +51,13 @@
     font-size: 3.5vw;
   }
 
+  .step h4 {
+    font-size: 5vw;
+  }
+  .b5 {
+    font-size: 3vw;
+  }
+
   .botton_text {
     font-size: 4.6vw;
     font-weight: bold;
@@ -404,11 +411,11 @@
     align-items: flex-end;
 
     left: 0;
-    top: 42%;
+    top: 20%;
 
     overflow: hidden;
 
-    height: 58vh;
+    height: 80vh;
 
     z-index: 10;
   }
@@ -424,7 +431,7 @@
     overflow: hidden;
 
     left: 0;
-    top: 46vh;
+    top: 68vh;
 
     height: 100%;
     width: 90vw;
@@ -444,7 +451,7 @@
   }
   .lower-popUp-wraper.desactive {
     animation: lower-popUp-off 0.5s 0s 1 ease-out;
-    top: 48vh;
+    top: 68vh;
   }
 
   .left-info-block-conainer img {
@@ -484,7 +491,7 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 45%;
+    height: 30%;
     width: 100%;
   }
   .info-blocks .left .right-elements .lover-elements button {
@@ -495,6 +502,27 @@
     height: 30%;
     width: 80%;
   }
+
+  .graphic-element-mobile {
+    display: block;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+  .graphic {
+    margin-top: 2vh !important;
+    margin-bottom: 0 !important;
+    margin-right: 5vw;
+
+    width: 65% !important;
+  }
+  .info-blocks .steps {
+    width: 100%;
+  }
+
   .info-blocks .left .video-content {
     margin: 4vh 0 2vh 0;
 
@@ -622,7 +650,7 @@
 
 @keyframes lower-popUp-on {
   0% {
-    top: 44vh;
+    top: 68vh;
   }
 
   100% {
@@ -636,7 +664,7 @@
   }
 
   100% {
-    top: 48vh;
+    top: 68vh;
   }
 }
 
