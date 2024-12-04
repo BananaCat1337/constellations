@@ -515,7 +515,9 @@ main {
 }
 
 .step h4 {
-  font-family: "Angst";
+  font-family: 'Haora-Normal';
+
+  font-weight: 800;
 
   font-size: 1.2vw;
 
