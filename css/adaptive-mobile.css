@@ -189,16 +189,22 @@
   }
 
   .namePhotoConstell {
-    height: 30%;
-    margin-bottom: 7vh;
+    height: 45%;
+    margin-bottom: 2vh;
   }
-
+  .foto_for_pc {
+    display: none;
+  }
+  .foto_for_mobile {
+    display: block;
+  }
   .namePhotoConstell img {
     height: 100%;
     width: 55%;
   }
   .nameConstell_Container img {
-    width: 50%;
+    width: 80%;
+    max-height: 60%;
   }
   .nameConstell_Container {
     display: flex;
@@ -476,9 +482,10 @@
 
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 
-    height: 40%;
-    width: 80%;
+    height: 45%;
+    width: 100%;
   }
   .info-blocks .left .right-elements .lover-elements button {
     display: flex;
@@ -486,7 +493,7 @@
     justify-content: center;
 
     height: 30%;
-    width: 100%;
+    width: 80%;
   }
   .info-blocks .left .video-content {
     margin: 4vh 0 2vh 0;

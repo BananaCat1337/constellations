@@ -239,6 +239,14 @@ label {
   z-index: 15;
 }
 
+.foto_for_pc {
+  display: block;
+}
+
+.foto_for_mobile {
+  display: none;
+}
+
 .swiper-button-prev-mobyle {
   left: 14vw;
   z-index: 19 !important;
