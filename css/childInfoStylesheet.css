@@ -40,7 +40,7 @@ body {
 
 .backsideBody {
   display: flex;
-  background-image: url(/constellations/cards/childInfoCards/childInfoSvgs/backsidebodybackground.png);
+  background-image: url(../cards/childInfoCards/childInfoSvgs/backsidebodybackground.png);
   background-size: cover;
   width: 90%;
   height: 85%;
@@ -92,7 +92,7 @@ p {
   width: 100%;
   color: #fff;
   height: 100%;
-  background-image: url(/constellations/cards/childInfoCards/childInfoSvgs/frontsidebodybackground.png);
+  background-image: url(../cards/childInfoCards/childInfoSvgs/frontsidebodybackground.png);
   background-size: cover;
 }
 
