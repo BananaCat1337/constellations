@@ -411,11 +411,11 @@
     align-items: flex-end;
 
     left: 0;
-    top: 20%;
+    top: calc(var(--vh, 1vh) * 20);
 
     overflow: hidden;
 
-    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
 
     z-index: 10;
   }
@@ -451,7 +451,7 @@
   }
   .lower-popUp-wraper.desactive {
     animation: lower-popUp-off 0.5s 0s 1 ease-out;
-    top: 68vh;
+    top: calc(var(--vh, 1vh) * 68);
   }
 
   .left-info-block-conainer img {
@@ -650,7 +650,7 @@
 
 @keyframes lower-popUp-on {
   0% {
-    top: 68vh;
+    top: calc(var(--vh, 1vh) * 68);
   }
 
   100% {
@@ -664,7 +664,7 @@
   }
 
   100% {
-    top: 68vh;
+    top: calc(var(--vh, 1vh) * 68);
   }
 }
 
