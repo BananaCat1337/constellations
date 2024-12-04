@@ -151,6 +151,8 @@ document.body.addEventListener("click", function (e) {
   }
 });
 
+lower_popUp.classList.add("desactive");
+
 lower_popUp_botton.addEventListener("click", function (e) {
   e.preventDefault();
 
