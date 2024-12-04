@@ -400,7 +400,7 @@ main {
 }
 
 .main-lover-elements {
-  height: 36vh;
+  height: calc(var(--vh, 1vh) * 36);
 }
 
 .info-blocks .left {
