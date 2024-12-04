@@ -41,6 +41,9 @@ function openPopUps() {
 }
 
 export function sozvezdie(name) {
+  popUp3.classList.remove("active");
+  popUp_form.classList.remove("active");
+  countWindows += 1;
   openPopUps();
   popUp_sozvezdie.classList.add("active");
   popUp.classList.remove("active");

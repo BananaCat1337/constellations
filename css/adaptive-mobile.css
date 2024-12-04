@@ -55,6 +55,10 @@
     font-weight: bold;
   }
 
+  .btn {
+    font-size: 4.6vw;
+  }
+
   .copyright_container a {
     font-size: 2.7vw;
   }
@@ -183,6 +187,11 @@
     padding: 5vh 3vw 5vh 3vw;
   }
 
+  .namePhotoConstell {
+    height: 30%;
+    margin-bottom: 7vh;
+  }
+
   .namePhotoConstell img {
     height: 100%;
     width: 55%;
@@ -217,6 +226,7 @@
     justify-content: center;
     align-items: center;
     height: 45%;
+    width: 100%;
   }
   .popUp-large .info-container .left-elements img {
     width: 100%;
@@ -494,6 +504,7 @@
     top: -3.5vh;
 
     width: 100%;
+    height: 6vh;
 
     z-index: 4;
     transform: rotate(0);

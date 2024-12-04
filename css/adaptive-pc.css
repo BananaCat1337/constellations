@@ -14,7 +14,7 @@
 
 @media (max-width: 1700px) {
   .b3 {
-    font-size: 1.2vw;
+    font-size: 1.1  vw;
   }
 
   .b3-1 {
@@ -26,7 +26,7 @@
   }
 
   .b5 {
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
 
   h1 {
@@ -123,6 +123,9 @@
 }
 
 @media (max-width: 1300px) {
+  .infoText .b1 {
+    font-size: 1.4vw;
+  }
   .b3 {
     font-size: 1.2vw;
   }
@@ -136,7 +139,7 @@
   }
 
   .b5 {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
   }
 
   .step h4 {
@@ -187,7 +190,7 @@
   }
 
   .menu-container {
-    width: 25%;
+    width: 15%;
   }
   .left-nav-bar {
     width: 60%;
@@ -231,7 +234,7 @@
     font-size: 1.3vw;
   }
   .left-nav-bar {
-    width: 65%;
+    width: 85%;
   }
 
   .wars {
