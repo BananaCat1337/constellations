@@ -309,10 +309,16 @@ label {
 .popUp-share {
   display: none;
 
-  height: 23%;
-  width: 28%;
+  height: 20%;
+  width: 22%;
 
   align-items: center;
+  justify-content: center;
+}
+.popUp-share .contacts_container {
+  width: 100%;
+  height: 100%;
+
   justify-content: center;
 }
 
