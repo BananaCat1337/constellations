@@ -23,7 +23,7 @@ const pay = function () {
     applePaySupport: false,
     googlePaySupport: false,
     yandexPaySupport: false,
-    tinkoffPaySupport: true,
+    tinkoffPaySupport: false,
     tinkoffInstallmentSupport: false,
     sbpSupport: true,
   });
