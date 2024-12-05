@@ -207,6 +207,8 @@
     display: block;
   }
   .namePhotoConstell img {
+    object-fit: cover;
+
     height: 100%;
     width: 50%;
   }
@@ -286,6 +288,8 @@
   .popUp2 .info-container .left-elements img {
     width: 100%;
     height: 70%;
+
+    object-fit: cover;
   }
 
   .header {

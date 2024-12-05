@@ -256,6 +256,14 @@ label {
   z-index: 19 !important;
 }
 
+.popup_form_alt {
+  display: none;
+}
+
+.popup_form_alt.active {
+  display: flex;
+}
+
 .popUp-form {
   display: none;
 }

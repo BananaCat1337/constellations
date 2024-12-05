@@ -4,6 +4,7 @@ const openPopUp_1 = document.getElementById("popup1_open");
 const openPopUp_2 = document.getElementById("popup2_open");
 const openPopUp_3 = document.getElementsByClassName("popup3_open");
 const openPopUp_form = document.getElementsByClassName("popup_form_open");
+const openPopUp_form_alt = document.getElementsByClassName("popup_form_open_alt");
 const openPopUp_share = document.getElementById("openPopUp_share");
 const openPopUp_video = document.getElementById("openPopUp_video");
 
@@ -87,14 +88,39 @@ for (var i = 0; i < openPopUp_3.length; i++) {
   });
 }
 
+const constellationTitle = document.getElementById("constellation-title");
+const constellationMainTitle = document.getElementById("constellation-main-title");
+const constellationTitleShare = document.getElementById("constellation-title-share");
+const constellationMainTitleShare = document.getElementById("constellation-main-title-share");
+const constellationImage = popUp.querySelector(".constellationImage");
+
 for (var i = 0; i < openPopUp_form.length; i++) {
   openPopUp_form[i].addEventListener("click", function (e) {
     countWindows += 1;
     openPopUps();
     e.preventDefault();
+    constellationTitle.style.display = "block";
+    constellationMainTitle.textContent = 'созвездие';
+    constellationMainTitleShare.textContent = 'ВАШЕ СОЗВЕЗДИЕ';
     popUp3.classList.remove("active");
     popUp_form.classList.add("active");
     popUp.classList.add("active");
+  });
+}
+
+for (var i = 0; i < openPopUp_form_alt.length; i++) {
+  openPopUp_form_alt[i].addEventListener("click", function (e) {
+    countWindows += 1;
+  openPopUps();
+  e.preventDefault();
+  constellationTitle.style.display = "none";
+  constellationMainTitle.textContent = 'зажги все созвездия!';
+  constellationMainTitleShare.textContent = 'ВЫ ЗАЖГЛИ';
+  constellationTitleShare.textContent = 'небосвод мечтаний';
+  constellationImage.src = `./assets/PopUp1-image.svg`;
+  popUp3.classList.remove("active");
+  popUp_form.classList.add("active");
+  popUp.classList.add("active");
   });
 }
 
