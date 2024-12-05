@@ -29,7 +29,6 @@ document.getElementById(
 }&text=${shareText}&image=${defaultImage}`;
 
 resetButton.addEventListener("click", () => {
-  console.log(1231231)
   document.getElementById(
     "ok-share"
   ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
@@ -52,7 +51,6 @@ resetButton.addEventListener("click", () => {
 });
 
 resetButtonMobyle.addEventListener("click", () => {
-  console.log(1231231)
   document.getElementById(
     "ok-share"
   ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
