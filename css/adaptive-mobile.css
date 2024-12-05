@@ -35,6 +35,9 @@
   h2 {
     font-size: 5vw;
   }
+  .constellationName {
+    font-size: 5vw !important;
+  }
   .b1 {
     font-size: 3.5vw !important;
   }
@@ -207,7 +210,7 @@
     display: block;
   }
   .namePhotoConstell img {
-    object-fit: cover;
+    object-fit: contain;
 
     height: 100%;
     width: 50%;
