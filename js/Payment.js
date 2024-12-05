@@ -13,7 +13,7 @@ function isValidEmail(email) {
 }
 
 function isValidAmount(amount) {
-  return /^[0-9]+$/.test(amount) && parseFloat(amount) >= 10;
+  return /^[0-9]+$/.test(amount) && parseFloat(amount);
 }
 
 const pay = function () {
@@ -44,7 +44,7 @@ const pay = function () {
     })
     .then((widgetResult) => {
       // if (widgetResult.status === "success")
-         sozvezdie(payment_Name);
+      sozvezdie(payment_Name);
     })
     .catch(function (error) {
       console.log("error", error);
@@ -60,14 +60,12 @@ widget_open.addEventListener("click", function (e) {
   const agreementChecked = document.getElementById("payment_agreement").checked;
   const emailField = document.getElementById("payment_email");
   const emailError = document.getElementById("email-error");
+  const amountField = document.getElementById("payment_amount");
+  const amountError = document.getElementById("amount-error");
 
   const checkboxError = document.getElementById("checkbox-error");
 
   let hasError = false;
-
-  if (!isValidAmount(payment_amount)) {
-    payment_amount = 10;
-  }
 
   if (!isValidEmail(payment_email)) {
     emailField.classList.add("invalid");
@@ -76,6 +74,15 @@ widget_open.addEventListener("click", function (e) {
   } else {
     emailField.classList.remove("invalid");
     emailError.style.display = "none";
+  }
+
+  if (!isValidAmount(payment_amount)) {
+    amountField.classList.add("invalid");
+    amountError.style.display = "block";
+    hasError = true;
+  } else {
+    amountField.classList.remove("invalid");
+    amountError.style.display = "none";
   }
 
   if (!agreementChecked) {
