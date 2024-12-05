@@ -258,6 +258,9 @@
   .popUp-form .info-container .left-elements {
     width: 100%;
   }
+  .popUp-form .info-container .right-elements {
+    margin-top: 10%;
+  }
   .popUp-form form {
     width: 100%;
   }
