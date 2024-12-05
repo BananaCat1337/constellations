@@ -88,7 +88,7 @@ h1 {
 
 /* h2 */
 
-h2 {
+h2, .constellationName {
   font-family: 'Angst-Bold';
   font-size: 2.3vw;
   font-weight: bold;
