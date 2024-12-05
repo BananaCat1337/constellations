@@ -236,18 +236,20 @@
     align-items: center;
     padding: 5vh 3vw 5vh 3vw;
   }
-
+  .constellationContainer {
+    height: 13%;
+  }
   .popUp-large .info-container {
     display: flex;
     flex-direction: column;
 
-    height: 100%;
+    height: 95%;
   }
   .popUp-large .info-container .left-elements {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45%;
+    height: 40%;
     width: 100%;
   }
   .popUp-large .info-container .left-elements img {
