@@ -117,7 +117,8 @@ for (var i = 0; i < openPopUp_form_alt.length; i++) {
   constellationMainTitle.textContent = 'зажги все созвездия!';
   constellationMainTitleShare.textContent = 'ВЫ ЗАЖГЛИ';
   constellationTitleShare.textContent = 'небосвод мечтаний';
-  constellationImage.src = `./assets/PopUp1-image.svg`;
+  constellationImage.src = `./assets/PopUp-share-img.svg`;
+  constellationImage.style.height = "100%";
   popUp3.classList.remove("active");
   popUp_form.classList.add("active");
   popUp.classList.add("active");
