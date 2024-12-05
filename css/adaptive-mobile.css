@@ -293,7 +293,7 @@
     flex-direction: row;
   }
 
-  .popUp-share.active {
+  .popUp-share {
     width: 70%;
     height: 20%;
   }
