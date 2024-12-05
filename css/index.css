@@ -308,6 +308,12 @@ label {
 
 .popUp-share {
   display: none;
+
+  height: 23%;
+  width: 28%;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .popUp-share.active {
