@@ -27,7 +27,6 @@ document.getElementById(
   url
 )}&text=${encodeURIComponent(shareText)}&image=${defaultImage}`;
 
-
 resetButton.addEventListener("click", () => {
   document.getElementById(
     "ok-share"
@@ -52,7 +51,6 @@ resetButton.addEventListener("click", () => {
 
 constellationCards.forEach((card) => {
   card.addEventListener("click", () => {
-    console.log(resetButton);
     const newTitle = card.getAttribute("data-constellation");
     const constellation = card.getAttribute("img-constellation");
     constellationImage.src = `/constellations/cards/childInfoCards/childInfoSvgs/${constellation}.svg`;
