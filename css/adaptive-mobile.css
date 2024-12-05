@@ -213,7 +213,6 @@
     width: 50%;
   }
   .nameConstell_Container img {
-    object-fit: none;
     width: 90%;
     max-height: 15vh;
   }

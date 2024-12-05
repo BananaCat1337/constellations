@@ -93,6 +93,7 @@ const constellationMainTitle = document.getElementById("constellation-main-title
 const constellationTitleShare = document.getElementById("constellation-title-share");
 const constellationMainTitleShare = document.getElementById("constellation-main-title-share");
 const constellationImage = popUp.querySelector(".constellationImage");
+const userName = document.getElementById("userName");
 
 for (var i = 0; i < openPopUp_form.length; i++) {
   openPopUp_form[i].addEventListener("click", function (e) {
@@ -114,8 +115,9 @@ for (var i = 0; i < openPopUp_form_alt.length; i++) {
   openPopUps();
   e.preventDefault();
   constellationTitle.style.display = "none";
+  userName.style.display = "none";
   constellationMainTitle.textContent = 'зажги все созвездия!';
-  constellationMainTitleShare.textContent = 'ВЫ ЗАЖГЛИ';
+  constellationMainTitleShare.textContent = 'вы зажгли';
   constellationTitleShare.textContent = 'небосвод мечтаний';
   constellationImage.src = `./assets/PopUp-share-img.svg`;
   constellationImage.style.height = "100%";
