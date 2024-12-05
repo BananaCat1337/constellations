@@ -215,6 +215,8 @@
   .nameConstell_Container img {
     width: 90%;
     max-height: 15vh;
+
+    object-fit: contain;
   }
   .nameConstell_Container {
     display: flex;
