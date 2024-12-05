@@ -11,42 +11,42 @@ const url = "https://mechta.nastenka.ru/";
 const defaultImage = "https://mechta.nastenka.ru/assets/share/defShare.jpg";
 document.getElementById(
   "vk-share"
-).href = `https://vk.com/share.php?url=${encodeURIComponent(
+).href = `https://vk.com/share.php?url=${
   url
-)}&title=Следуй за созвездием мечты&og:description=${encodeURIComponent(
+}&title=Следуй за созвездием мечты&og:description=${
   shareText
-)}&image=${defaultImage}`;
+}&image=${defaultImage}`;
 document.getElementById(
   "ok-share"
-).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(
+).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
   url
-)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
+}&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
 document.getElementById(
   "tg-share"
-).href = `https://t.me/share/url?url=${encodeURIComponent(
+).href = `https://t.me/share/url?url=${
   url
-)}&text=${encodeURIComponent(shareText)}&image=${defaultImage}`;
+}&text=${shareText}&image=${defaultImage}`;
 
 resetButton.addEventListener("click", () => {
   document.getElementById(
     "ok-share"
-  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(
+  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
     url
-  )}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
+  }&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
 
   document.getElementById(
     "vk-share"
-  ).href = `https://vk.com/share.php?url=${encodeURIComponent(
+  ).href = `https://vk.com/share.php?url=${
     url
-  )}&title=Следуй за созвездием мечты&description=${encodeURIComponent(
+  }&title=Следуй за созвездием мечты&description=${
     shareText
-  )}&image=${defaultImage}`;
+  }&image=${defaultImage}`;
 
   document.getElementById(
     "tg-share"
-  ).href = `https://t.me/share/url?url=${encodeURIComponent(
+  ).href = `https://t.me/share/url?url=${
     url
-  )}&text=${encodeURIComponent(shareText)}`;
+  }&text=${shareText}`;
 });
 
 constellationCards.forEach((card) => {
@@ -60,24 +60,24 @@ constellationCards.forEach((card) => {
 
     document.getElementById(
       "ok-share"
-    ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(
+    ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
       url
-    )}&st.comments=${encodeURIComponent(
+    }&st.comments=${
       shareText
-    )}&st.imageUrl=${encodeURIComponent(imagePath)}`;
+    }&st.imageUrl=${imagePath}`;
 
     document.getElementById(
       "vk-share"
-    ).href = `https://vk.com/share.php?url=${encodeURIComponent(
+    ).href = `https://vk.com/share.php?url=${
       url
-    )}&title=Следуй за созвездием мечты&description=${encodeURIComponent(
+    }&title=Следуй за созвездием мечты&description=${
       shareText
-    )}&image=${imagePath}`;
+    }&image=${imagePath}`;
 
     document.getElementById(
       "tg-share"
-    ).href = `https://t.me/share/url?url=${encodeURIComponent(
+    ).href = `https://t.me/share/url?url=${
       url
-    )}&text=${encodeURIComponent(shareText)}`;
+    }&text=${shareText}`;
   });
 });
