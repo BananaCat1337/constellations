@@ -6,6 +6,7 @@ const constellationCards = document.querySelectorAll(".cardContainer");
 const popUp = document.querySelector("#popUp-sozvezdie");
 const constellationImage = popUp.querySelector(".constellationImage");
 const resetButton = document.querySelector(".popup_form_open_alt");
+const resetButtonMobyle = document.querySelector(".popup_form_open_alt-mobyle");
 const shareText = `Благотворительный фонд "Настенька" попросил подопечных нарисовать свои заветные мечты. Эти рисунки обратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты.`;
 const url = "https://mechta.nastenka.ru/";
 const defaultImage = "https://mechta.nastenka.ru/assets/share/defShare.jpg";
@@ -28,6 +29,30 @@ document.getElementById(
 }&text=${shareText}&image=${defaultImage}`;
 
 resetButton.addEventListener("click", () => {
+  console.log(1231231)
+  document.getElementById(
+    "ok-share"
+  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
+    url
+  }&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
+
+  document.getElementById(
+    "vk-share"
+  ).href = `https://vk.com/share.php?url=${
+    url
+  }&title=Следуй за созвездием мечты&description=${
+    shareText
+  }&image=${defaultImage}`;
+
+  document.getElementById(
+    "tg-share"
+  ).href = `https://t.me/share/url?url=${
+    url
+  }&text=${shareText}`;
+});
+
+resetButtonMobyle.addEventListener("click", () => {
+  console.log(1231231)
   document.getElementById(
     "ok-share"
   ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${
