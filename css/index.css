@@ -857,6 +857,8 @@ a:visited {
 .logo {
   margin-right: 20%;
   height: 55%;
+
+  border: none;
 }
 
 .site_address {
