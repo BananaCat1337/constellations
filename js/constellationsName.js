@@ -18,8 +18,7 @@ document.getElementById(
 ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${url}&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
 document.getElementById(
   "tg-share"
-).href = `https://t.me/share/url?url=${url}&text=${shareText.replace(/ /g, "+")}
-&image=${defaultImage}`;
+).href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`
 
 resetButton.addEventListener("click", () => {
   document.getElementById(
@@ -32,10 +31,7 @@ resetButton.addEventListener("click", () => {
 
   document.getElementById(
     "tg-share"
-  ).href = `https://t.me/share/url?url=${url}&text=${shareText.replace(
-    / /g,
-    "+"
-  )}`;
+  ).href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
 });
 
 resetButtonMobyle.addEventListener("click", () => {
@@ -49,10 +45,7 @@ resetButtonMobyle.addEventListener("click", () => {
 
   document.getElementById(
     "tg-share"
-  ).href = `https://t.me/share/url?url=${url}&text=${shareText.replace(
-    / /g,
-    "+"
-  )}`;
+  ).href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
 });
 
 constellationCards.forEach((card) => {
@@ -74,9 +67,6 @@ constellationCards.forEach((card) => {
 
     document.getElementById(
       "tg-share"
-    ).href = `https://t.me/share/url?url=${url}&text=${shareText.replace(
-      / /g,
-      "+"
-    )}`;
+    ).href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
   });
 });
