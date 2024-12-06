@@ -12,10 +12,10 @@ const url = "https://mechta.nastenka.ru/";
 const defaultImage = "https://mechta.nastenka.ru/assets/share/defShare.jpg";
 document.getElementById(
   "vk-share"
-).href = `https://vk.com/share.php?url=${url}&title=Следуй за созвездием мечты&og:description=${shareText}&image=${defaultImage}`;
+).href = `https://vk.com/share.php?url=${encodeURIComponent(url)}&title=Следуй за созвездием мечты&og:description=${encodeURIComponent(shareText)}&image=${defaultImage}`;
 document.getElementById(
   "ok-share"
-).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${url}&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
+).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(url)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
 document.getElementById(
   "tg-share"
 ).href = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`
@@ -23,11 +23,11 @@ document.getElementById(
 resetButton.addEventListener("click", () => {
   document.getElementById(
     "ok-share"
-  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${url}&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
+  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(url)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
 
   document.getElementById(
     "vk-share"
-  ).href = `https://vk.com/share.php?url=${url}&title=Следуй за созвездием мечты&description=${shareText}&image=${defaultImage}`;
+  ).href = `https://vk.com/share.php?url=${encodeURIComponent(url)}&title=Следуй за созвездием мечты&description=${encodeURIComponent(shareText)}&image=${defaultImage}`;
 
   document.getElementById(
     "tg-share"
@@ -37,11 +37,11 @@ resetButton.addEventListener("click", () => {
 resetButtonMobyle.addEventListener("click", () => {
   document.getElementById(
     "ok-share"
-  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${url}&st.comments=${shareText}&st.imageUrl=${defaultImage}`;
+  ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(url)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
 
   document.getElementById(
     "vk-share"
-  ).href = `https://vk.com/share.php?url=${url}&title=Следуй за созвездием мечты&description=${shareText}&image=${defaultImage}`;
+  ).href = `https://vk.com/share.php?url=${encodeURIComponent(url)}&title=Следуй за созвездием мечты&description=${encodeURIComponent(shareText)}&image=${defaultImage}`;
 
   document.getElementById(
     "tg-share"
@@ -59,11 +59,11 @@ constellationCards.forEach((card) => {
 
     document.getElementById(
       "ok-share"
-    ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${url}&st.comments=${shareText}&st.imageUrl=${imagePath}`;
+    ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(url)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${imagePath}`;
 
     document.getElementById(
       "vk-share"
-    ).href = `https://vk.com/share.php?url=${url}&title=Следуй за созвездием мечты&description=${shareText}&image=${imagePath}`;
+    ).href = `https://vk.com/share.php?url=${encodeURIComponent(url)}&title=Следуй за созвездием мечты&description=${encodeURIComponent(shareText)}&image=${imagePath}`;
 
     document.getElementById(
       "tg-share"
