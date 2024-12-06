@@ -68,7 +68,7 @@
   }
 
   .infoText .b1 {
-    font-size: 1.1vw;
+    font-size: 1.0vw;
   }
 
   .popUp-large .info-container .left-elements img {
@@ -87,7 +87,7 @@
   }
 
   .infoText .b1 {
-    font-size: 1.2vw;
+    font-size: 1.0vw;
   }
   .popUp-large .info-container {
     height: 85%;
@@ -106,7 +106,7 @@
     font-size: 1vw;
   }
   .infoText .b1 {
-    font-size: 1.2vw;
+    font-size: 1.0vw;
   }
 
   .steps .step {
@@ -124,7 +124,7 @@
 
 @media (max-width: 1300px) {
   .infoText .b1 {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
   .b3 {
     font-size: 1.2vw;
