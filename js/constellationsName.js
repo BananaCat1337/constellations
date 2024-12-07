@@ -7,17 +7,18 @@ const popUp = document.querySelector("#popUp-sozvezdie");
 const constellationImage = popUp.querySelector(".constellationImage");
 const shareText = `Благотворительный фонд "Настенька" попросил подопечных нарисовать свои заветные мечты. Эти рисунки обратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты.`;
 const url = "https://mechta.nastenka.ru/";
-const defaultImage = "https://mechta.nastenka.ru/assets/share/Share.jpg";
+const OkImage = "https://mechta.nastenka.ru/assets/share/Share.jpg";
+const VkImage = "https://mechta.nastenka.ru/assets/share/shareVK.jpg"
 document.getElementById(
   "vk-share"
 ).href = `https://vk.com/share.php?url=${encodeURIComponent(
   url
-)}&title=Следуй за созвездием мечты&image=${encodeURIComponent(defaultImage)}`;
+)}&title=Следуй за созвездием мечты&image=${encodeURIComponent(VkImage)}`;
 document.getElementById(
   "ok-share"
 ).href = `https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl=${encodeURIComponent(
   url
-)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${defaultImage}`;
+)}&st.comments=${encodeURIComponent(shareText)}&st.imageUrl=${OkImage}`;
 document.getElementById(
   "tg-share"
 ).href = `https://t.me/share/url?url=${encodeURIComponent(
