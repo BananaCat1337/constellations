@@ -43,7 +43,7 @@ const pay = function () {
       requireEmail: false,
     })
     .then((widgetResult) => {
-      // if (widgetResult.status === "success")
+      if (widgetResult.status === "success")
        sozvezdie(payment_Name);
     })
     .catch(function (error) {
