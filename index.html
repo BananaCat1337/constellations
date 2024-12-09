@@ -20,23 +20,6 @@
 
     <title>Созвездие мечты</title>
   </head>
-<script>
-  // 😎😎😎
-  function getUTMParams() {
-    console.log(window, 'window.location.search');
-    const params = new URLSearchParams(window.location.search);
-    return {
-        utm_source: params.get('utm_source'),
-        utm_medium: params.get('utm_medium'),
-        utm_campaign: params.get('utm_campaign'),
-        utm_term: params.get('utm_term'),
-        utm_content: params.get('utm_content'),
-    };
-}
-
-const utmParams = getUTMParams();
-console.log('Наши UTM-метки:', utmParams);
-</script>
   <body>
     <div class="popUp" id="popUp">
       <img class="popup_close popup_close_mobile" src="./assets/closseCross-mobile.svg" alt="" />
@@ -1093,6 +1076,7 @@ console.log('Наши UTM-метки:', utmParams);
         </div>
       </footer>
     </div>
+    <script src="./js/utm-key.js"></script>
     <script src="./js/swiper/swiper-bundle.min.js"></script>
     <script src="./js/addaptive.js"></script>
     <script src="./lightUpConstellationSwiper/lightUpConstellationSwiper.js"></script>
