@@ -23,7 +23,7 @@
 <script>
   // 😎😎😎
   function getUTMParams() {
-    console.log(window.location, 'window.location.search');
+    console.log(window, 'window.location.search');
     const params = new URLSearchParams(window.location.search);
     return {
         utm_source: params.get('utm_source'),

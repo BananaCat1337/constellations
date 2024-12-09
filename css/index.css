@@ -639,8 +639,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100px;
   background: transparent !important;
   cursor: pointer;
-  z-index: 2;
-  z-index: 200;
+  z-index: 12;
 }
 
 .constellationToClick {
