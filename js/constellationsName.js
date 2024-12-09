@@ -8,7 +8,7 @@ const constellationImage = popUp.querySelector(".constellationImage");
 const shareText = `Благотворительный фонд "Настенька" попросил подопечных нарисовать свои заветные мечты. Эти рисунки обратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты.`;
 const url = "https://mechta.nastenka.ru/";
 const OkImage = "https://mechta.nastenka.ru/assets/share/Share.jpg";
-const VkImage = "https://mechta.nastenka.ru/assets/share/shareVK.jpg"
+const VkImage = "https://mechta.nastenka.ru/assets/share/shareVK.jpg";
 document.getElementById(
   "vk-share"
 ).href = `https://vk.com/share.php?url=${encodeURIComponent(
