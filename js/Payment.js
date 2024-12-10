@@ -52,12 +52,13 @@ const pay = function () {
     })
     .then((widgetResult) => {
       if (widgetResult.status === "success") {
-        data.utm_source = getParameterByName("utm_source");
-        data.utm_medium = getParameterByName("utm_medium");
-        data.utm_content = getParameterByName("utm_content");
-        data.utm_campaign = getParameterByName("utm_campaignt");
-        data.utm_term = getParameterByName("utm_term");
-        console.log(data)
+        sozvezdie(payment_Name);
+        // data.utm_source = getParameterByName("utm_source");
+        // data.utm_medium = getParameterByName("utm_medium");
+        // data.utm_content = getParameterByName("utm_content");
+        // data.utm_campaign = getParameterByName("utm_campaignt");
+        // data.utm_term = getParameterByName("utm_term");
+        // console.log(data)
       }
     })
     .catch(function (error) {
