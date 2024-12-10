@@ -5,7 +5,15 @@ const widget_open = document.getElementById("widget-open");
 let payment_amount = 0;
 let payment_email = "";
 let payment_Name = "";
-let agreementChecked = document.getElementById("payment_agreement").checked;
+
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 function isValidEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -43,8 +51,14 @@ const pay = function () {
       requireEmail: false,
     })
     .then((widgetResult) => {
-      if (widgetResult.status === "success")
-       sozvezdie(payment_Name);
+      if (widgetResult.status === "success") {
+        data.utm_source = getParameterByName("utm_source");
+        data.utm_medium = getParameterByName("utm_medium");
+        data.utm_content = getParameterByName("utm_content");
+        data.utm_campaign = getParameterByName("utm_campaignt");
+        data.utm_term = getParameterByName("utm_term");
+        console.log(data)
+      }
     })
     .catch(function (error) {
       console.log("error", error);
