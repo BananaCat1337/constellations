@@ -12,6 +12,8 @@ function getParameterByName(name, url = window.location.href) {
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
+  console.log(decodeURIComponent(results[2].replace(/\+/g, " ")), 'decodeURIComponent(results[2].replace(/\+/g, " "))', name, url = window.location.href, 'name, url = window.location.href');
+  
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
@@ -59,7 +61,21 @@ const pay = function () {
     })
     .then((widgetResult) => {
       if (widgetResult.status === "success") {
+        console.log(
+          getParameterByName("utm_source"),
+          getParameterByName("utm_medium"),
+          getParameterByName("utm_content"),
+          getParameterByName("utm_campaign"),
+          getParameterByName("utm_term"),
+          ` getParameterByName("utm_source"),
+ getParameterByName("utm_medium"),
+ getParameterByName("utm_content"),
+ getParameterByName("utm_campaign"),
+ getParameterByName("utm_term"),`
+        );
+        console.log(1336);
         sozvezdie(payment_Name);
+        console.log(1337);
       }
     })
     .catch(function (error) {
