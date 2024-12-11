@@ -12,14 +12,8 @@ function getParameterByName(name, url = window.location.href) {
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
-  console.log(
-    decodeURIComponent(results[2].replace(/\+/g, " ")),
-    'decodeURIComponent(results[2].replace(/+/g, " "))',
-    name,
-    (url = window.location.href),
-    "name, url = window.location.href"
-  );
-
+  console.log(decodeURIComponent(results[2].replace(/\+/g, " ")), 'decodeURIComponent(results[2].replace(/\+/g, " "))', name, url = window.location.href, 'name, url = window.location.href');
+  
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
@@ -31,17 +25,6 @@ function isValidEmail(email) {
 function isValidAmount(amount) {
   return /^[0-9]+$/.test(amount) && parseFloat(amount);
 }
-var data = {};
-data.CloudPayments = {
-  babay:'babay',
-  recurrent: {
-  zazay:'zazay',
-
-    interval: "Month",
-    period: 1,
-    customerReceipt: "wq", //чек для регулярных платежей
-  },
-};
 
 const pay = function () {
   var payments = new cp.CloudPayments({
@@ -52,17 +35,14 @@ const pay = function () {
     yandexPaySupport: false,
     tinkoffPaySupport: false,
     tinkoffInstallmentSupport: false,
-    sbpSupport: true,
-    data: data,
+    sbpSupport: false,
   });
 
   payments
-    .pay("auth", {
-      publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
-      // publicId: "test_api_00000000000000000000002", //Тестовый id
-      data: data,
-      myProp: "myProp value",
-      description: "Зажги созвездие!45454",
+    .pay("charge", {
+      // publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
+      publicId: "test_api_00000000000000000000002", //Тестовый id
+      description: "Зажги созвездие!222222",
       amount: payment_amount,
       currency: "RUB",
       autoClose: 5,
@@ -71,45 +51,18 @@ const pay = function () {
       email: payment_email,
       skin: "classic",
       requireEmail: false,
-
-      // data: {
-      //   customKey:'babay,',
-      //   utm_source: getParameterByName("utm_source"),
-      //   utm_medium: getParameterByName("utm_medium"),
-      //   utm_content: getParameterByName("utm_content"),
-      //   utm_campaign: getParameterByName("utm_campaign"),
-      //   utm_term: getParameterByName("utm_term"),
-      // },
-    })
-    .charge({
-      // options
-      publicId: "test_api_00000000000000000000001", //id из личного кабинета
-      description: "Подписка на ежемесячный доступ к сайту example.com", //назначение
-      amount: 1000, //сумма
-      currency: "RUB", //валюта
-      invoiceId: "1234567", //номер заказа  (необязательно)
-      accountId: "user@example.com", //идентификатор плательщика (обязательно для создания подписки)
-      data: data,
-  zazay:'aggay',
-      
+      data: JSON.stringify({
+        utm_source: getParameterByName("utm_source"),
+        utm_medium: getParameterByName("utm_medium"),
+        utm_content: getParameterByName("utm_content"),
+        utm_campaign: getParameterByName("utm_campaign"),
+        utm_term: getParameterByName("utm_term"),
+      }) ,
     })
     .then((widgetResult) => {
       if (widgetResult.status === "success") {
-        console.log(
-          getParameterByName("utm_source"),
-          getParameterByName("utm_medium"),
-          getParameterByName("utm_content"),
-          getParameterByName("utm_campaign"),
-          getParameterByName("utm_term"),
-          ` getParameterByName("utm_source"),
- getParameterByName("utm_medium"),
- getParameterByName("utm_content"),
- getParameterByName("utm_campaign"),
- getParameterByName("utm_term"),`
-        );
-        console.log(1336);
+       
         sozvezdie(payment_Name);
-        console.log(1337);
       }
     })
     .catch(function (error) {
