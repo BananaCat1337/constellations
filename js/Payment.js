@@ -49,17 +49,18 @@ const pay = function () {
       email: payment_email,
       skin: "classic",
       requireEmail: false,
-    })
-    .then((widgetResult) => {
-      if (widgetResult.status === "success") {
+      data: {
+        utm_source: getParameterByName("utm_source"),
+        utm_medium: getParameterByName("utm_medium"),
+        utm_content: getParameterByName("utm_content"),
+        utm_campaign: getParameterByName("utm_campaign"),
+        utm_term: getParameterByName("utm_term"),
+      },
+      onSuccess: (widgetResult) => {
+        console.log(1);
         sozvezdie(payment_Name);
-        // data.utm_source = getParameterByName("utm_source");
-        // data.utm_medium = getParameterByName("utm_medium");
-        // data.utm_content = getParameterByName("utm_content");
-        // data.utm_campaign = getParameterByName("utm_campaignt");
-        // data.utm_term = getParameterByName("utm_term");
-        // console.log(data)
-      }
+        console.log(2);
+      },
     })
     .catch(function (error) {
       console.log("error", error);
