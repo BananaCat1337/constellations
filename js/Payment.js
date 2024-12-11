@@ -42,7 +42,7 @@ const pay = function () {
     .pay("charge", {
       publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
       // publicId: "test_api_00000000000000000000002", //Тестовый id
-      description: "Зажги созвездие!222222",
+      description: "Зажги созвездие!",
       amount: payment_amount,
       currency: "RUB",
       autoClose: 5,
