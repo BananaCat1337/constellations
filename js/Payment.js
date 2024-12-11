@@ -56,11 +56,11 @@ const pay = function () {
         utm_campaign: getParameterByName("utm_campaign"),
         utm_term: getParameterByName("utm_term"),
       },
-      onSuccess: (widgetResult) => {
-        console.log(1);
+    })
+    .then((widgetResult) => {
+      if (widgetResult.status === "success") {
         sozvezdie(payment_Name);
-        console.log(2);
-      },
+      }
     })
     .catch(function (error) {
       console.log("error", error);
