@@ -1,4 +1,4 @@
-import { sozvezdie } from "../js/modals.js";
+import { constellations } from "../js/modals.js";
 
 const widget_open = document.getElementById("widget-open");
 
@@ -57,12 +57,10 @@ const pay = function () {
     },
     {
       onSuccess: function (options) {
-        sozvezdie(payment_Name);
+        constellations(payment_Name);
       },
-      onFail: function (reason, options) {
-      },
-      onComplete: function (paymentResult, options) {
-      },
+      onFail: function (reason, options) {},
+      onComplete: function (paymentResult, options) {},
     }
   );
 };
