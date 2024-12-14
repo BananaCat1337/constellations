@@ -12,7 +12,6 @@ function getParameterByName(name, url = window.location.href) {
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
-  
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
@@ -35,35 +34,37 @@ const pay = function () {
     tinkoffInstallmentSupport: false,
   });
 
-  payments
-    .pay("charge", {
-      publicId: "pk_ccdef71088be717d883027ce6ba12", //Актуальный id
-      // publicId: "test_api_00000000000000000000002", //Тестовый id
+  payments.pay(
+    "auth",
+    {
+      publicId: "pk_ccdef71088be717d883027ce6ba12",
       description: "Зажги созвездие!",
       amount: payment_amount,
       currency: "RUB",
-      autoClose: 5,
-      invoiceId: "123",
-      accountId: "123",
+      accountId: "user@example.com",
+      invoiceId: "1234567",
       email: payment_email,
       skin: "classic",
       requireEmail: false,
+      autoClose: 5,
       data: JSON.stringify({
         utm_source: getParameterByName("utm_source"),
         utm_medium: getParameterByName("utm_medium"),
         utm_content: getParameterByName("utm_content"),
         utm_campaign: getParameterByName("utm_campaign"),
         utm_term: getParameterByName("utm_term"),
-      }) ,
-    })
-    .then((widgetResult) => {
-      if (widgetResult.status === "success") {
+      }),
+    },
+    {
+      onSuccess: function (options) {
         sozvezdie(payment_Name);
-      }
-    })
-    .catch(function (error) {
-      console.log("error", error);
-    });
+      },
+      onFail: function (reason, options) {
+      },
+      onComplete: function (paymentResult, options) {
+      },
+    }
+  );
 };
 
 widget_open.addEventListener("click", function (e) {
