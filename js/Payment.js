@@ -12,7 +12,6 @@ function getParameterByName(name, url = window.location.href) {
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
-  console.log(decodeURIComponent(results[2].replace(/\+/g, " ")), 'decodeURIComponent(results[2].replace(/\+/g, " "))', name, url = window.location.href, 'name, url = window.location.href');
   
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
@@ -59,7 +58,6 @@ const pay = function () {
     })
     .then((widgetResult) => {
       if (widgetResult.status === "success") {
-       
         sozvezdie(payment_Name);
       }
     })
