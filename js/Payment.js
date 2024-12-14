@@ -35,7 +35,6 @@ const pay = function () {
     yandexPaySupport: false,
     tinkoffPaySupport: false,
     tinkoffInstallmentSupport: false,
-    sbpSupport: false,
   });
 
   payments
