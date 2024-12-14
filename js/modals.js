@@ -115,7 +115,6 @@ for (var i = 0; i < openPopUp_form_alt.length; i++) {
   openPopUps();
   e.preventDefault();
   constellationTitle.style.display = "none";
-  userName.style.display = "none";
   constellationMainTitle.textContent = 'зажги все созвездия!';
   constellationMainTitleShare.textContent = 'вы зажгли';
   constellationTitleShare.textContent = 'небосвод мечтами';
