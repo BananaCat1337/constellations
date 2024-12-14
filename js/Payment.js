@@ -33,7 +33,6 @@ const pay = function () {
     applePaySupport: false,
     googlePaySupport: false,
     yandexPaySupport: false,
-    tinkoffPaySupport: false,
     tinkoffInstallmentSupport: false,
   });
 
