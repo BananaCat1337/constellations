@@ -41,7 +41,7 @@ const pay = function () {
       description: "Зажги созвездие!",
       amount: payment_amount,
       currency: "RUB",
-      accountId: "user@example.com",
+      accountId: payment_email,
       invoiceId: "1234567",
       email: payment_email,
       skin: "classic",
@@ -53,6 +53,7 @@ const pay = function () {
         utm_content: getParameterByName("utm_content"),
         utm_campaign: getParameterByName("utm_campaign"),
         utm_term: getParameterByName("utm_term"),
+        Name: payment_Name,
       }),
     },
     {
