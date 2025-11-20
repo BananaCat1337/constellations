@@ -61,7 +61,6 @@ const pay = function () {
         constellations(payment_Name);
       },
       onFail: function (reason, options) {
-        constellations(payment_Name);
       },
       onComplete: function (paymentResult, options) {},
     }
