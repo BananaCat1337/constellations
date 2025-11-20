@@ -1,1270 +1,2088 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content='Подопечные фонда "Настенка" нарисовали свои заветные мечты — то, чего им так не хватает, пока они болеют. Эти рисунки превратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - Исполнить мечту мечты!'
+    />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/wheelStylesheet.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/childInfoStylesheet.css" />
+    <link rel="stylesheet" href="./css/cardStylesheet.css" />
+    <link rel="stylesheet" href="./css/text.css" />
+    <link rel="stylesheet" href="./css/adaptive-pc.css" />
+    <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/cardStylesheet.css" />
+    <link rel="stylesheet" href="./css/adaptive-mobile.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content='Подопечные фонда "Настенка" нарисовали свои заветные мечты — то, чего им так не хватает, пока они болеют. Эти рисунки превратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты'>
-  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/wheelStylesheet.css" />
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/childInfoStylesheet.css" />
-  <link rel="stylesheet" href="./css/cardStylesheet.css" />
-  <link rel="stylesheet" href="./css/text.css" />
-  <link rel="stylesheet" href="./css/adaptive-pc.css" />
-  <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/cardStylesheet.css" />
-  <link rel="stylesheet" href="./css/adaptive-mobile.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicons/site.webmanifest">
+    <meta
+      property="og:image"
+      content="https://mechta.nastenka.ru/assets/share/share-post.jpg"
+    />
+    <meta property="og:url" content="https://mechta.nastenka.ru/" />
+    <meta property="og:title" content="Созвездие мечты" />
 
+    <title>Созвездие мечты</title>
+  </head>
 
-  <meta property="og:image" content="https://mechta.nastenka.ru/assets/share/share-post.jpg"/>
-  <meta property="og:url" content="https://mechta.nastenka.ru/" />
-  <meta property="og:title" content="Созвездие мечты"/>
-
-
-  <title>Созвездие мечты</title>
-</head>
- 
-<body>
-  <div class="popUp" id="popUp">
-    <img class="popup_close popup_close_mobile" src="./assets/closseCross-mobile.svg" alt="" />
-    <div class="side-element"></div>
-    <div id="popUp1" class="popUp1 popUp-large">
-      <h2>об акции</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <img class="PopUp-image" src="./assets/PopUp1-image.svg" alt="" />
-          <img class="PopUp-image-mobile" src="./assets/PopUp1-image-mobile.svg" alt="" />
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">
-            Детские мечты, отложенные из-за тяжёлой болезни, зажигаются на бескрайнем небосводе. Они превращаются во
-            множество маленьких звёзд и составляют целые созвездия, которые видны лишь в
-            канун Нового года.
-            <br />
-            <br />
-            Зажигая их, мы поможем детям не только найти путь к выздоровлению, но и стать ближе к осуществлению их
-            заветной мечты.
-          </h1>
-          <button class="popup3_open">
-            <h4 class="botton_text">Зажги созвездие</h4>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div id="popUp2" class="popUp2 popUp-large">
-      <h2>на что пойдут средства?</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <img class="PopUp-image" src="./assets/popUp2.png" alt="" />
-          <img class="PopUp-image-mobile" src="./assets/popUp2-image-mobile.png" alt="" />
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">
-            Благотворительный фонд «Настенька» - один из старейший российских фондов и первый, который стал помогать
-            детям с онкологическими заболеваниями.
-            <br />
-            <br />
-            Фонд оплачивает детям со всей России и из стран СНГ: операции, лечение, реабилитацию, лекарства,
-            обследования, проживание на время лечения и многое другое.
-          </h1>
-          <div class="bottom-elements">
-            <div class="void"></div>
-            <img src="./assets/popUp2.svg" alt="" />
-            <a class="b3" href="https://nastenka.ru/">Узнать больше о фонде</a>
+  <body>
+    <div class="popUp" id="popUp">
+      <img
+        class="popup_close popup_close_mobile"
+        src="./assets/closseCross-mobile.svg"
+        alt=""
+      />
+      <div class="side-element"></div>
+      <div id="popUp1" class="popUp1 popUp-large">
+        <h2>об акции</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <img class="PopUp-image" src="./assets/PopUp1-image.svg" alt="" />
+            <img
+              class="PopUp-image-mobile"
+              src="./assets/PopUp1-image-mobile.svg"
+              alt=""
+            />
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Этот див сверни  -->
-    <div class="popUp3" id="popUp3">
-      <section class="container">
-        <div class="card__container swiper">
-          <div class="card__content">
-            <div class="swiper-wrapper">
-              <div class="cardContainer swiper-slide" data-constellation="кошка" img-constellation="catInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Кошка</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/nikitaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/nikitaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Никита,</p>
-                          <p class="age">6 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/catInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">
-                        «Я мечтаю завести маленького пушистого котёнка. Но мы с мамой почти всё время лежим в больнице,
-                        а кошечек сюда не пускают. Я так хочу побыстрее выздороветь!»
-                      </div>
-                      <div class="star b1">История Никиты — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn btnCard popup_form_open">Зажги созвездие</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="пожарная машина"
-                img-constellation="fireCarInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Пожарная<br />машина</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/davidPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/davidPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Давид,</p>
-                          <p class="age">6 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/fireCarInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я мечтаю поскорее выздороветь и стать пожарным, чтобы спасти как можно
-                        больше людей!»</div>
-                      <div class="star b1">История Давида — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="собака" img-constellation="dogInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Собака</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/gulnaraPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/gulnaraPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Гульнара,</p>
-                          <p class="age">10 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/dogInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Мечтаю о пушистом щеночке. Когда я смогу ходить сама, мы будем с ним много
-                        гулять и играть!»</div>
-                      <div class="star b1">История Гульнары — всего одна звёздочка - мечта из множества, что сияет в
-                        этом созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="мама" img-constellation="mamaInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Мама</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/damirPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/damirPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Дамир,</p>
-                          <p class="age">10 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/mamaInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я очень хочу увидеть счастливую улыбку мамы, когда она узнает, что я
-                        здоров. Хочу обнимать её долго-долго и больше никогда не разлучаться.»</div>
-                      <div class="star b1">История Дамира — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="попугайчик" img-constellation="parrotInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Попугайчик</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/yaroslavPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/yaroslavPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Ярослав,</p>
-                          <p class="age">12 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/parrotInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«У меня есть целых два лучших друга — собачка Соня и попугай Веня! Хочу
-                        набраться побольше сил, чтобы хорошо за ними ухаживать.»</div>
-                      <div class="star b1">История Ярослава — всего одна звёздочка - мечта из множества, что сияет в
-                        этом созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="велосипед" img-constellation="bycicleInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Велосипед</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/ulyanaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/ulyanaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Ульяна,</p>
-                          <p class="age">5 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/bycicleInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Хочу велосипед! Большой и красивый. Но я ещё не умею на нём кататься.
-                        Сделаю это, когда разрешат врачи.»</div>
-                      <div class="star b1">История Ульяны — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="самолёт" img-constellation="planeInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Самолёт</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/timoshaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/timoshaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Тимоша,</p>
-                          <p class="age">5 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/planeInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Мечтаю, что когда я буду здоров, обязательно полечу на настоящем самолете
-                        на море. Со мной будут рядом мама, папа, сестренки и братик»</div>
-                      <div class="star b1">История Тимоши — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="хоккей" img-constellation="hokkeyInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Хоккей</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/vanyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/vanyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Ваня,</p>
-                          <p class="age">12 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/hokkeyInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я мечтаю стать известным хоккеистом. Когда я выздоровею, то буду
-                        тренироваться каждый день!»</div>
-                      <div class="star b1">История Вани — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="ёжик" img-constellation="hedgehogInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Ёжик</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/katyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/katyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Катя,</p>
-                          <p class="age">4 года</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/hedgehogInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Хочу увидеть живого ёжика! Когдая смогу ходить самостоятельно, мы с мамой
-                        пойдем на прогулку в лес и обязательно его увидим.»</div>
-                      <div class="star b1">История Кати — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="черепашка" img-constellation="turtleInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Черепашка</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/alisiyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/alisiyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Алисия,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/turtleInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Когда я буду здорова, мы с мамой поедем на море. Я так хочу увидеть
-                        забавных, маленьких черепашек!»</div>
-                      <div class="star b1">История Алисии — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="коньки" img-constellation="skatesInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Коньки</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/lizaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/lizaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Лиза,</p>
-                          <p class="age">9 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/skatesInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Зимой на катке так весело. Когда я буду здоровой мы обязательно туда
-                        поедем, и я научусь кататься на коньках.</div>
-                      <div class="star b1">История Лизы — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="вертолёт" img-constellation="helicopterInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Вертолёт</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/romaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/romaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Рома,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/helicopterInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я мечтаю полетать на вертолете! А ещё когда я стану здоровыми вырасту,
-                        обязательно научусь им управлять.»</div>
-                      <div class="star b1">История Ромы — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="светофор" img-constellation="trafficLight">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Светофор</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/vasyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/vasyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Вася,</p>
-                          <p class="age">16 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/trafficLight.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я могу часами наблюдать за движением на перекрёстке. Жду того дня, когда
-                        смогу успешно сдать экзамен и наконец-то занять место водителя!»</div>
-                      <div class="star b1">История Васи — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="фотоаппарат" img-constellation="camInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Фотоаппарат</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/dimaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/dimaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Дима,</p>
-                          <p class="age">9 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/camInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Мечтаю выздороветь и стать фотографом. Чтобы показать людям всю красоту
-                        мира, которую я пока могу видеть только из окна больничной палаты.»</div>
-                      <div class="star b1">История Димы — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="компьютер" img-constellation="PCInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Компьютер</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/matveyPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/matveyPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Матвей,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/PCInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я хочу стать известным блогером, чтобы снимать добрые видео и помогать
-                        другим детям, как сейчас помогают мне.»</div>
-                      <div class="star b1">История Матвея — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="паровоз" img-constellation="trainInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Паровоз</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/dima2Photo.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/dima2Photo-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Дима,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/trainInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Моя мечта — стать машинистом паровоза. Но это очень ответственная работа,
-                        поэтому мне нужно быть внимательным и здоровым.»</div>
-                      <div class="star b1">История Димы — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="туфелька" img-constellation="shoeInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Туфелька</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/sofiyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/sofiyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">София,</p>
-                          <p class="age">14 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/shoeInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Мечтаю снова научиться ходить без поддержки и пойти на школьный выпускной в
-                        красивых туфлях на высоком каблуке.»</div>
-                      <div class="star b1">История Софии — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="врач" img-constellation="doctorInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Врач</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/ksusha2Photo.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/ksusha2Photo-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Ксюша,</p>
-                          <p class="age">13 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/doctorInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Моя мечта — стать врачом и спасти множество жизней. Но сначала мне нужно
-                        выздороветь и набраться сил, чтобы помогать другим.»</div>
-                      <div class="star b1">История Ксюши — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="кораблик" img-constellation="shipInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Кораблик</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/mehrodgePhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/mehrodgePhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Мехродж,</p>
-                          <p class="age">17 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/shipInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Море, ветер и парус — это и есть моя мечта! Когда я стану здоровым хочу
-                        отправиться в путешествие на корабле и увидеть много красивых мест.»</div>
-                      <div class="star b1">История Мехроджи — всего одна звёздочка - мечта из множества, что сияет в
-                        этом созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="горы" img-constellation="mountainInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Горы</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/emiliyaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/emiliyaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Эмилия,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/mountainInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я мечтаю увидеть настоящие горы. Когда я буду здорова мы с мамой пойдем в
-                        поход по горным тропкам.»</div>
-                      <div class="star b1">История Эмилии — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="кукла" img-constellation="dollInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Кукла</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/miroslavaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/miroslavaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Мирослава,</p>
-                          <p class="age">7 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/dollInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я так скучаю по своей кукле! Моя мечта — побыстрее выздороветь и поехать
-                        домой, чтобы её обнять.»</div>
-                      <div class="star b1">История Мирославы — всего одна звёздочка - мечта из множества, что сияет в
-                        этом созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="мороженое" img-constellation="iceCreamInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Мороженое</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/ksushaPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/ksushaPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Ксюша,</p>
-                          <p class="age">6 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/iceCreamInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Когда я стану здоровой. Смогу есть всё, что захочу. Много-много конфет, а
-                        ещё мороженое и даже чипсы!»</div>
-                      <div class="star b1">История Ксюши — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="мячик" img-constellation="ballInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Мячик</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/leonidPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/leonidPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Лёня,</p>
-                          <p class="age">11 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/ballInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Моя мечта — стать известным футболистом. Когда я выздоровею, то обязательно
-                        стану лучшим игроком!»</div>
-                      <div class="star b1">История Леонида — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cardContainer swiper-slide" data-constellation="торт" img-constellation="cakeInfo">
-                <div class="backsideBody">
-                  <div class="backsideInfo">
-                    <p class="constellClische">Созвездие</p>
-                    <p class="constellName">Торт</p>
-                  </div>
-                </div>
-                <div class="frontsideBody">
-                  <div class="frontsideContainer">
-                    <div class="namePhotoConstell">
-                      <img class="foto_for_pc" src="./cards/childInfoCards/childInfoSvgs/kanishayPhoto.png"
-                        alt="Фото Ребёнка" />
-                      <img class="foto_for_mobile" src="./cards/childInfoCards/childInfoSvgs/kanishayPhoto-mobile.png"
-                        alt="Фото Ребёнка" />
-                      <div class="nameConstell_Container">
-                        <div class="whoIs">
-                          <p class="name">Канышай,</p>
-                          <p class="age">15 лет</p>
-                        </div>
-                        <img src="./cards/childInfoCards/childInfoSvgs/cakeInfo.svg" alt="Созвездие" />
-                      </div>
-                    </div>
-                    <div class="infoText">
-                      <div class="dream b1">«Я мечтаю выздороветь и стать кондитером. Буду печь маме и друзьям самые
-                        вкусные и красивые торты.»</div>
-                      <div class="star b1">История Канышай — всего одна звёздочка - мечта из множества, что сияет в этом
-                        созвездии.</div>
-                      <div class="btnContainer"><button class="btn popup_form_open">Зажги созвездие</button></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </section>
-    </div>
-
-    <div id="popUp-form" class="popUp-form popUp-large">
-      <h2 id="constellation-main-title">созвездие</h2>
-      <h2 id="constellation-title">мама</h2>
-      <div class="info-container">
-        <div class="left-elements">
-          <form action="">
-            <input class="b3" id="payment_Name" type="text" placeholder="Имя" />
-            <div id="name-error" class="error-message"></div>
-
-            <input class="b3" id="payment_amount" type="text" placeholder="Сумма" />
-            <div id="amount-error" class="error-message">Введите сумму</div>
-            <input class="b3" id="payment_email" type="email" placeholder="E - mail" />
-            <div id="email-error" class="error-message">Введите корректный e-mail</div>
-            <div class="chekbox">
-              <input class="b5 payment_agreement" id="payment_agreement" type="checkbox"
-                title="Я соглашаюсь с условиями пожертвования" />
-              <label for="payment_agreement">
-                Я соглашаюсь с
-                <a href="https://nastenka.ru/wp-content/themes/nastenka/docs/pub-2014.pdf" target="_blank">условиями
-                  пожертвования</a>
-                <a href="https://nastenka.ru/wp-content/uploads/oferta-politika-akcija.pdf" target="_blank">и условиями
-                  обработки персональных данных</a>
-              </label>
-
-              <p id="checkbox-error" class="error-message">Вы должны согласиться с условиями пожертвования.</p>
-            </div>
-          </form>
-        </div>
-        <div class="right-elements">
-          <h1 class="b1">Мы очень хотим, чтобы детские мечты исполнились! С вашей помощью мы сможем оплатить необходимое
-            лечение и сокровенное обязательно сбудется, когда дети поправятся.</h1>
-          <button class="" id="widget-open">
-            <h4 class="botton_text">Зажги созвездие</h4>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="popUp-sozvezdie popUp-large" id="popUp-sozvezdie">
-      <div class="constellationContainer">
-        <h2 id="constellation-main-title-share" class="constellationName">ВАШЕ СОЗВЕЗДИЕ</h2>
-        <h2 id="constellation-title-share">мама</h2>
-        <div></div>
-      </div>
-      <div class="info-container">
-        <div class="left-elements">
-          <img class="constellationImage" src="./cards/childInfoCards/childInfoSvgs/mamaInfo.svg" alt="" />
-        </div>
-        <div class="right-elements">
-          <div class="doneInfoContainer">
-            <h3 class="userName" id="userName"></h3>
-            <h4 class="shareThisInfo b1">Вы зажгли созвездие и помогли детской мечте засиять на карте звёздного неба. 
-              Поделитесь этой новостью со всеми, чтобы карта созвездий стала ещё ярче!</h4>
-            <button class="" id="openPopUp_share">
-              <h4 class="botton_text">Поделиться</h4>
+          <div class="right-elements">
+            <h1 class="b1">
+              Наши подопечные - дети с самыми тяжелыми заболеваниями, но как и у
+              других детей у них есть мечты.
+              <br />
+              <br />
+              Зажигая созвездия, вы помогаете детям выздороветь и стать ближе к
+              исполнению  заветной мечты.
+              <br />
+              <br />
+              “Если звезды зажигают, значит это кому-то нужно”
+              <br />
+              В. Маяковский
+            </h1>
+            <button class="popup3_open">
+              <h4 class="botton_text">Исполнить мечту</h4>
             </button>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="popUp-share popUp-large" id="popUp_share">
-      <div class="b4">Поделитесь страницей в социальных сетях</div>
-      <div class="contacts_container">
-        <a id="ok-share" target="_blank">
-          <img class="contactsLogo" src="assets/Odnoklassniki.svg" alt="Odnoklassniki SVG" />
-        </a>
-        <a id="vk-share" target="_blank">
-          <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
-        </a>
-        <a id="tg-share" target="_blank">
-          <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
-        </a>
-      </div>
-    </div>
-
-    <div class="PopUp_video" id="PopUp_video">
-      <video id="videoElement" class="video-content" width="100%" height="auto" controls>
-        <source src="./assets/video/настенька 9.0.mp4" type="video/mp4" />
-        Ваш браузер не поддерживает видео.
-      </video>
-    </div>
-
-    <div class="side-element">
-      <img class="popup_close" src="./assets/closseCross.svg" alt="" />
-    </div>
-  </div>
-
-  <div class="bgImage-container"></div>
-  <div class="wrapper">
-    <header class="header">
-      <div class="logo-left">
-        <img class="logo-header" src="./assets/logo-left.svg" alt="" />
-      </div>
-      <div class="logo-center">
-        <img class="logo-header" src="./assets/logo-center.svg" alt="" />
-      </div>
-      <div id="open_menu" class="void">
-        <img src="./assets/menu.svg" alt="" />
-      </div>
-    </header>
-    <main>
-      <div class="main-wrapper">
-        <div class="menu-container">
-          <div class="left-nav-bar" id="menu">
-            <h5 class="button-nav b3-1" id="popup1_open">Об акции</h5>
-            <h5 class="button-nav b3-1" id="popup2_open">На что пойдут средства?</h5>
-            <h5 class="button-nav b3-1 popup3_open" id="popup3_open">Выбрать созвездие</h5>
+      <div id="popUp2" class="popUp2 popUp-large">
+        <h2>на что пойдут средства?</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <img class="PopUp-image" src="./assets/popUp2.png" alt="" />
+            <img
+              class="PopUp-image-mobile"
+              src="./assets/popUp2-image-mobile.png"
+              alt=""
+            />
           </div>
-        </div>
-
-        <div class="main-title-wrapper">
-          <h1 class="main-title">
-            СЛЕДУЙ <br />
-            ЗА СОЗВЕЗДИЕМ МЕЧТЫ!
-          </h1>
-          <p class="main-sub-title b3">Выбери созвездие и помоги детям!</p>
-          <!-- <p class="main-sub-title b3">и помоги детям выздороветь, чтобы их исполнить</p> -->
-        </div>
-        <div class="bolvanka"></div>
-      </div>
-      <div class="constellation__slider mySwiper">
-        <div class="swiper-button-next-mobyle"></div>
-        <div class="swiper-button-prev-mobyle"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div class="topConstellationPair_constellationGroup__slider reduce_line">
-                <img class="constellationToClick" src="./assets/wheelSVG/group1/firecar.svg"
-                  data-constellation="пожарная машина" alt="Созвездие" />
-                <img class="constellationToClick" src="./assets/wheelSVG/group1/dog.svg" data-constellation="собака"
-                  alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider">
-                <img class="constellationToClick" src="./assets/wheelSVG/group1/cat.svg" data-constellation="кошка"
-                  alt="Созвездие" />
-                <img class="constellationToClick" src="./assets/wheelSVG/group1/mama.svg" data-constellation="мама"
-                  alt="Созвездие" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div
-                class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-60" id="" src="./assets/wheelSVG/group2/parrot.svg"
-                  data-constellation="попугайчик" alt="Созвездие" />
-                <img class="constellationToClick rotate-60" id="" src="./assets/wheelSVG/group2/hokkey.svg"
-                  data-constellation="хоккей" alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-60" src="./assets/wheelSVG/group2/bycicle.svg"
-                  data-constellation="велосипед" alt="Созвездие" />
-                <img class="constellationToClick rotate-60" src="./assets/wheelSVG/group2/plane.svg"
-                  data-constellation="самолёт" alt="Созвездие" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div
-                class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-120" src="./assets/wheelSVG/group3/hedgehog.svg"
-                  data-constellation="ёжик" alt="Созвездие" />
-                <img class="constellationToClick rotate-120" src="./assets/wheelSVG/group3/helicopter.svg"
-                  data-constellation="вертолёт" alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-120" src="./assets/wheelSVG/group3/turtle.svg"
-                  data-constellation="черепашка" alt="Созвездие" />
-                <img class="constellationToClick rotate-120" src="./assets/wheelSVG/group3/skates.svg"
-                  data-constellation="коньки" alt="Созвездие" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div
-                class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-180 small_picture"
-                  src="./assets/wheelSVG/group4/trafficLight.svg" data-constellation="светофор" alt="Созвездие" />
-                <img class="constellationToClick rotate-180" src="./assets/wheelSVG/group4/train.svg"
-                  data-constellation="паровоз" alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-180 small_picture" src="./assets/wheelSVG/group4/cam.svg"
-                  data-constellation="фотоаппарат" alt="Созвездие" />
-                <img class="constellationToClick rotate-180 small_picture" src="./assets/wheelSVG/group4/PC.svg"
-                  data-constellation="компьютер" alt="Созвездие" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div
-                class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-240 small_picture" src="./assets/wheelSVG/group5/shoe.svg"
-                  data-constellation="туфелька" alt="Созвездие" />
-                <img class="constellationToClick rotate-240 mountains" src="./assets/wheelSVG/group5/mountain.svg"
-                  data-constellation="горы" alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-240" src="./assets/wheelSVG/group5/doctor.svg"
-                  data-constellation="врач" alt="Созвездие" />
-                <img class="constellationToClick rotate-240" src="./assets/wheelSVG/group5/ship.svg"
-                  data-constellation="кораблик" alt="Созвездие" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="constellationGroup__slider">
-              <div
-                class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-300" src="./assets/wheelSVG/group6/doll.svg"
-                  data-constellation="кукла" alt="Созвездие" />
-                <img class="constellationToClick rotate-300" src="./assets/wheelSVG/group6/cake.svg"
-                  data-constellation="торт" alt="Созвездие" />
-              </div>
-              <div class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider">
-                <img class="constellationToClick rotate-300" src="./assets/wheelSVG/group6/iceCream.svg"
-                  data-constellation="мороженое" alt="Созвездие" />
-                <img class="constellationToClick rotate-300" src="./assets/wheelSVG/group6/ball.svg"
-                  data-constellation="мячик" alt="Созвездие" />
-              </div>
+          <div class="right-elements">
+            <h1 class="b1">
+              Благотворительный фонд «Настенька» с 2002 года помогает детям с
+              тяжелыми заболеваниями.
+              <br />
+              Фонд оказывает комплексную помощь детям от ранней диагностики до
+              полной реабилитации.
+              <br />
+              <br />
+              Благодаря работе фонда и вашей поддержки более 7000 детей получили
+              жизненно важную помощь и шанс на выздоровление.
+              <br />
+              <br />
+              Пусть в новом году счастливых историй выздоровления будет больше и
+              детские мечты исполнятся!
+              <br />
+              Давайте вместе помогать детям!
+            </h1>
+            <div class="bottom-elements">
+              <div class="void"></div>
+              <img src="./assets/popUp2.svg" alt="" />
+              <a class="b3" href="https://nastenka.ru/"
+                >Узнать больше о фонде</a
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="main-lover-elements">
-        <div class="input-container">
-          <input class="slider-input" type="range" min="0" max="360" value="0" step="1" class="range" id="range" />
-          <div class="range-text">|| 0 ||</div>
-          <div class="marks-container" id="marks-container"></div>
-        </div>
-        <div class="info-blocks" id="info_blocks">
-          <div class="lower-popUp-wraper" id="lower_popUp">
-            <div class="info-block left" id="left_info_block">
-              <button class="lower-popUp-botton" id="lower_popUp_botton">
-                <img src="./assets/bottom-menu-button.svg" alt="" />
-              </button>
-              <div class="left-info-block-conainer">
-                <p class="b2 title_lower_popUp" id="lower_popUp_title">Кому и как помочь?</p>
-                <img src="./assets/video.png" id="openPopUp_video" alt="" />
-                <div class="right-elements">
-                  <h3 class="b3">Наши подопечные нарисовали свои заветные мечты — то, чего им так не хватает, пока они
-                    болеют.</h3>
-                  <h4 class="b4">Каждый рисунок — это лишь одна маленькая звёздочка в созвездии мечты, ведь порой
-                    желания совпадают.</h4>
-                  <div class="graphic-element-mobile">
-                    <img class="graphic" src="./assets/Graphic.svg" alt="" />
-                    <div class="steps">
-                      <div class="step">
-                        <h4>ШАГ 1</h4>
-                        <h5 class="b5">Выбери созвездие</h5>
+
+      <!-- Этот див сверни  -->
+      <div class="popUp3" id="popUp3">
+        <section class="container">
+          <div class="card__container swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="кошка"
+                  img-constellation="catInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Кошка</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/nikitaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/nikitaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Никита,</p>
+                            <p class="age">6 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/catInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
                       </div>
-                      <div class="step">
-                        <h4>ШАГ 2</h4>
-                        <h5 class="b5">Определи сумму пожертвования</h5>
-                      </div>
-                      <div class="step">
-                        <h4>ШАГ 3</h4>
-                        <h5 class="b5">Следуй за созвездием мечты!</h5>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю завести маленького пушистого котёнка. Но мы
+                          с мамой почти всё время лежим в больнице, а кошечек
+                          сюда не пускают. Я так хочу побыстрее выздороветь!»
+                        </div>
+                        <div class="star b1">
+                          История Никиты — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn btnCard popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="lover-elements">
-                    <h4 class="b4">Зажги небосвод мечтами и помоги детям выздороветь.</h4>
-                    <button class="popup_form_open_alt defShare-mobyle">
-                      <h4 class="botton_text">Зажги небосвод</h4>
-                    </button>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="пожарная машина"
+                  img-constellation="fireCarInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Пожарная<br />машина</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/davidPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/davidPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Давид,</p>
+                            <p class="age">6 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/fireCarInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю поскорее выздороветь и стать пожарным, чтобы
+                          спасти как можно больше людей!»
+                        </div>
+                        <div class="star b1">
+                          История Давида — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="собака"
+                  img-constellation="dogInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Собака</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/gulnaraPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/gulnaraPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Гульнара,</p>
+                            <p class="age">10 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/dogInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Мечтаю о пушистом щеночке. Когда я смогу ходить сама,
+                          мы будем с ним много гулять и играть!»
+                        </div>
+                        <div class="star b1">
+                          История Гульнары — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="мама"
+                  img-constellation="mamaInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Мама</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/damirPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/damirPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Дамир,</p>
+                            <p class="age">10 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/mamaInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я очень хочу увидеть счастливую улыбку мамы, когда
+                          она узнает, что я здоров. Хочу обнимать её долго-долго
+                          и больше никогда не разлучаться.»
+                        </div>
+                        <div class="star b1">
+                          История Дамира — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="попугайчик"
+                  img-constellation="parrotInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Попугайчик</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/yaroslavPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/yaroslavPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Ярослав,</p>
+                            <p class="age">12 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/parrotInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «У меня есть целых два лучших друга — собачка Соня и
+                          попугай Веня! Хочу набраться побольше сил, чтобы
+                          хорошо за ними ухаживать.»
+                        </div>
+                        <div class="star b1">
+                          История Ярослава — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="велосипед"
+                  img-constellation="bycicleInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Велосипед</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/ulyanaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/ulyanaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Ульяна,</p>
+                            <p class="age">5 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/bycicleInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Хочу велосипед! Большой и красивый. Но я ещё не умею
+                          на нём кататься. Сделаю это, когда разрешат врачи.»
+                        </div>
+                        <div class="star b1">
+                          История Ульяны — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="самолёт"
+                  img-constellation="planeInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Самолёт</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/timoshaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/timoshaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Тимоша,</p>
+                            <p class="age">5 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/planeInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Мечтаю, что когда я буду здоров, обязательно полечу
+                          на настоящем самолете на море. Со мной будут рядом
+                          мама, папа, сестренки и братик»
+                        </div>
+                        <div class="star b1">
+                          История Тимоши — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="хоккей"
+                  img-constellation="hokkeyInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Хоккей</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/vanyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/vanyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Ваня,</p>
+                            <p class="age">12 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/hokkeyInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю стать известным хоккеистом. Когда я
+                          выздоровею, то буду тренироваться каждый день!»
+                        </div>
+                        <div class="star b1">
+                          История Вани — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="ёжик"
+                  img-constellation="hedgehogInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Ёжик</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/katyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/katyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Катя,</p>
+                            <p class="age">4 года</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/hedgehogInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Хочу увидеть живого ёжика! Когдая смогу ходить
+                          самостоятельно, мы с мамой пойдем на прогулку в лес и
+                          обязательно его увидим.»
+                        </div>
+                        <div class="star b1">
+                          История Кати — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="черепашка"
+                  img-constellation="turtleInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Черепашка</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/alisiyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/alisiyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Алисия,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/turtleInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Когда я буду здорова, мы с мамой поедем на море. Я
+                          так хочу увидеть забавных, маленьких черепашек!»
+                        </div>
+                        <div class="star b1">
+                          История Алисии — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="коньки"
+                  img-constellation="skatesInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Коньки</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/lizaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/lizaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Лиза,</p>
+                            <p class="age">9 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/skatesInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Зимой на катке так весело. Когда я буду здоровой мы
+                          обязательно туда поедем, и я научусь кататься на
+                          коньках.
+                        </div>
+                        <div class="star b1">
+                          История Лизы — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="вертолёт"
+                  img-constellation="helicopterInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Вертолёт</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/romaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/romaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Рома,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/helicopterInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю полетать на вертолете! А ещё когда я стану
+                          здоровыми вырасту, обязательно научусь им управлять.»
+                        </div>
+                        <div class="star b1">
+                          История Ромы — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="светофор"
+                  img-constellation="trafficLight"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Светофор</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/vasyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/vasyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Вася,</p>
+                            <p class="age">16 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/trafficLight.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я могу часами наблюдать за движением на перекрёстке.
+                          Жду того дня, когда смогу успешно сдать экзамен и
+                          наконец-то занять место водителя!»
+                        </div>
+                        <div class="star b1">
+                          История Васи — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="фотоаппарат"
+                  img-constellation="camInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Фотоаппарат</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/dimaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/dimaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Дима,</p>
+                            <p class="age">9 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/camInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Мечтаю выздороветь и стать фотографом. Чтобы показать
+                          людям всю красоту мира, которую я пока могу видеть
+                          только из окна больничной палаты.»
+                        </div>
+                        <div class="star b1">
+                          История Димы — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="компьютер"
+                  img-constellation="PCInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Компьютер</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/matveyPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/matveyPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Матвей,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/PCInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я хочу стать известным блогером, чтобы снимать добрые
+                          видео и помогать другим детям, как сейчас помогают
+                          мне.»
+                        </div>
+                        <div class="star b1">
+                          История Матвея — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="паровоз"
+                  img-constellation="trainInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Паровоз</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/dima2Photo.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/dima2Photo-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Дима,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/trainInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Моя мечта — стать машинистом паровоза. Но это очень
+                          ответственная работа, поэтому мне нужно быть
+                          внимательным и здоровым.»
+                        </div>
+                        <div class="star b1">
+                          История Димы — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="туфелька"
+                  img-constellation="shoeInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Туфелька</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/sofiyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/sofiyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">София,</p>
+                            <p class="age">14 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/shoeInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Мечтаю снова научиться ходить без поддержки и пойти
+                          на школьный выпускной в красивых туфлях на высоком
+                          каблуке.»
+                        </div>
+                        <div class="star b1">
+                          История Софии — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="врач"
+                  img-constellation="doctorInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Врач</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/ksusha2Photo.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/ksusha2Photo-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Ксюша,</p>
+                            <p class="age">13 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/doctorInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Моя мечта — стать врачом и спасти множество жизней.
+                          Но сначала мне нужно выздороветь и набраться сил,
+                          чтобы помогать другим.»
+                        </div>
+                        <div class="star b1">
+                          История Ксюши — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="кораблик"
+                  img-constellation="shipInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Кораблик</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/mehrodgePhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/mehrodgePhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Мехродж,</p>
+                            <p class="age">17 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/shipInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Море, ветер и парус — это и есть моя мечта! Когда я
+                          стану здоровым хочу отправиться в путешествие на
+                          корабле и увидеть много красивых мест.»
+                        </div>
+                        <div class="star b1">
+                          История Мехроджи — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="горы"
+                  img-constellation="mountainInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Горы</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/emiliyaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/emiliyaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Эмилия,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/mountainInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю увидеть настоящие горы. Когда я буду здорова
+                          мы с мамой пойдем в поход по горным тропкам.»
+                        </div>
+                        <div class="star b1">
+                          История Эмилии — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="кукла"
+                  img-constellation="dollInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Кукла</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/miroslavaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/miroslavaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Мирослава,</p>
+                            <p class="age">7 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/dollInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я так скучаю по своей кукле! Моя мечта — побыстрее
+                          выздороветь и поехать домой, чтобы её обнять.»
+                        </div>
+                        <div class="star b1">
+                          История Мирославы — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="мороженое"
+                  img-constellation="iceCreamInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Мороженое</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/ksushaPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/ksushaPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Ксюша,</p>
+                            <p class="age">6 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/iceCreamInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Когда я стану здоровой. Смогу есть всё, что захочу.
+                          Много-много конфет, а ещё мороженое и даже чипсы!»
+                        </div>
+                        <div class="star b1">
+                          История Ксюши — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="мячик"
+                  img-constellation="ballInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Мячик</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/leonidPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/leonidPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Лёня,</p>
+                            <p class="age">11 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/ballInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Моя мечта — стать известным футболистом. Когда я
+                          выздоровею, то обязательно стану лучшим игроком!»
+                        </div>
+                        <div class="star b1">
+                          История Леонида — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="cardContainer swiper-slide"
+                  data-constellation="торт"
+                  img-constellation="cakeInfo"
+                >
+                  <div class="backsideBody">
+                    <div class="backsideInfo">
+                      <p class="constellClische">Созвездие</p>
+                      <p class="constellName">Торт</p>
+                    </div>
+                  </div>
+                  <div class="frontsideBody">
+                    <div class="frontsideContainer">
+                      <div class="namePhotoConstell">
+                        <img
+                          class="foto_for_pc"
+                          src="./cards/childInfoCards/childInfoSvgs/kanishayPhoto.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <img
+                          class="foto_for_mobile"
+                          src="./cards/childInfoCards/childInfoSvgs/kanishayPhoto-mobile.png"
+                          alt="Фото Ребёнка"
+                        />
+                        <div class="nameConstell_Container">
+                          <div class="whoIs">
+                            <p class="name">Канышай,</p>
+                            <p class="age">15 лет</p>
+                          </div>
+                          <img
+                            src="./cards/childInfoCards/childInfoSvgs/cakeInfo.svg"
+                            alt="Созвездие"
+                          />
+                        </div>
+                      </div>
+                      <div class="infoText">
+                        <div class="dream b1">
+                          «Я мечтаю выздороветь и стать кондитером. Буду печь
+                          маме и друзьям самые вкусные и красивые торты.»
+                        </div>
+                        <div class="star b1">
+                          История Канышай — всего одна звёздочка - мечта из
+                          множества, что сияет в этом созвездии.
+                        </div>
+                        <div class="btnContainer">
+                          <button class="btn popup_form_open">
+                            Исполнить мечту
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </div>
+
+      <div id="popUp-form" class="popUp-form popUp-large">
+        <h2 id="constellation-main-title">созвездие</h2>
+        <h2 id="constellation-title">мама</h2>
+        <div class="info-container">
+          <div class="left-elements">
+            <form action="">
+              <input
+                class="b3"
+                id="payment_Name"
+                type="text"
+                placeholder="Имя"
+              />
+              <div id="name-error" class="error-message"></div>
+
+              <input
+                class="b3"
+                id="payment_amount"
+                type="text"
+                placeholder="Сумма"
+              />
+              <div id="amount-error" class="error-message">Введите сумму</div>
+              <input
+                class="b3"
+                id="payment_email"
+                type="email"
+                placeholder="E - mail"
+              />
+              <div id="email-error" class="error-message">
+                Введите корректный e-mail
+              </div>
+              <div class="chekbox">
+                <input
+                  class="b5 payment_agreement"
+                  id="payment_agreement"
+                  type="checkbox"
+                  title="Я соглашаюсь с условиями пожертвования"
+                />
+                <label for="payment_agreement">
+                  Я соглашаюсь с
+                  <a
+                    href="https://nastenka.ru/wp-content/themes/nastenka/docs/pub-2014.pdf"
+                    target="_blank"
+                    >условиями пожертвования</a
+                  >
+                  <a
+                    href="https://nastenka.ru/wp-content/uploads/oferta-politika-akcija.pdf"
+                    target="_blank"
+                    >и условиями обработки персональных данных</a
+                  >
+                </label>
+
+                <p id="checkbox-error" class="error-message">
+                  Вы должны согласиться с условиями пожертвования.
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="right-elements">
+            <h1 class="b1">
+              Ваше пожертвование поможет детям победить болезнь.
+              <br />
+              <br />
+              Сокровенное обязательно сбудется, когда дети поправятся.
+            </h1>
+            <button class="" id="widget-open">
+              <h4 class="botton_text">Исполнить мечту</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popUp-sozvezdie popUp-large" id="popUp-sozvezdie">
+        <div class="constellationContainer">
+          <h2 id="constellation-main-title-share" class="constellationName">
+            ВАШЕ СОЗВЕЗДИЕ
+          </h2>
+          <h2 id="constellation-title-share">мама</h2>
+          <div></div>
+        </div>
+        <div class="info-container">
+          <div class="left-elements">
+            <img
+              class="constellationImage"
+              src="./cards/childInfoCards/childInfoSvgs/mamaInfo.svg"
+              alt=""
+            />
+          </div>
+          <div class="right-elements">
+            <div class="doneInfoContainer">
+              <h3 class="userName" id="userName"></h3>
+              <h4 class="shareThisInfo b1">
+                Вы подарили ребенку надежду на выздоровление!
+                <br />
+                Вы добрый волшебник, который приблизил исполнение детской мечты.
+                <br />
+                <br />
+                Поделитесь этой новостью со всеми, чтобы новогоднее чудо
+                продолжалось !
+              </h4>
+              <button class="" id="openPopUp_share">
+                <h4 class="botton_text">Поделиться</h4>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popUp-share popUp-large" id="popUp_share">
+        <div class="b4">Поделитесь страницей в социальных сетях</div>
+        <div class="contacts_container">
+          <a id="ok-share" target="_blank">
+            <img
+              class="contactsLogo"
+              src="assets/Odnoklassniki.svg"
+              alt="Odnoklassniki SVG"
+            />
+          </a>
+          <a id="vk-share" target="_blank">
+            <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
+          </a>
+          <a id="tg-share" target="_blank">
+            <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
+          </a>
+        </div>
+      </div>
+
+      <div class="PopUp_video" id="PopUp_video">
+        <video
+          id="videoElement"
+          class="video-content"
+          width="100%"
+          height="auto"
+          controls
+        >
+          <source src="./assets/video/настенька 9.0.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+
+      <div class="side-element">
+        <img class="popup_close" src="./assets/closseCross.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="bgImage-container"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo-left">
+          <img class="logo-header" src="./assets/logo-left.svg" alt="" />
+        </div>
+        <div class="logo-center">
+          <img class="logo-header" src="./assets/logo-center.svg" alt="" />
+        </div>
+        <div id="open_menu" class="void">
+          <img src="./assets/menu.svg" alt="" />
+        </div>
+      </header>
+      <main>
+        <div class="main-wrapper">
+          <div class="menu-container">
+            <div class="left-nav-bar" id="menu">
+              <h5 class="button-nav b3-1" id="popup1_open">Об акции</h5>
+              <h5 class="button-nav b3-1" id="popup2_open">
+                На что пойдут средства?
+              </h5>
+              <h5 class="button-nav b3-1 popup3_open" id="popup3_open">
+                Выбрать созвездие
+              </h5>
+            </div>
+          </div>
+
+          <div class="main-title-wrapper">
+            <h1 class="main-title">
+              ЗАЖГИ <br />
+              СОЗВЕЗДИЕ МЕЧТЫ!
+            </h1>
+            <p class="main-sub-title b3">Выбери созвездие и помоги детям!</p>
+            <!-- <p class="main-sub-title b3">и помоги детям выздороветь, чтобы их исполнить</p> -->
+          </div>
+          <div class="bolvanka"></div>
+        </div>
+        <div class="constellation__slider mySwiper">
+          <div class="swiper-button-next-mobyle"></div>
+          <div class="swiper-button-prev-mobyle"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="topConstellationPair_constellationGroup__slider reduce_line"
+                >
+                  <img
+                    class="constellationToClick"
+                    src="./assets/wheelSVG/group1/firecar.svg"
+                    data-constellation="пожарная машина"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick"
+                    src="./assets/wheelSVG/group1/dog.svg"
+                    data-constellation="собака"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div class="bottomConstellationPair_constellationGroup__slider">
+                  <img
+                    class="constellationToClick"
+                    src="./assets/wheelSVG/group1/cat.svg"
+                    data-constellation="кошка"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick"
+                    src="./assets/wheelSVG/group1/mama.svg"
+                    data-constellation="мама"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-60"
+                    id=""
+                    src="./assets/wheelSVG/group2/parrot.svg"
+                    data-constellation="попугайчик"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-60"
+                    id=""
+                    src="./assets/wheelSVG/group2/hokkey.svg"
+                    data-constellation="хоккей"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div
+                  class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-60"
+                    src="./assets/wheelSVG/group2/bycicle.svg"
+                    data-constellation="велосипед"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-60"
+                    src="./assets/wheelSVG/group2/plane.svg"
+                    data-constellation="самолёт"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-120"
+                    src="./assets/wheelSVG/group3/hedgehog.svg"
+                    data-constellation="ёжик"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-120"
+                    src="./assets/wheelSVG/group3/helicopter.svg"
+                    data-constellation="вертолёт"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div
+                  class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-120"
+                    src="./assets/wheelSVG/group3/turtle.svg"
+                    data-constellation="черепашка"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-120"
+                    src="./assets/wheelSVG/group3/skates.svg"
+                    data-constellation="коньки"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-180 small_picture"
+                    src="./assets/wheelSVG/group4/trafficLight.svg"
+                    data-constellation="светофор"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-180"
+                    src="./assets/wheelSVG/group4/train.svg"
+                    data-constellation="паровоз"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div
+                  class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-180 small_picture"
+                    src="./assets/wheelSVG/group4/cam.svg"
+                    data-constellation="фотоаппарат"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-180 small_picture"
+                    src="./assets/wheelSVG/group4/PC.svg"
+                    data-constellation="компьютер"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-240 small_picture"
+                    src="./assets/wheelSVG/group5/shoe.svg"
+                    data-constellation="туфелька"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-240 mountains"
+                    src="./assets/wheelSVG/group5/mountain.svg"
+                    data-constellation="горы"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div
+                  class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-240"
+                    src="./assets/wheelSVG/group5/doctor.svg"
+                    data-constellation="врач"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-240"
+                    src="./assets/wheelSVG/group5/ship.svg"
+                    data-constellation="кораблик"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="constellationGroup__slider">
+                <div
+                  class="collapsedGroup topConstellationPair_constellationGroup__slider reduce_line hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-300"
+                    src="./assets/wheelSVG/group6/doll.svg"
+                    data-constellation="кукла"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-300"
+                    src="./assets/wheelSVG/group6/cake.svg"
+                    data-constellation="торт"
+                    alt="Созвездие"
+                  />
+                </div>
+                <div
+                  class="bottomConstellationPair_constellationGroup__slider hideConstellationGroup__slider"
+                >
+                  <img
+                    class="constellationToClick rotate-300"
+                    src="./assets/wheelSVG/group6/iceCream.svg"
+                    data-constellation="мороженое"
+                    alt="Созвездие"
+                  />
+                  <img
+                    class="constellationToClick rotate-300"
+                    src="./assets/wheelSVG/group6/ball.svg"
+                    data-constellation="мячик"
+                    alt="Созвездие"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-lover-elements">
+          <div class="input-container">
+            <input
+              class="slider-input"
+              type="range"
+              min="0"
+              max="360"
+              value="0"
+              step="1"
+              class="range"
+              id="range"
+            />
+            <div class="range-text">|| 0 ||</div>
+            <div class="marks-container" id="marks-container"></div>
+          </div>
+          <div class="info-blocks" id="info_blocks">
+            <div class="lower-popUp-wraper" id="lower_popUp">
+              <div class="info-block left" id="left_info_block">
+                <button class="lower-popUp-botton" id="lower_popUp_botton">
+                  <img src="./assets/bottom-menu-button.svg" alt="" />
+                </button>
+                <div class="left-info-block-conainer">
+                  <p class="b2 title_lower_popUp" id="lower_popUp_title">
+                    Кому и как помочь?
+                  </p>
+                  <img src="./assets/video.png" id="openPopUp_video" alt="" />
+                  <div class="right-elements">
+                    <h3 class="b3">
+                      Наши подопечные нарисовали свои заветные мечты —
+                      то, чего им так не хватает, пока они болеют.
+                    </h3>
+                    <h4 class="b4">
+                      В канун Нового года мечты превратились в созвездия на
+                      новогоднем небосводе. <br />Выбери созвездие и помоги
+                      ребенку выздороветь!
+                    </h4>
+                    <div class="graphic-element-mobile">
+                      <img class="graphic" src="./assets/Graphic.svg" alt="" />
+                      <div class="steps">
+                        <div class="step">
+                          <h4>ШАГ 1</h4>
+                          <h5 class="b5">Выбери созвездие</h5>
+                        </div>
+                        <div class="step">
+                          <h4>ШАГ 2</h4>
+                          <h5 class="b5">Определи сумму пожертвования</h5>
+                        </div>
+                        <div class="step">
+                          <h4>ШАГ 3</h4>
+                          <h5 class="b5">Исполнить мечту мечты!</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lover-elements">
+                      <h4 class="b4">
+                        Помоги детям выздороветь и тогда мечты исполнятся!
+                      </h4>
+                      <button class="popup_form_open_alt defShare-mobyle">
+                        <h4 class="botton_text">Помочь детям</h4>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-block right">
+              <div class="left-elements">
+                <h3 class="b3">
+                  Помоги детям выздороветь и тогда мечты исполнятся!
+                </h3>
+                <button class="popup_form_open_alt defShare">
+                  <h4 class="botton_text">Помочь детям</h4>
+                </button>
+              </div>
+              <div class="right-elements">
+                <img class="graphic" src="./assets/Graphic.svg" alt="" />
+                <div class="steps">
+                  <div class="step">
+                    <h4>ШАГ 1</h4>
+                    <h5 class="b5">Выбери созвездие</h5>
+                  </div>
+                  <div class="step">
+                    <h4>ШАГ 2</h4>
+                    <h5 class="b5">Сделай пожертвование</h5>
+                  </div>
+                  <div class="step">
+                    <h4>ШАГ 3</h4>
+                    <h5 class="b5">
+                      Созвездие станет ярче, а мечта ребенка ближе
+                    </h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </main>
 
-          <div class="info-block right">
-            <div class="left-elements">
-              <h3 class="b3">Зажги небосвод мечтами и помоги детям выздороветь, чтобы их исполнить!</h3>
-              <button class="popup_form_open_alt defShare">
-                <h4 class="botton_text">Зажги небосвод</h4>
-              </button>
+      <footer>
+        <div class="footerContainer">
+          <div class="logo_container">
+            <img class="logo" src="assets/logo-left.svg" alt="Logo SVG" />
+            <img
+              class="logo"
+              id="nastenkaLogo"
+              src="./assets/logo-center.svg"
+              alt="LogoNastenka SVG"
+            />
+          </div>
+          <div class="footer-central-container">
+            <div class="contacts_container">
+              <a href="https://ok.ru/fondnastenka">
+                <img
+                  class="contactsLogo"
+                  src="assets/Odnoklassniki.svg"
+                  alt="Odnoklassniki SVG"
+                />
+              </a>
+              <a href="https://vk.com/fondnastenka">
+                <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
+              </a>
+              <a href="https://t.me/bf_nastenka">
+                <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
+              </a>
+              <a
+                href="https://zen.yandex.ru/id/5cdbc32fd0418e00b317c46e?lang=ru"
+              >
+                <img
+                  class="contactsLogo"
+                  src="assets/Dzen.svg"
+                  alt="Dzen SVG"
+                />
+              </a>
             </div>
-            <div class="right-elements">
-              <img class="graphic" src="./assets/Graphic.svg" alt="" />
-              <div class="steps">
-                <div class="step">
-                  <h4>ШАГ 1</h4>
-                  <h5 class="b5">Выбери созвездие</h5>
-                </div>
-                <div class="step">
-                  <h4>ШАГ 2</h4>
-                  <h5 class="b5">Определи сумму пожертвования</h5>
-                </div>
-                <div class="step">
-                  <h4>ШАГ 3</h4>
-                  <h5 class="b5">Следуй за созвездием мечты!</h5>
-                </div>
+            <div class="footer-right-elements">
+              <h5 class="site_address b4">fond@nastenka.ru</h5>
+              <div class="numbers">
+                <h5 class="b4">+7 925 585-41-01</h5>
+                <h5 class="b4">+7 985 550-17-46</h5>
+              </div>
+              <div class="addresses">
+                <h5 class="b4">
+                  117105, г. Москва, Варшавское шоссе, д. 39Б, 3 эт, пом.XI,
+                  комн.1.
+                </h5>
+                <h5 class="b4">пн-пт с 10:00 до 18:00</h5>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="footerContainer">
-        <div class="logo_container">
-          <img class="logo" src="assets/logo-left.svg" alt="Logo SVG" />
-          <img class="logo" id="nastenkaLogo" src="./assets/logo-center.svg" alt="LogoNastenka SVG" />
-        </div>
-        <div class="footer-central-container">
-          <div class="contacts_container">
-            <a href="https://ok.ru/fondnastenka">
-              <img class="contactsLogo" src="assets/Odnoklassniki.svg" alt="Odnoklassniki SVG" />
-            </a>
-            <a href="https://vk.com/fondnastenka">
-              <img class="contactsLogo" src="assets/VK.svg" alt="VK SVG" />
-            </a>
-            <a href="https://t.me/bf_nastenka">
-              <img class="contactsLogo" src="assets/TG.svg" alt="TG SVG" />
-            </a>
-            <a href="https://zen.yandex.ru/id/5cdbc32fd0418e00b317c46e?lang=ru">
-              <img class="contactsLogo" src="assets/Dzen.svg" alt="Dzen SVG" />
-            </a>
+        <div class="copyright_container">
+          <div class="Wow">
+            <div>сделано в</div>
+            <pre></pre>
+            <a href="https://wow.wearewowagency.com/"> Wow</a>
           </div>
-          <div class="footer-right-elements">
-            <h5 class="site_address b4">fond@nastenka.ru</h5>
-            <div class="numbers">
-              <h5 class="b4">+7 925 585-41-01</h5>
-              <h5 class="b4">+7 985 550-17-46</h5>
-            </div>
-            <div class="addresses">
-              <h5 class="b4">117105, г. Москва, Варшавское шоссе, д. 39Б, 3 эт, пом.XI, комн.1.</h5>
-              <h5 class="b4">пн-пт с 10:00 до 18:00</h5>
-            </div>
+          <a
+            href="https://nastenka.ru/wp-content/uploads/oferta_na_lending_sozvezdie_mechty.pdf"
+          >
+            <div>Оферта</div>
+          </a>
+          <a
+            href="https://nastenka.ru/wp-content/uploads/Politika_personal'nye_dannye_Nasten'ka.pdf"
+          >
+            <div>Политика конфинденциальности</div>
+          </a>
+          <div>
+            © 2002 — 2024 Благотворительный фонд «Настенька». Все права
+            защищены.
           </div>
         </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(99171002, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/99171002"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
       </div>
-
-      <div class="copyright_container">
-        <div class="Wow">
-          <div>сделано в</div>
-          <pre> </pre>
-          <a href="https://wow.wearewowagency.com/"> Wow</a>
-        </div>
-        <a href="https://nastenka.ru/wp-content/uploads/oferta_na_lending_sozvezdie_mechty.pdf">
-          <div>Оферта</div>
-        </a>
-        <a href="https://nastenka.ru/wp-content/uploads/Politika_personal'nye_dannye_Nasten'ka.pdf">
-          <div>Политика конфинденциальности</div>
-        </a>
-        <div>© 2002 — 2024 Благотворительный фонд «Настенька». Все права защищены.</div>
-      </div>
-    </footer>
-  </div>
-  <script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-      m[i].l = 1 * new Date();
-      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(99171002, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
-  </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/99171002" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <script
-    type="text/javascript">!function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = 'https://vk.com/js/api/openapi.js?173', t.onload = function () { VK.Retargeting.Init("VK-RTRG-1921885-a01PJ"), VK.Retargeting.Hit() }, document.head.appendChild(t) }();</script>
-  <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1921885-a01PJ" style="position:fixed; left:-999px;"
-      alt="" /></noscript>
-  <script src="./js/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/addaptive.js"></script>
-  <script src="./lightUpConstellationSwiper/lightUpConstellationSwiper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="./js/constellationSwiper.js"></script>
-  <script src="./js/constellationsName.js"></script>
-  <script src="./js/sansaroWill.js"></script>
-  <script src="./js/video.js"></script>
-  <script src="./js/buttonSansara.js"></script>
-  <script type="module" src="../js/modals.js"></script>
-  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
-  <script type="module" src="./js/Payment.js"></script>
-  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
-  <script type="module" src="./js/openCurrentConstellationSlide.js"></script>
-</body>
-
+    </noscript>
+    <script type="text/javascript">
+      !(function () {
+        var t = document.createElement("script");
+        (t.type = "text/javascript"),
+          (t.async = !0),
+          (t.src = "https://vk.com/js/api/openapi.js?173"),
+          (t.onload = function () {
+            VK.Retargeting.Init("VK-RTRG-1921885-a01PJ"), VK.Retargeting.Hit();
+          }),
+          document.head.appendChild(t);
+      })();
+    </script>
+    <noscript
+      ><img
+        src="https://vk.com/rtrg?p=VK-RTRG-1921885-a01PJ"
+        style="position: fixed; left: -999px"
+        alt=""
+    /></noscript>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/addaptive.js"></script>
+    <script src="./lightUpConstellationSwiper/lightUpConstellationSwiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/constellationSwiper.js"></script>
+    <script src="./js/constellationsName.js"></script>
+    <script src="./js/sansaroWill.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/buttonSansara.js"></script>
+    <script type="module" src="../js/modals.js"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script type="module" src="./js/Payment.js"></script>
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script type="module" src="./js/openCurrentConstellationSlide.js"></script>
+  </body>
 </html>
