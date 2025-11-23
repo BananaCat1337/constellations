@@ -468,6 +468,15 @@ main {
     top: 0;
     left: 20%;
 }
+
+@media (max-width: 768px) {
+    .graphic {
+        position: static; /* или relative — как вам нужно */
+        top: auto;
+        left: auto;
+    }
+}
+
 .info-blocks .left .video-content {
     -o-object-fit: cover;
     object-fit: cover;
