@@ -471,7 +471,7 @@ main {
 
 @media (max-width: 768px) {
     .graphic {
-        position: static; /* или relative — как вам нужно */
+        position: static;
         top: auto;
         left: auto;
     }
