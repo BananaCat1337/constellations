@@ -667,6 +667,16 @@ input[type="range"]::-webkit-slider-thumb {
     height: 28vh;
 }
 
+.Bycicle {
+    width: 32vh;
+    height: 32vh;
+}
+
+.train {
+    width: 31vh;
+    height: 31vh;
+}
+
 .cameraImg {
     height: 26vh;
     width: 26vh;
