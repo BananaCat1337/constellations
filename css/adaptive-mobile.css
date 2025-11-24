@@ -121,7 +121,7 @@
   }
 
   .topConstellationPair_constellationGroup__slider {
-    width: 70%;
+    width: 90%;
   }
 
   .bottomConstellationPair_constellationGroup__slider {
@@ -130,8 +130,8 @@
 
 
   .constellationToClick {
-    width: 34vw;
-    height: 40vw;
+    width: 38vw;
+    height: 44vw;
   }
 
   .cameraImg {
