@@ -12,44 +12,58 @@
 
 @media (max-width: 500px) {
   .bgImage-container {
-    height: 100vh; 
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background-image: url("../assets/mobileBackground.png");
   }
+
   .input-container {
     display: none;
   }
+
   .whoIs p {
+    text-align: left;
     font-size: 4.5vw;
   }
+
   .infoText .b1 {
+    margin-top: 15px;
     font-size: 4vw !important;
   }
+
   .chekbox a,
   label {
     font-size: 3vw;
   }
+
   h1 {
     font-size: 10vw;
   }
+
   h2 {
     font-size: 5vw;
   }
+
   .constellationName {
     font-size: 5vw !important;
   }
+
   .b1 {
     font-size: 3.5vw !important;
   }
+
   .b2 {
     font-size: 3.7vw;
   }
+
   .b3-1 {
     font-size: 3.5vw;
   }
+
   .b3 {
     font-size: 3.5vw;
   }
+
   .b4 {
     font-size: 3.5vw;
   }
@@ -57,6 +71,7 @@
   .step h4 {
     font-size: 5vw;
   }
+
   .b5 {
     font-size: 3vw;
   }
@@ -78,10 +93,12 @@
   .swiper-rtl .swiper-button-next {
     left: 0;
   }
+
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: 0;
   }
+
   .swiper-button-next-mobyle {
     display: block !important;
     right: 0;
@@ -89,6 +106,7 @@
     -moz-user-select: none;
     user-select: none;
   }
+
   .swiper-button-prev-mobyle {
     display: block !important;
     left: 0;
@@ -101,14 +119,16 @@
     /* width: 70%; */
     width: inherit;
   }
+
   .topConstellationPair_constellationGroup__slider {
     width: 70%;
   }
+
   .bottomConstellationPair_constellationGroup__slider {
     width: 90%;
   }
 
-  
+
   .constellationToClick {
     width: 34vw;
     height: 40vw;
@@ -131,6 +151,7 @@
     height: 50vh;
     height: calc(var(--vh, 1vh) * 50);
   }
+
   .constellationGroup__slider {
     height: 40vh;
   }
@@ -145,6 +166,7 @@
   button:hover {
     background-color: #ffb007;
   }
+
   *:focus-visible {
     outline: none;
   }
@@ -188,9 +210,11 @@
 
     margin-top: 8vh;
   }
+
   .popUp.active {
     justify-content: center;
   }
+
   .popUp1.active {
     display: flex;
     flex-direction: column;
@@ -211,29 +235,40 @@
     width: 90%;
     margin-bottom: 2vh;
   }
+
   .foto_for_pc {
     display: none;
   }
+
   .foto_for_mobile {
     display: block;
   }
+
   .namePhotoConstell img {
     object-fit: contain;
 
     height: 100%;
     width: 50%;
   }
-  .nameConstell_Container img {
-    width: 90%;
-    max-height: 15vh;
 
+  
+  .nameConstell_Container img {
+    width: 80px;
+    margin-top: 10px;
+    height: auto;
     object-fit: contain;
   }
+  
+  .nameConstell_Container_Doctor img{
+    width: 70px;
+    margin-top: 10px;
+    height: auto;
+    object-fit: contain;
+  }
+
   .nameConstell_Container {
-    display: flex;
-
-    align-items: center;
-
+    flex-direction: column;
+    align-items: flex-start;
     width: 45%;
   }
 
@@ -244,15 +279,18 @@
     align-items: center;
     padding: 5vh 3vw 5vh 3vw;
   }
+
   .constellationContainer {
     height: 13%;
   }
+
   .popUp-large .info-container {
     display: flex;
     flex-direction: column;
 
     height: 95%;
   }
+
   .popUp-large .info-container .left-elements {
     display: flex;
     justify-content: center;
@@ -260,18 +298,23 @@
     height: 40%;
     width: 100%;
   }
+
   .popUp-large .info-container .left-elements img {
     width: 100%;
   }
+
   .popUp-form .info-container .left-elements {
     width: 100%;
   }
+
   .popUp-form .info-container .right-elements {
     margin-top: 10%;
   }
+
   .popUp-form form {
     width: 100%;
   }
+
   .popUp-large .info-container .right-elements {
     display: flex;
     align-items: center;
@@ -279,15 +322,19 @@
     height: 60%;
     width: 100%;
   }
+
   .popUp .side-element {
     display: none;
   }
+
   .PopUp-image-mobile {
     display: block;
   }
+
   .PopUp-image {
     display: none;
   }
+
   .popUp-large .info-container .right-elements button {
     width: 80%;
     height: 20%;
@@ -399,7 +446,7 @@
   }
 
   .wrapper {
-    height: 100vh; 
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
 
@@ -415,6 +462,7 @@
   .main-title-wrapper {
     width: 100vw;
   }
+
   .main-sub-title {
     width: 60%;
     text-align: center;
@@ -449,9 +497,11 @@
 
     z-index: 10;
   }
+
   .info-blocks.active {
     z-index: 20;
   }
+
   .lower-popUp-wraper {
     display: flex;
     justify-content: center;
@@ -479,6 +529,7 @@
 
     z-index: 20;
   }
+
   .lower-popUp-wraper.desactive {
     animation: lower-popUp-off 0.5s 0s 1 ease-out;
     top: calc(var(--vh, 1vh) * 68);
@@ -498,15 +549,18 @@
 
     height: 100%;
   }
+
   .title_lower_popUp {
     display: block;
 
     margin-top: 2vh;
     margin-bottom: 20vh;
   }
+
   .title_lower_popUp.active {
     display: none;
   }
+
   .info-blocks .left .right-elements {
     width: 90%;
 
@@ -514,6 +568,7 @@
 
     margin-bottom: 2vh;
   }
+
   .info-blocks .left .right-elements .lover-elements {
     display: flex;
 
@@ -524,6 +579,7 @@
     height: 30%;
     width: 100%;
   }
+
   .info-blocks .left .right-elements .lover-elements button {
     display: flex;
     align-items: center;
@@ -542,6 +598,7 @@
 
     width: 100%;
   }
+
   .graphic {
     margin-top: 2vh !important;
     margin-bottom: 0 !important;
@@ -549,6 +606,7 @@
 
     width: 65% !important;
   }
+
   .info-blocks .steps {
     width: 100%;
   }
@@ -559,6 +617,7 @@
     height: 17vh;
     width: 50vw;
   }
+
   .left-info-block-conainer {
     position: absolute;
 
@@ -566,6 +625,7 @@
 
     overflow: hidden;
   }
+
   .lower-popUp-botton {
     position: absolute;
     top: calc(var(--vh, 1vh) * -3.5);
@@ -581,6 +641,7 @@
 
     z-index: 50;
   }
+
   .lower-popUp-botton.active {
     transform: rotate(180deg);
     top: calc(var(--vh, 1vh) * -3);
@@ -600,6 +661,7 @@
 
     height: 50vh;
   }
+
   .footerContainer {
     flex-direction: column;
 
@@ -607,16 +669,19 @@
 
     height: 75%;
   }
+
   .logo_container {
     justify-content: space-between;
 
     height: 25%;
     width: 100%;
   }
+
   .logo {
     height: 100%;
     margin-right: 0;
   }
+
   .footer-central-container {
     display: flex;
     flex-direction: column-reverse;
@@ -628,19 +693,23 @@
     width: 100%;
     height: 90%;
   }
+
   .footer-right-elements {
     flex-direction: column;
 
     width: 86%;
     height: 75%;
   }
+
   .addresses {
     align-items: flex-start;
   }
+
   .contacts_container {
     margin-left: 0;
     width: 60%;
   }
+
   .contactsLogo {
     height: 4vh;
   }
