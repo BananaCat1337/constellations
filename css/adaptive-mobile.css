@@ -108,10 +108,17 @@
     width: 90%;
   }
 
+  
   .constellationToClick {
-    width: 30vw;
-    height: 30vw;
+    width: 34vw;
+    height: 40vw;
   }
+
+  .cameraImg {
+    width: 31vw;
+    height: 31vw;
+  }
+
   .constellationToClick.mountains {
     width: 70%;
     height: 80%;
