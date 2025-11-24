@@ -25,6 +25,14 @@ html {
     height: 100%;
 }
 
+.zoomed-clone {
+    border-radius: 8px;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+
 .swiper {
     height: 100%;
 
