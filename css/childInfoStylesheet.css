@@ -178,11 +178,12 @@ p {
     width: 90%;
 }
 
-.whoIs * {
+.whoIs {
     display: flex;
-    justify-content: end;
-    font-family: Hauora-700;
-    font-size: 22px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    font-size: 4.5vw;
 }
 
 .swiper-slide {
