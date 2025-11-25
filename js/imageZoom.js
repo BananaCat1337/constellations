@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let extraY = 0;
             if (isMobile) {
-                extraY = 34.406 - rect.top;
+                extraY = 10.406 - rect.top;
             }
 
             requestAnimationFrame(() => {
