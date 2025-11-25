@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".foto_for_pc, .foto_for_mobile");
 
-    images.forEach(img => {
+    images.forEach((img) => {
         img.style.cursor = "pointer";
 
-        img.addEventListener("click", e => {
+        img.addEventListener("click", (e) => {
             e.stopPropagation();
 
             const rect = img.getBoundingClientRect();
@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const clone = img.cloneNode(true);
             clone.classList.add("zoomed-clone");
+
+            const isMobile = window.innerWidth <= 768;
+
             clone.style.position = "fixed";
             clone.style.top = rect.top + "px";
             clone.style.left = rect.left + "px";
@@ -43,15 +46,25 @@ document.addEventListener("DOMContentLoaded", () => {
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight;
 
-            const scaleX = Math.min(0.9 * viewportWidth / rect.width, 0.9 * viewportHeight / rect.height);
+            const scaleX = Math.min(
+                (0.9 * viewportWidth) / rect.width,
+                (0.9 * viewportHeight) / rect.height
+            );
             const scaleY = scaleX;
             const scale = Math.min(scaleX, scaleY);
 
             const targetX = viewportWidth / 2 - (rect.left + rect.width / 2);
             const targetY = viewportHeight / 2 - (rect.top + rect.height / 2);
 
+            let extraY = 0;
+            if (isMobile) {
+                extraY = 34.406 - rect.top;
+            }
+
             requestAnimationFrame(() => {
-                clone.style.transform = `translate(${targetX}px, ${targetY}px) scale(${scale})`;
+                clone.style.transform = `translate(${targetX}px, ${
+                    targetY + extraY
+                }px) scale(${scale})`;
             });
 
             function closeZoom() {
@@ -62,10 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 clone.style.top = rect.top + "px";
                 clone.style.left = rect.left + "px";
 
-                clone.addEventListener("transitionend", () => {
-                    clone.remove();
-                    overlay.remove();
-                }, { once: true });
+                clone.addEventListener(
+                    "transitionend",
+                    () => {
+                        clone.remove();
+                        overlay.remove();
+                    },
+                    { once: true }
+                );
             }
 
             overlay.addEventListener("click", closeZoom);

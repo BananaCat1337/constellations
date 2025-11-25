@@ -10,6 +10,7 @@
   }
 }
 
+
 @media (max-width: 500px) {
   .bgImage-container {
     height: 100vh;
@@ -25,6 +26,10 @@
     text-align: left;
     font-size: 4.5vw;
   }
+
+
+
+
 
   .infoText .b1 {
     margin-top: 15px;
@@ -62,6 +67,15 @@
 
   .b3 {
     font-size: 3.5vw;
+  }
+
+
+  .sub-title-mobyle {
+    font-size: 4.5vw;
+  }
+
+  .main-mobyle {
+    font-size: 13.5vw;
   }
 
   .b4 {
@@ -251,15 +265,15 @@
     width: 50%;
   }
 
-  
+
   .nameConstell_Container img {
     width: 80px;
     margin-top: 10px;
     height: auto;
     object-fit: contain;
   }
-  
-  .nameConstell_Container_Doctor img{
+
+  .nameConstell_Container_Doctor img {
     width: 70px;
     margin-top: 10px;
     height: auto;
@@ -341,7 +355,9 @@
   }
 
   .popUp2.active {
+    height: 640px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     padding: 5vh 3vw 5vh 3vw;
@@ -359,7 +375,6 @@
   .popUp2 .info-container .left-elements img {
     width: 100%;
     height: 70%;
-
     object-fit: cover;
   }
 
@@ -455,15 +470,16 @@
   }
 
   .main-title {
-    /* font-size: 3vw; */
     margin-top: 10%;
   }
+
 
   .main-title-wrapper {
     width: 100vw;
   }
 
   .main-sub-title {
+    /* font-size: 100vw; */
     width: 60%;
     text-align: center;
   }
@@ -764,6 +780,26 @@
 
   100% {
     top: calc(var(--vh, 1vh) * 68);
+  }
+}
+
+
+@media (max-width: 400px) {
+  .constellationToClick {
+    width: 35vw;
+    height: 39vw;
+  }
+
+  .main-mobyle {
+    font-size: 10.5vw;
+  }
+
+  .sub-title-mobyle {
+    font-size: 4.5vw;
+  }
+
+  .b2 {
+    font-size: 4vw;
   }
 }
 

@@ -14,8 +14,12 @@
 
 @media (max-width: 1700px) {
   .b3 {
-    font-size: 1.1  vw;
+    font-size: 1.1vw;
   }
+
+  .sub-title-mobyle {
+    font-size: 1.4vw;
+}
 
   .b3-1 {
     font-size: 1.2vw;
