@@ -33,7 +33,7 @@
 
   .infoText .b1 {
     margin-top: 15px;
-    font-size: 4vw !important;
+    font-size: 3.7vw !important;
   }
 
   .chekbox a,
@@ -268,13 +268,15 @@
 
   .nameConstell_Container img {
     width: 80px;
-    margin-top: 10px;
+    margin-top: 2px;
+    margin-left: 2vw;
     height: auto;
     object-fit: contain;
   }
 
   .nameConstell_Container_Doctor img {
-    width: 70px;
+    width: 48px;
+    margin-left: 4vw;
     margin-top: 10px;
     height: auto;
     object-fit: contain;
@@ -791,11 +793,11 @@
   }
 
   .main-mobyle {
-    font-size: 10.5vw;
+    font-size: 9.5vw;
   }
 
   .sub-title-mobyle {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 
   .b2 {
