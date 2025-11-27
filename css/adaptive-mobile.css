@@ -793,6 +793,16 @@
     height: 36vw;
   }
 
+  .cameraImg {
+    width: 28vw;
+    height: 36vw;
+  }
+
+  .painterImgMain {
+    width: 27vw;
+    height: 33vw;
+  }
+
   .infoText .b1 {
     font-size: 3.1vw !important;
   }
