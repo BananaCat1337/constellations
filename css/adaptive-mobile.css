@@ -62,7 +62,7 @@
   }
 
   .b3-1 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .b3 {
@@ -79,7 +79,7 @@
   }
 
   .b4 {
-    font-size: 3.5vw;
+    font-size: 2.4vw;
   }
 
   .step h4 {
@@ -621,7 +621,7 @@
     margin-top: 2vh !important;
     margin-bottom: 0 !important;
     margin-right: 5vw;
-
+    display: none;
     width: 65% !important;
   }
 
@@ -788,16 +788,29 @@
 
 @media (max-width: 400px) {
   .constellationToClick {
-    width: 35vw;
-    height: 39vw;
+    width: 32vw;
+    height: 36vw;
+  }
+
+  .infoText .b1 {
+    font-size: 3.1vw !important;
+  }
+
+  .popUp2.active {
+    height: 360px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 3vw 5vh 3vw;
   }
 
   .main-mobyle {
-    font-size: 9.5vw;
+    font-size: 9.3vw;
   }
 
   .sub-title-mobyle {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .b2 {
