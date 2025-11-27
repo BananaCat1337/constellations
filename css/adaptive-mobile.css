@@ -447,6 +447,7 @@
   }
 
   .left-nav-bar.active {
+    height: 42vw;
     animation: menu-open 0.5s 0s 1 ease-out;
     top: 0;
   }
