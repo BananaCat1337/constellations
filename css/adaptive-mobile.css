@@ -789,8 +789,9 @@
 
 @media (max-width: 400px) {
   .constellationToClick {
-    width: 32vw;
-    height: 36vw;
+    margin-top: 6px;
+    width: 29vw;
+    height: 33vw;
   }
 
   .cameraImg {
@@ -821,7 +822,7 @@
   }
 
   .sub-title-mobyle {
-    font-size: 3.5vw;
+    font-size: 3.2vw;
   }
 
   .b2 {
