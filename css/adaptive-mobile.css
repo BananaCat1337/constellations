@@ -168,6 +168,11 @@
     max-height: 36vw;
   }
 
+  .dancerImgMain,.rocketImgMain {
+    min-width: 38vw;
+    min-height: 36vw;
+  }
+
   .cameraImg {
     width: 27vw;
     height: 36vw;
