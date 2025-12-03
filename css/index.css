@@ -294,9 +294,9 @@ label {
 .popUp-sozvezdie .info-container .left-elements {
     width: 35%;
 }
-
-.popUp-sozvezdie .info-container .left-elements img {
-    height: 60%;
+.popUp-sozvezdie .info-container .left-elements img
+ {
+    height: 100%;
 }
 
 .popUp-sozvezdie .info-container {
@@ -652,6 +652,12 @@ input[type="range"] {
     padding: 2px 6px;
     z-index: 11;
 }
+
+.no-rotate {
+  transform: none !important;
+  animation: none !important;
+}
+
 
 input[type="range"]::-webkit-slider-thumb {
     -moz-appearance: none !important;

@@ -5,10 +5,10 @@ const constellationTitleShare = document.getElementById(
 const constellationCards = document.querySelectorAll(".cardContainer");
 const popUp = document.querySelector("#popUp-sozvezdie");
 const constellationImage = popUp.querySelector(".constellationImage");
-const shareText = `Благотворительный фонд "Настенька" попросил подопечных нарисовать свои заветные мечты. Эти рисунки обратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - следуй за созвездием мечты.`;
+const shareText = 'Подопечные фонда "Настенька" нарисовали свои заветные мечты — то, чего им так не хватает, пока они болеют. Эти рисунки превратились в настоящие созвездия, которые в этот новый год Мы можем сделать ярче! Все просто - помоги детям выздороветь, и тогда мечты и исполнятся!';
 const url = "https://mechta.nastenka.ru/";
-const OkImage = "https://mechta.nastenka.ru/assets/share/Share.jpg";
-const VkImage = "https://mechta.nastenka.ru/assets/share/shareVK.jpg";
+const OkImage = "https://mechta.nastenka.ru/assets/share/share-post.jpg";
+const VkImage = "https://mechta.nastenka.ru/assets/share/share-post.jpg";
 document.getElementById(
   "vk-share"
 ).href = `https://vk.com/share.php?url=${encodeURIComponent(
@@ -29,7 +29,7 @@ constellationCards.forEach((card) => {
   card.addEventListener("click", () => {
     const newTitle = card.getAttribute("data-constellation");
     const constellation = card.getAttribute("img-constellation");
-    constellationImage.src = `./cards/childInfoCards/childInfoSvgs/${constellation}.svg`;
+    constellationImage.src = `./assets/cardSvgs/${constellation}.svg`;
     constellationTitle.textContent = `${newTitle}`;
     constellationTitleShare.textContent = `${newTitle}`;
   });
