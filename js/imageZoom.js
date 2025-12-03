@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             clone.style.top = rect.top + "px";
             clone.style.left = rect.left + "px";
             clone.style.width = rect.width + "px";
-            clone.style.height = rect.height + "px";
             clone.style.objectFit = "contain";
             clone.style.cursor = "zoom-out";
             clone.style.transition = "all 0.4s ease";

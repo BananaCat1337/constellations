@@ -8,6 +8,11 @@
   .b2 {
     font-size: 4vw;
   }
+
+  .zoomed-clone {
+    max-height: 280px;
+    border-radius: 20px;
+  }
 }
 
 
@@ -16,6 +21,11 @@
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background-image: url("../assets/mobileBackground.png");
+  }
+
+  .zoomed-clone {
+    max-height: 280px;
+    border-radius: 20px;
   }
 
   .input-container {
@@ -75,7 +85,7 @@
   }
 
   .main-mobyle {
-    font-size: 13.5vw;
+    font-size: 9.5vw;
   }
 
   .b4 {
@@ -88,6 +98,16 @@
 
   .b5 {
     font-size: 3vw;
+  }
+
+  .doctorImg{
+    max-width: 26vw;
+    max-height: 36vw;
+  }
+
+  .train,   .dollImg{
+    min-width: 35vw;
+    min-height: 36vw;
   }
 
   .botton_text {
@@ -144,13 +164,13 @@
 
 
   .constellationToClick {
-    width: 38vw;
-    height: 44vw;
+    max-width: 30vw;
+    max-height: 36vw;
   }
 
   .cameraImg {
-    width: 31vw;
-    height: 31vw;
+    width: 27vw;
+    height: 36vw;
   }
 
   .constellationToClick.mountains {
@@ -635,6 +655,11 @@
 
     height: 17vh;
     width: 50vw;
+  }
+
+    .painterImgMain {
+    width: 27vw;
+    height: 33vw;
   }
 
   .left-info-block-conainer {
